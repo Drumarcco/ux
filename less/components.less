@@ -1,0 +1,160 @@
+// COMPONENTS
+
+// 1. Buttons
+// -- 1.1 Regular Buttons
+// -- 1.2 Arrow Buttons
+// -- 1.3 Send Buttons
+// -- 1.4 Color Variations (orange, green & blue)
+// -- 1.5 Button Overrides
+
+
+
+
+// 1.1 Regular Buttons (the white ones)
+
+.button {
+  font-family: lato;
+  border: 1px solid #bcbcbc;
+  color: #7b8388;
+  text-decoration: none!important;
+  text-shadow: none;
+  padding: 10px 38px;
+  border-radius: 100px;
+  background: #FFF;
+  font-size: 16px;
+  transition: all .2s;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: @ux-blue;
+  transition: all .2s;
+  color: #FFF;
+  border: 1px solid @ux-blue;
+}
+
+
+// 1.2 Arrow Buttons - Buttons that displays an arrow on hover ->
+
+.arrow-button {
+  position: relative;
+}
+
+.arrow-button:hover {
+  padding-right: 59px;
+}
+
+.arrow-button:after {
+  position: absolute;
+  opacity: 0;
+  transition: all .2s;
+  width: 21px;
+  height: 11px;
+  right: 38px;
+  background: url(../img/arrow-white.png);
+  content: '';
+  display: block;
+  top: 17px;
+  background-size: cover;
+}
+
+.arrow-button:hover:after {
+  opacity: 1;
+  transition: all .2s;
+  right: 30px;
+}
+
+
+// 1.3 Send Buttons - Displays a paper plane on hover (used on contact and register forms)
+
+.send-button {
+  position: relative;
+}
+
+.send-button:hover {
+  padding-right: 59px;
+}
+
+.send-button:after {
+  position: absolute;
+  opacity: 0;
+  transition: all .2s;
+  width: 22px;
+  height: 15px;
+  right: 38px;
+  background: url(../img/paper-plane.png);
+  content: '';
+  display: block;
+  top: 12px;
+  background-size: cover;
+}
+
+.send-button:hover:after {
+  opacity: 1;
+  transition: all .2s;
+  right: 30px;
+}
+
+
+// 1.4 - Color Variations
+
+.orange {
+  color: #FFF;
+  background-color: @ns-orange;
+  border-color: @ns-orange;
+}
+
+.orange:hover {
+  background-color: #e14a0e;
+  color: #FFF;
+  border-color: #e14a0e;
+  transition: all .2s;
+}
+
+.green {
+  background-color: @ux-green;
+  color: #FFF!important;
+  border-color: @ux-green;
+}
+
+.green:hover {
+  background-color: #6ac028;
+  color: #FFF;
+  border-color: #6ac028;
+  transition: all .2s;
+}
+
+
+// 1.5 - Button Overrides
+
+.home .left-title .button {
+  float: right;
+  margin-top: .5rem;
+}
+
+.form-center input[type='submit'] { // Used for registration plugin buttons
+  font-family: lato;
+  border: 1px solid #bcbcbc;
+  text-decoration: none!important;
+  text-shadow: none;
+  padding: 10px 38px;
+  border-radius: 100px;
+  background-color: @ux-green;
+  font-size: 16px;
+  transition: all .2s;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 1px!important;
+  color: #FFF!important;
+  border-color: @ux-green;
+  position: relative;
+}
+
+.form-center input[type='submit']:hover {
+  
+}

@@ -1,0 +1,119 @@
+@media (max-width: 915px) {
+  .section-bg,
+  .section-bg-takeaways {
+    padding: 0 45px 70px 45px;
+  }
+
+  .orange,
+  .diy-header,
+  .gray {
+    padding: 70px 85px;
+  }
+
+  .takeaways-box:after {
+    display: none;
+  }
+
+  .takeaways-box ul {
+    width: auto;
+    padding-left: 15px;
+  }
+
+  .takeaways-box {
+    padding: 30px;
+    width: auto;
+  }
+
+  .how-cont h1 {
+    margin: 0;
+  }
+
+  .references-cont p {
+    padding-left: 0;
+  }
+
+  .references-cont h1 {
+    margin: 0;
+  }
+
+  a.downlaod-infographic {
+    top: 120px;
+  }
+}
+
+@media (max-width: 660px) {
+  .steps {
+      padding-left: 0;
+  }
+  .orange .how-cont-icon {
+    display: none;
+  }
+
+  .orange .how-cont-description {
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .orange .how-cont h1 {
+    padding-left: 0;
+  }
+
+  .method-cont {
+    h1 {
+      font-size: 45px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+
+  .section-bg-takeaways .takeaways-box:after {
+    display: none;
+  }
+
+
+  .section-bg-takeaways .takeaways-box ul {
+    width: 95%;
+  }
+}
+
+@media (max-width: 541px) {
+
+  .orange,
+  .diy-header,
+  .gray {
+    padding: 70px 50px;
+  }
+
+  .section-bg,
+  .section-bg-takeaways {
+    padding: 0 20px 50px 20px;
+  }
+
+  .references-cont p {
+    padding-left: 0;
+    word-break: break-all;
+  }
+
+  .why-cont {
+    padding: 50px 30px !important;
+  }
+
+  a.nearsof-logo {
+    margin-left: 0;
+  }
+
+  a.nearsof-logo {
+    padding-top: 30px;
+    display: block;
+  }
+
+  a.downlaod-infographic {
+    top: 120px;
+  }
+
+  .section-bg-takeaways .takeaways-cont h1 {
+    padding: 15px;
+  }
+}

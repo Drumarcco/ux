@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: lato;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero,
+.howitworks,
+.experts,
+.submit,
+.episode-hero,
+.report-hero,
+.faq {
+  text-align: center;
+}
+
+.hero h1,
+.howitworks h2,
+.experts h2,
+.submit h2,
+.faq h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  color: #606a70;
+}
+
+
+/* ELEMENTS */
+
+.button {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #09ae09;
+  transition: background .3s;
+}
+
+.button:active {
+  background: #0b9b0b;
+  transition: background .2s;
+}
+
+.big-button {
+  padding: 12px 20px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.designmethod {
+  font-size: 19px;
+  font-weight: 300;
+  color: #FFF;
+  background: #5e6a71;
+  padding: 11px 20px;
+  border-radius: 4px;
+}

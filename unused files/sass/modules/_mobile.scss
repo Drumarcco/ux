@@ -1,0 +1,449 @@
+/* MOBILE LANDING PAGE */
+
+.mobile-hero {
+  height: 300px;
+  background: url(../img/mobile-ux-research.png) no-repeat center center;
+  padding-top: 300px;
+  background-size: cover;
+}
+
+.mobile-hero h1 {
+  margin: 0 auto;
+  font-size: 55px;
+  color: #FFF;
+  font-weight: 300;
+  width: 50%;
+  text-align: center;
+}
+
+
+
+/* PROBLEMS */
+
+.mobile-problems {
+  padding: 60px calc(50% - 500px) 100px calc(50% - 500px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.mobile-problems h2 {
+  color: #646464;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.mobile-problems .half {
+  width: 40%;
+  float: left;
+  margin-left: 8%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.mobile-problems .half:last-child {
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 8%;
+}
+
+.mobile-problems .half .illustration {
+  height: 250px;
+}
+
+.mobile-problems .half .description {
+  font-size: 19px;
+  color: #646464;
+  margin-top: 20px;
+}
+
+.mobile-problems .half .description h3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+
+/* MOBILE PROCESS */
+
+.mobile-process {
+  background: url(../img/mobile-ux-design-process-background.png) no-repeat center center;
+  background-size: cover;
+  padding: 60px calc(50% - 500px) 160px calc(50% - 500px);
+  text-align: center;
+}
+
+.mobile-process h2 {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.mobile-process .services-cont .blocks .block-text-cont h2 {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 0;
+  color: #575757;
+}
+
+
+
+/* MOBILE CASE STUDIES */
+
+.mobile-cs {
+  padding: 60px calc(50% - 500px) 160px calc(50% - 500px);
+  text-align: center;
+  color: #646464;
+  overflow: hidden;
+}
+
+.mobile-cs h2 {
+  color: #646464;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.mobile-cs .single-casestudy {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.mobile-cs .single-casestudy .details {
+  width: calc(100% - 440px);
+  float: left;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+}
+
+.mobile-cs .single-casestudy .details .case-logo {
+  width: 300px;
+  height: 100px;
+}
+
+.mobile-cs .single-casestudy .details .shopwell-logo {
+  background-image: url(../img/shopwell-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-cs .single-casestudy .details .skedio-logo {
+  background-image: url(../img/skedio-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-cs .single-casestudy .details .subtitle {
+  color: #F15922;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
+  display: block;
+}
+
+.mobile-cs .single-casestudy .details p {
+  color: #646464;
+  font-size: 19px;
+}
+
+.challenge-title {
+  margin-bottom: 10px;
+}
+
+.challenge-text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.mobile-cs .single-casestudy .details p b {
+  color: #646464;
+  font-weight: 600;
+}
+
+.mobile-cs .single-casestudy .details ul {
+  padding-left: 22px;
+}
+
+.mobile-cs .single-casestudy .details ul li {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.mobile-cs .single-casestudy .details .button {
+  margin-top: 25px;
+}
+
+
+
+
+
+.mobile-cs .single-casestudy .phoneframe {
+  width: 320px;
+  float: right;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #c3c3c3;
+  margin-bottom: 60px;
+}
+
+
+.onboarding-back {
+  width: 226px;
+  height: 226px;
+  background-image: url(../img/mobile-ux-onboarding.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.onboarding-back:hover {
+  -webkit-animation: rotate 6s infinite;
+  -webkit-animation-timing-function: linear;
+  animation: rotate 6s infinite;
+  animation-timing-function: linear;
+}
+
+.onboarding-text {
+  width: 102px;
+  height: 66px;
+  margin: 0 auto;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  background: url(../img/onboarding-text.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+@-webkit-keyframes rotate {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 1180px) {
+	.submit-mobile {
+  	padding-bottom: 300px;
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.mobile-cs {
+  	padding-left: 30px;
+  	padding-right: 30px;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.mobile-hero {
+  	padding-top: 200px;
+  	height: auto;
+  	padding-bottom: 100px;
+  	padding-left: 30px;
+  	padding-right: 30px;
+	}
+	
+	.mobile-hero h1 {
+  	font-size: 40px;
+	}
+}
+
+@media (max-width: 754px) {
+	.submit-mobile {
+  	padding-bottom: 350px;
+	}
+}
+
+@media (max-width: 732px) {
+	.submit-mobile {
+  	padding-bottom: 600px;
+	}
+}
+
+@media (max-width: 720px) {
+	.mobile-cs .single-casestudy .details {
+  	width: 100%;
+  	box-sizing: border-box;
+	}
+	
+	.mobile-cs .single-casestudy .phoneframe {
+    padding: 0 calc(50% - 160px);
+	}
+}
+
+
+
+@media (max-width: 700px) {
+  
+  .mobile-problems {
+  	padding-left: 30px;
+  	padding-right: 30px;
+	}
+  
+	.mobile-problems h2 {
+  	font-size: 28px;
+	}
+	
+	.mobile-problems .half {
+  	width: 100%;
+  	margin-left: 0;
+  	margin-right: 0;
+	}
+	
+	.mobile-problems .half:last-child {
+  	width: 100%;
+  	margin-left: 0;
+  	margin-right: 0;
+  	margin-top: 30px;
+	}
+	
+	.mobile-problems .half .description {
+  	width: 80%;
+  	margin: 0 auto;
+	}
+	
+	.mobile-process {
+  	padding-left: 30px;
+  	padding-right: 30px;
+	}
+	
+	.mobile-process h2 {
+  	font-size: 28px;
+	}
+	
+	.mobile-cs h2 {
+  	font-size: 28px;
+	}
+	
+	.mobile-submit h2 {
+  	font-size: 28px!important;
+	}
+	
+}
+
+
+@media (max-width: 400px) {
+	.mobile-cs .single-casestudy .details .button {
+  	margin: 0 auto;
+  	display: block;
+  	text-align: center;
+	}
+	
+	.mobile-cs {
+  	padding-bottom: 40px;
+	}
+	
+	.mobile-process {
+  	padding-bottom: 50px;
+	}
+}
+
+.illustration-frame {
+  position: relative;
+  width: 224px;
+  height: 198px;
+  margin: 0 auto;
+  top: 35px;
+}
+
+.backhand-bg {
+  width: 158px;
+  height: 198px;
+  background: url(../img/backhand-bg.png) no-repeat center center;
+  position: absolute;
+  left: 0;
+}
+
+.fronthand-bg {
+  width: 133px;
+  height: 158px;
+  background: url(../img/fronthand-bg.png) no-repeat center center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.phone-phoneframe {
+  width: 70px;
+  height: 136px;
+  background: url(../img/phoneframe-bg.png) no-repeat center center;
+  position: absolute;
+  left: 70px;
+  top: 26px;  
+}
+
+.phone-homescreen {
+  width: 58px;
+  height: 104px;
+  background: url(../img/homescreen-bg.png) no-repeat center center;
+  position: absolute;
+  left: 76px;
+  top: 34px;
+}
+
+.phone-app {
+  width: 58px;
+  height: 104px;
+  background: url(../img/app-screen-bg.png) no-repeat center center;
+  position: absolute;
+  left: 76px;
+  top: 34px;
+}
+
+@-webkit-keyframes shrink {
+  0% {transform: scale(1)}
+  100% {transform: scale(.2)}
+}
+
+@keyframes shrink {
+  0% {transform: scale(1)}
+  100% {transform: scale(.2)}
+}
+
+.illustration-frame:hover .phone-app {
+  -webkit-animation: shrink 1s infinite;
+  -webkit-animation-timing-function: linear;
+  animation: shrink 1s infinite;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

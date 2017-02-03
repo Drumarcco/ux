@@ -1,0 +1,4 @@
+[02-Aug-2015 01:48:58] PHP Fatal error:  Call to undefined function  get_header() in /home3/a1357246/public_html/stg.uxclinic/wp/wp-content/themes/uxclinic/404.php on line 1
+[07-Aug-2015 12:47:19] PHP Parse error:  syntax error, unexpected T_STRING in /home3/a1357246/public_html/stg.uxclinic/wp/wp-content/themes/uxclinic/send.php on line 30
+[07-Aug-2015 13:01:34] PHP Parse error:  syntax error, unexpected T_STRING in /home3/a1357246/public_html/stg.uxclinic/wp/wp-content/themes/uxclinic/send.php on line 30
+[07-Aug-2015 13:02:30] PHP Parse error:  syntax error, unexpected T_STRING in /home3/a1357246/public_html/stg.uxclinic/wp/wp-content/themes/uxclinic/send.php on line 30

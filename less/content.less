@@ -1,0 +1,147 @@
+.mainwrap .main{
+//EDIT FROM HERE
+
+
+// IMAGE STYLING
+// created by by Axel Valdez
+
+img{
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	float: left;
+	display: block;
+	&.alignleft{
+		float: left;
+		margin: 0 @spc 1em 0;
+	}
+	&.alignright{
+		float: right;
+		display: block;
+		margin: 0 0 1em @spc;
+	}
+	&.aligncenter{
+		display: block;
+		margin: 1em auto;
+		float: none;
+	}
+	&.border{
+		border: 1px solid #dedede;
+		padding: 5px;
+		box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	}
+}
+
+//ADDED FOR POSTS WITH FEATURED IMAGE IN HEADER (HERMES CAMPAIGN)
+
+.imgheading{
+	position: relative;
+	margin-bottom: 50px;
+	& > img{
+		display: block;
+		float: none;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+	h1{
+		background: rgba(0,0,0,.3);
+		color: white;
+		padding: 10px 20px 10px 20px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.meta{
+		position: absolute;
+		bottom: -50px;
+		left: 20px;
+		img{
+			position: absolute;
+			left: -110px;
+			top: -60px;
+		}
+	}
+}
+
+@media all and (max-width: 700px){
+	.imgheading{
+		position: relative;
+		margin-bottom: 0;
+		img{
+			display: block;
+			float: none;
+			margin: 0;
+		}
+		h1{
+			background: rgba(0,0,0,.1);
+			color: @darker;
+			padding: 10px 20px;
+			position: static;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			border-bottom: 1px solid rgba(95,105,114,0.3);
+		}
+		.meta{
+			position: relative;
+			bottom: auto;
+			left: auto;
+			padding: 0 20px 10px;
+			img{
+				display: none;
+			}
+		}
+	}
+}
+
+// SEARCH RESULTS
+
+.searchresult.wphoto{
+}
+
+.searchresult{
+	position: relative;
+	clear: both;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	img{
+		width: 150px;
+		height: auto;
+		float: left;
+		margin: 1em 0 0 0;
+	}
+	p{
+		width: calc(~"100% - 170px");
+		float: right;
+	}
+}
+
+
+// STOP EDITING
+}
+
+// ADDED FOR READ NEXT BLOG POSTS WITH FEAT IMG
+
+.sec .readnext{
+	width: 232px;
+	img{
+		width: 100%;
+		height: auto;
+		display: block !important;
+	}
+	.content{
+		padding-top: 0;
+	}
+}
+
+@media all and (max-width: 980px){
+	.sec .readnext,
+	.sec .readnext.stop	{
+		position: static;
+		display: block !important;
+	}
+}

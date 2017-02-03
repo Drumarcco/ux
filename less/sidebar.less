@@ -1,0 +1,302 @@
+// SEC (SIDEBAR)
+
+.single-post .sec,
+.single-ns_faq .sec{
+	margin-top: @spc;
+}
+
+.sec{
+	.column(3);
+
+	.card{
+		p, h2, h3, h4, h5{
+			&:first-child{
+				margin-top: 0;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&.thumb{
+			.thumbleft;
+			margin-top: 0;
+			margin-bottom: @spc;
+		}
+		&.video{
+			.thumbup;
+			//.playicon-top;
+		}
+		&.pain{
+			.thumbup;
+		}
+	}
+
+
+	.content{
+		padding: (@spc / 2);
+	}
+
+	ul{
+		margin: 0;
+
+		li{
+			margin-bottom: (@spc/2);
+			padding-left: 1.2em;
+			position: relative;
+			margin-left: (@spc/2);
+			background: transparent;
+			&:before{
+				content:"";
+				font-family: "fontawesome";
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: fadeout(@dark,50%);
+			}
+			&:hover:before{
+				color: @accent;
+			}
+		}
+
+		&.people li:before{
+			content:"";
+			font-family: "fontawesome";
+			top: .1em;
+		}
+
+		&.tags li:before{
+			content:"";
+			font-family: "fontawesome";
+			top: .1em;
+		}
+	}
+
+	.titlecard{
+		h1, h2, h3, h4, h5, h6{
+			padding: (@spc / 4) (@spc / 2);
+		}
+	}
+	form{
+		label{
+			display: block;
+			font-size: .8em;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		input[type=text],
+		textarea{
+			border: 1px solid lighten(@dark, 40%);
+			padding: (@spc / 4) (@spc / 2);
+			background: @white;
+			width: 100%;
+			box-shadow: 0 1px 2px fadeout(@dark, 90%) inset;
+			&:focus{
+				border-color: @accent;
+				outline: none;
+			}
+		}
+	}
+	.reversed{
+		form{
+			label{
+				display: block;
+				font-size: .8em;
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+			input[type=text],
+			textarea{
+				border: 1px solid transparent;
+				padding: (@spc / 4) (@spc / 2);
+				background: fadeout(lighten(@dark, 35%), 70%);
+				width: 100%;
+				color: @white;
+				&:focus{
+					border-color: @white;
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+// hide current video from videos sidebar
+
+.page-id-125 .id125,
+.page-id-130 .id130,
+.page-id-134 .id134{
+	display: none !important;
+}
+
+// hide current initiative from initiatives sidebar
+
+.page-id-1589 .id1589,
+.page-id-1592 .id1592,
+.page-id-1595 .id1595{
+	display: none !important;
+}
+
+// hide current pain from pains sidebar
+
+.page-id-1528 .id1528,
+.page-id-87 .id87{
+	display: none !important;
+}
+
+// show resume box only in life at nearsoft video
+
+.resume{
+	display: none;
+}
+
+.page-id-134 .resume{
+	display: block;
+}
+
+.readnext{
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  background: #f55604;
+  display: none;
+}
+
+.readnext.stop{
+  position: absolute;
+}
+
+.field-error{
+	border: 1px solid @accent !important;
+
+	&::-webkit-input-placeholder,
+	&:-moz-placeholder,
+	&::-moz-placeholder,
+	&:-ms-input-placeholder {
+	   color: @accent;
+	}
+}
+
+// MEDIA QUERIES --------------------------------------------------
+
+@media screen and (max-width: 980px) {
+	.sec{
+		.column(12);
+		clear: both;
+
+		.grouper{
+			.row(12);
+		}
+
+		.card{
+			.column(4,12);
+
+			&.pain{
+				.thumbup;
+			}
+
+			&.video{
+				.column(6,12);
+				.thumbleft;
+				//.playicon-left;
+			}
+
+			&.contact{
+				.column(12,12);
+
+				.content{
+					.row(12);
+					p{
+						.column(6,12);
+						margin-bottom: (@spc / 4);
+						&:nth-child(5),
+						&:nth-child(6){
+							.push(3);
+						}
+						&:nth-child(5){
+							margin-top: (@spc / 2);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px){
+	.sec{
+		.column(12);
+		clear: both;
+
+		.grouper{
+			.row(12);
+		}
+
+		.card{
+			.column(12,12);
+
+			&.video{
+				.thumbup;
+				//.playicon-top;
+			}
+
+			&.pain{
+				.column(12,12);
+				.thumbleft;
+			}
+
+			&.contact{
+				.column(12,12);
+
+				.content{
+					.row(12);
+					p{
+						.column(12,12);
+						margin-bottom: (@spc / 2);
+						&:nth-child(5),
+						&:nth-child(6){
+							.push(0);
+						}
+						&:nth-child(5){
+							margin-bottom: (@spc / 2);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.sec{
+		.card{
+			&.video{
+				.thumbup;
+				//.playicon-top(1.5em);
+			}
+
+			&.pain{
+				.column(12,12);
+				.thumbleft;
+			}
+
+			&.contact{
+				.column(12,12);
+
+				.content{
+					.row(12);
+					p{
+						.column(12,12);
+						margin-bottom: (@spc / 2);
+						&:nth-child(5),
+						&:nth-child(6){
+							.push(0);
+						}
+						&:nth-child(5){
+							margin-bottom: (@spc / 2);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,171 @@
+@media (max-width: 1045px) {
+
+	.hero {
+		height: 615px;
+
+		h1 {
+			font-size: 45px;
+		}
+	}
+
+	.services-cont {
+		min-width: 84%;
+		width: 84%;
+	}
+
+	.blocks {
+		width: 32%;
+	}
+}
+
+@media (max-width: 850px) {
+	.hero {
+		h1 {
+			font-size: 40px;
+			width: 80%;
+		}
+	}
+
+	.services-cont {
+		width: 94%;
+	}
+}
+
+@media (max-width: 775px) {
+
+	.hero {
+		height: 815px;
+		padding-top: 165px;
+
+		h1 {
+			font-size: 35px;
+		}
+	}
+
+	.services-cont {
+		width: 84%;
+		box-shadow: none;
+		background-color: transparent;
+	}
+
+	.blocks {
+		width: 83%;
+		border-radius: 5px;
+		padding: 10px 0 20px;
+		margin-bottom: 20px;
+		background-color: #fff;
+		box-shadow: 0px 2px 3px rgba(82,82,82,0.17);
+	}
+
+	.block-text-cont {
+		width: 65%;
+
+		p {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 775px) {
+	.episodes {
+		padding-bottom: 97px;
+	}
+	.home .submit {
+// 		padding-bottom: 345px;
+    padding-bottom: 285px;
+	}
+}
+
+@media (max-width: 732px) {
+	footer .contact,
+	footer .social {
+  	width: 100%;
+  	margin: 0;
+  	float: none;
+	}
+	
+	.page-id-2 .submit {
+  	padding-bottom: 575px;
+	}
+	
+	.page-id-54 .submit {
+  	padding-bottom: 575px;
+	}
+	
+	footer .contact h3,
+  footer .social h3 {
+    margin-bottom: 5px;
+  }
+  
+  footer .contact,
+  footer .social {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 685px) {
+/*
+	.home .submit {
+		padding-bottom: 555px;
+	}
+*/
+}
+
+@media (max-width: 685px) {
+/*
+	.home .submit {
+		padding-bottom: 385px;
+	}
+*/
+}
+
+@media (max-width: 665px) {
+
+	.hero {
+		height: 865px;
+	}
+
+	// .home .submit {
+	// 	padding-bottom: 445px;
+	// }
+
+	.blocks {
+		width: 100%;
+	}
+}
+
+@media (max-width: 568px) {
+
+  .home .submit {
+    padding-bottom: 575px;
+  }
+}
+
+@media (max-width: 465px) {
+	.hero {
+
+		img {
+			width: 24%;
+		}
+
+		h1 {
+			font-size: 25px;
+		}
+	}
+}
+
+@media (max-width: 371px) {
+/*
+	.home .submit {
+	    padding-bottom: 540px;
+	}
+*/
+}
+
+
+
+@media (max-width: 354px) {
+	.hero {
+		height: 930px;
+	}
+}

@@ -1,0 +1,341 @@
+// UX PROCESS
+
+.ux-p-hero {
+	padding: 250px calc(50% - 500px) 150px calc(50% - 500px);
+	background: url(../img/ux-process/test001.png) no-repeat center center;
+	background-size: cover;
+}
+
+.ux-p-hero h1 {
+	color: #FFF;
+	font-size: 54px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 70%;
+	position: relative;
+	text-shadow: 1px 1px 1px 5px black;
+	word-spacing: 6px;
+}
+
+.ux-p-hero h1:before {
+	position: absolute;
+	content: '';
+	width: 170px;
+	height: 7px;
+	background: #FFF;
+	top: -10px;
+	left: 0;
+}
+/*
+
+.ux-p-hero span {
+	padding: 15px 20px;
+	font-weight: 600;
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+	background: #333;
+	display: inline-block;
+	word-spacing: 4px;
+}
+*/
+
+.ux-p-hero span {
+	padding: 15px 20px;
+	font-weight: 600;
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+// 	background: #333;
+	display: inline-block;
+	word-spacing: 4px;
+	position: relative;
+	padding-left: 0;
+}
+
+.ux-p-hero span:before {
+	position: absolute;
+	content: '';
+	width: 170px;
+	height: 7px;
+	background: #FFF;
+	bottom: -10px;
+	left: 0;
+}
+
+.ux-p-process {
+	padding: 30px calc(50% - 500px) 100px calc(50% - 500px);
+	background: #EDECEC;
+	position: relative;
+}
+
+.ux-p-process h2 {
+	color: #6b6b6b;
+	font-size: 34px;
+	font-weight: 400;
+}
+
+// PORTFOLIO REQUEST
+
+.request-form {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.request-form  input[type='text'] {
+	width: calc(33% - 30px);
+	display: block;
+	float: left;
+	border: 1px solid #e7e7e7;
+	border-radius: 2px;
+	padding: 14px;
+	font-size: 16px;
+	margin-right: 20px;
+	font-weight: 100;
+}
+
+.request-form  input[type='button'] {
+	width: calc(33% - 33px);
+	display: block;
+	float: left;
+	border: 1px solid #53bb23;
+	border-radius: 200px;
+	padding: 14px;
+	font-size: 16px;
+}
+
+.ux-p-process-single {
+	position: relative;
+	z-index: 3;
+	margin-top: 50px;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+.ux-p-process-single .image {
+	width: 300px;
+	height: 300px;
+	background: aqua;
+}
+
+.timelinebar {
+	width: 9px;
+	background: #D8D8D7;
+	border-radius: 100px;
+	height: 68%;
+	position: absolute;
+	z-index: 2;
+	left: calc(50% - 467px);
+}
+
+.icon-button {
+	width: 75px;
+	height: 78px;
+	float: left;
+}
+
+.button-01 {
+	background: url(../img/ux-process/button01.png) no-repeat center center;
+	background-size: cover;
+}
+
+.button-02 {
+	background: url(../img/ux-process/button02.png) no-repeat center center;
+	background-size: cover;
+}
+
+.button-03 {
+	background: url(../img/ux-process/button03.png) no-repeat center center;
+	background-size: cover;
+}
+
+.button-04 {
+	background: url(../img/ux-process/button04.png) no-repeat center center;
+	background-size: cover;
+}
+
+.ux-p-process-single .process {
+	float: left;
+	margin-left: 40px;
+	border-radius: 3px;
+	background: #FFF;
+	padding: 30px;
+	position: relative;
+	width: 650px;
+	box-shadow: 1px 1px 4px 1px #dfdfdf;
+}
+
+.ux-p-process-single .process:before {
+	content: '';
+	width: 40px;
+	height: 29px;
+	background: url(../img/portfolio/triangle.png) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	left: -24px;
+	top: 20px;
+	transform: rotate(270deg);
+}
+
+.ux-p-process-single .process h2,
+.ux-p-process-single .process p {
+	margin: 0
+}
+
+.ux-p-process-single .process h2 {
+	font-size: 28px;
+}
+
+.ux-p-process-single .process p {
+	margin-top: 10px;
+	color: #696969;
+	font-size: 18px;
+	color: #979797;
+}
+
+.onlytitle {
+	padding: 30px calc(50% - 500px) 30px calc(50% - 500px);
+	position: relative;
+}
+
+.onlytitle:after {
+	content: '';
+	width: 30px;
+	height: 18px;
+	background: url(../img/portfolio/triangle.png) no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	bottom: -14px;
+	z-index: 9;
+	transform: rotate(180deg);
+}
+
+.onlytitle h2 {
+	color: #6b6b6b;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.onlytitle h2 span {
+	color: #f37a29;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+
+.page-template-page-portfolio-request .p-cs-block {
+	box-shadow: none;
+}
+
+.ux-p-hero h3 {
+		color: #FFF;
+    font-size: 54px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 70%;
+    position: relative;
+    text-shadow: 1px 1px 1px 5px black;
+    word-spacing: 6px;
+}
+
+.ux-p-hero-request {
+	padding-top: 10px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+	.ux-p-hero {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+	.timelinebar {
+		display: none;
+	}
+	
+	.ux-p-process-single .process {
+		width: calc(100% - 185px);
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.onlytitle,
+	.ux-p-process {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+
+@media (max-width: 700px) {
+	.ux-p-hero h1 {
+		width: 100%;
+	}
+	
+	.p-shopwellslider {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.request-form input[type='text'],
+	.request-form input[type='button'] {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	.ux-p-hero h1 {
+		font-size: 48px;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.icon-button {
+		width: 45px;
+		height: 45px;
+		margin-top: 15px;
+	}
+	
+	.ux-p-process-single .process {
+		width: calc(100% - 160px);
+		margin-left: 25px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

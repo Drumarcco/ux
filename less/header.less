@@ -1,0 +1,151 @@
+.main-nav{
+	background: @white;
+	padding: 0 @spc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	ul{
+		padding: 0;
+		list-style: none;
+		line-height: 50px;
+		text-align: justify;
+		height: 50px;
+		max-width: @max-width;
+		margin: 0 auto;
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	.toggle{
+		.button;
+		.primary;
+		position: absolute;
+	  top: 10px;
+	  left: 20px;
+	  padding: 0;
+	  line-height: 30px;
+	  width: 30px;
+		display: none;
+	}
+
+	.logo img{
+		width: 100px;
+		height: auto;
+		vertical-align: top;
+	}
+
+	li{
+		display: inline-block;
+		height: 50px;
+		overflow: hidden;
+	}
+
+	a{
+		color: @dark;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 600;
+
+		&:hover{
+			color: @accent;
+		}
+	}
+
+	.searchbox{
+		position: relative;
+		top: -50px;
+		right: 0;
+		width: 0;
+		height: 30px;
+		margin: (@spc/2) 0;
+		background: @white;
+		border-radius: 3px;
+		line-height: 30px;
+		display: block;
+		transition: .3s ease-in all;
+		overflow: hidden;
+		box-shadow: 0 1px 2px @dark inset;
+		&.visible{
+			width: 200px;
+		}
+
+		button{
+			background: transparent;
+			border: none;
+			height: 30px;
+			width: 28px;
+			margin: 0;
+			float: left;
+			outline: none;
+			font-size: 1em;
+			padding: 0;
+		}
+
+		input{
+			background: transparent;
+			border: none;
+			height: 30px;
+			width: 170px;
+			margin: 0;
+			float: left;
+			outline: none;
+			font-size: 1rem;
+		}
+	}
+}
+
+.admin-bar .main-nav{
+	margin-top: 32px;
+}
+
+.main-nav .current-menu-item,
+.main-nav .current-page-ancestor,
+.single .main-nav .current_page_parent,
+.post-type-archive-ns_faq .main-nav .current_page_parent + li,
+.post-type-archive-ns_faq_candidates .main-nav .current_page_parent + li{
+	border-bottom: 5px solid @accent;
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 800px) {
+	.main-nav{
+		overflow: hidden;
+		height: 50px;
+		-webkit-transition: .2s ease-in height;
+		-moz-transition: .2s ease-in height;
+		-o-transition: .2s ease-in height;
+		transition: .2s ease-in height;
+		&.full{
+			height: 100px;
+		}
+	}
+	.main-nav ul{
+		padding-top: 50px;
+		font-weight: normal;
+		background: #fff;
+		height: 100px;
+	}
+	.main-nav li:first-child{
+		position: absolute;
+		top: 0;
+		left: 20px;
+		text-align: center;
+		right: 20px;
+	}
+	.main-nav li.search{
+		position: absolute;
+		top: 0;
+		right: 20px;
+		background: @white;
+	}
+	.main-nav .toggle{
+		display: inline-block;
+	}
+}

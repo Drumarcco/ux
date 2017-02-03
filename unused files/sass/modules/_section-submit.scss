@@ -1,0 +1,317 @@
+.home {
+  .submit {
+    padding-bottom: 320px;
+    padding-top: 70px;
+  }
+}
+
+.submit {
+  background: url(../img/ux-lab-background.gif) repeat;
+  padding: 0 calc(46% - 465px);
+  padding-top: 80px;
+  padding-bottom: 300px;
+  overflow: auto;
+
+  h2 {
+    color: #f8f8f8;
+  }
+
+  p {
+  color: #f8f8f8;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 20px 0 0 0;
+  }
+}
+
+.submit > p {
+  margin-bottom: 20px;
+}
+
+.submit p img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 10px;
+    width: 80px;
+}
+
+input.contactform-name,
+input.contactform-email,
+input.contactform-url,
+input.contactform-description,
+input.contactform-job-title,
+input.contactform-company {
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  border: 0;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  float: left;
+  color: #A1A1A1;
+  font-family: lato;
+}
+
+input.contactform-name,
+input.contactform-email {
+//   width: 34%
+}
+
+input.contactform-job-title,
+input.contactform-company {
+//   width: 34%;
+//   margin-top: 20px;
+}
+
+input.contactform-name,
+input.contactform-company  {
+//   margin-right: 25px;
+}
+
+input.contactform-description {
+/*
+  width: 97%;
+  height: 20px;
+  margin-top: 20px;
+*/
+}
+
+input::-webkit-input-placeholder {
+   color: #A1A1A1;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: #333;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: #333;
+}
+
+input:-ms-input-placeholder {
+   color: #A1A1A1;
+}
+
+.field-error::-webkit-input-placeholder {
+    color: #A83201 !important;
+    font-weight: 700;
+}
+
+.field-error:-moz-placeholder {
+    color: #A83201 !important;
+    font-weight: 700;
+}
+
+.field-error::-moz-placeholder {
+    color: #A83201 !important;
+    font-weight: 700;
+}
+
+.error-tags {
+    background-color: #A83201;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.error {
+  padding-bottom: 25px;
+}
+
+.contactform-submit {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-family: lato;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 0px;
+  font-size: 18px;
+  transition: background .3s;
+  border: 0;
+//   position: absolute;
+  z-index: 99;
+//   right: 1px;
+  cursor: pointer;
+//   width: calc(100% - 40px);
+  width: 100%;
+}
+
+.contactform-submit:hover {
+  background: #09ae09;
+  transition: background .3s;
+}
+
+.form {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.form div {
+  width: 100%;
+/*
+  float: left;
+  margin-right: 2%
+*/
+  display: block;
+  margin-bottom: 20px;
+  height: 45px;
+}
+
+.form div:nth-child(1),
+.form div:nth-child(3),
+.form div:nth-child(5) {
+  margin-right: 0
+}
+
+.form div:nth-child(2),
+.form div:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.form div:nth-child(4) {
+//   width: 68%;
+}
+
+.form div:nth-child(5) {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sendus-button {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-family: lato;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 18px;
+  transition: background .3s;
+  border: 0;
+  z-index: 99;
+//   right: 1px;
+  cursor: pointer;
+}
+
+.submit-about .submit {
+  padding-bottom: 260px;
+}
+
+/*MAX 1180PX*/
+@media (max-width: 1180px) {
+  .submit-about .submit {
+    padding-bottom: 280px;
+  }
+}
+
+/*MAX 1045PX*/
+@media (max-width: 1045px) {
+  .sendus-button {
+    position: relative;
+    top: -35px;
+  }
+}
+
+
+/*MAX 920PX*/
+@media (max-width: 955px) {
+/*
+  .form div:nth-child(2),
+  .form div:nth-child(3) {
+    width: 48%;
+  }
+  
+  .form div:nth-child(2) {
+    margin-right: 4%;
+  }
+*/
+}
+
+/*MAX 775PX*/
+@media (max-width: 775px) {
+  .sendus-button {
+    top: -50px;
+  }
+}
+
+
+/*MAX 754PX*/
+@media (max-width: 754px) {
+  .submit-about .submit {
+    padding-bottom: 320px;
+  }
+}
+
+/*MAX 732PX*/
+@media (max-width: 732px) {
+  .submit-about .submit {
+    padding-bottom: 560px;
+  }
+}
+
+/*MAX 660PX*/
+@media (max-width: 660px) {
+/*
+  .form div:nth-child(4) {
+    width: 66%;
+  }
+  
+  .form div:nth-child(4) {
+    margin-right: 4%;
+  }
+*/ 
+
+  .form {
+    width: 90%;
+    width: calc(100% - 30px);
+  }
+  
+  .form div:nth-child(5) {
+    width: 200px;
+  }
+
+}
+
+
+/*MAX 600PX*/
+@media (max-width: 600px) {
+/*
+  .form div:nth-child(2),
+  .form div:nth-child(3),
+  .form div:nth-child(4),
+  .form div:nth-child(5) {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    display: block;
+    height: 50px;
+  }
+  
+  .form div:nth-child(2) input,
+  .form div:nth-child(3) input,
+  .form div:nth-child(4) input,
+  .form div:nth-child(5) input {
+    width: calc(100% - 30px);
+  } 
+*/
+}
+
+/*MAX 440PX*/
+@media (max-width: 440px) {
+  .sendus-button {
+    top: -60px;
+  }
+}
+
+
+
+  
+
+
+

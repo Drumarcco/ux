@@ -1,0 +1,137 @@
+/* FOOTER */
+
+footer {
+  background-color: #333;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-cont {
+    padding: 0 calc(50% - 524px);
+}
+
+footer .logo {
+  background: url(../img/uxclinic-logo.png) no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 56px;
+  float: left;
+}
+
+footer .social,
+footer .contact {
+  float: right;
+  color: #FFF;
+}
+
+footer .social h3,
+footer .contact h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+footer .social ul,
+footer .contact ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .social li,
+footer .contact li {
+  list-style: none;
+  margin: 0;
+  color: #bcc1c3;
+}
+
+footer .social a,
+footer .contact a {
+  color: #bcc1c3;
+}
+
+footer .social a:hover,
+footer .contact a:hover {
+  text-decoration: underline;
+}
+
+footer .social,
+footer .contact {
+  margin-left: 50px;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  color: #bcc1c3;
+  float: left;
+  margin-top: 20px;
+}
+
+footer .copyright a{
+  color: #0ac10a;
+}
+
+
+// -------media queries
+
+@media (max-width: 1180px) {
+  .footer-cont {
+    padding: 0 50px;
+  }
+
+  footer .copyright {
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 680px) {
+ .orange {
+    margin-top: 0px!important;
+  }
+  footer .copyright {
+    margin-top: 40px;
+  }
+  footer .logo {
+    display: block;
+    margin: 10px 0;
+    float: none;
+  }
+  footer .social,
+  footer .contact {
+    margin-left: 0;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+  }
+/*
+  footer .contact {
+    margin-left: 15px;
+  }
+*/
+}
+
+
+@media (max-width: 400px) {
+  footer {
+    padding-top: 50px;
+  }
+}
+
+
+@media (max-width: 350px) {
+  /*FOOTER*/
+  footer .contact {
+    margin-left: 0;
+  }
+  footer .social {
+    margin-right: 15px;
+  }
+  footer .logo {
+    margin: 10px 0;
+  }
+}

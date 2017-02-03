@@ -1,0 +1,989 @@
+.page-template-page-landingpage-workshop {
+
+	footer {
+		position: relative;
+
+		.logo {
+			background: url(http://ux.nearsoft.com/wp/wp-content/uploads/2016/03/ns-logo.png) no-repeat;
+			height: 56px;
+			width: 189px;
+			background-size: cover;
+		}
+	}
+
+	.footer-padding-div {
+		height: auto;
+	}
+
+	section.catapulta {
+
+		h1 {
+			color: #FFFFFF;
+			font-weight: 300;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		padding: 30px 0;
+		background-color: #CCC;
+		text-align: center;
+
+		.logos img {
+			height: 76px;
+		}
+	}
+  section.uxworkshop {
+
+		.soldout img {
+			height: 160px;
+			margin-top: 40px;
+		}
+
+	.date {
+		padding: 25px 7px;
+		margin-top: 85px;
+		background-color: #333;
+		font-size: 18px;
+		text-transform: uppercase;
+
+		span {
+			color: #F15922;
+			margin: 0 10px;
+			font-size: 18px;
+		}
+	}
+
+	.boleto-submit {
+		border-radius: 100px;
+		background: #0ac10a;
+		font-family: lato;
+		font-weight: 700;
+		color: #FFF;
+		display: inline-block;
+		padding: 15px 0px;
+		font-size: 18px;
+		cursor: pointer;
+		width: 200px;
+		text-shadow: none;
+		margin-top: 50px;
+	}
+
+	.uxworkshop-label {
+		display: inline-block;
+		font-size: 28px;
+		text-transform: uppercase;
+		font-weight: 700;
+		background-color: #333;
+		padding: 10px 20px;
+		position: relative;
+		margin-left: -200px;
+
+		 &:after {
+			content: 'Por: Nearsoft’s UX Team';
+			position: absolute;
+			top: 15px;
+			right: -266px;
+			font-weight: 300;
+			font-size: 20px;
+			text-shadow: none;
+		 }
+	}
+
+	h1 {
+		font-weight: 700;
+		text-shadow: none;
+		text-transform: uppercase;
+		font-size: 58px;
+		width: 62%;
+		line-height: 68px;
+		margin-top: 20px;
+
+		span {
+			font-weight: 300;
+			font-size: 23px;
+			display: block;
+			text-transform: none;
+			width: 76%;
+			margin: 0 auto;
+			line-height: 27px;
+			margin-top: 20px;
+		}
+	}
+
+    background-image: url(http://ux.nearsoft.com/wp/wp-content/uploads/2016/03/uxworkshop-img.jpg) !important;
+    padding-top: 235px;
+    padding-bottom: 0;
+  }
+
+  section.uxcontent {
+
+	border-bottom: 1px solid #e4e4e4;
+
+  	ul {
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+
+  		li {
+
+			position: relative;
+			font-size: 20px;
+			text-align: left;
+			width: 80%;
+			margin: 25px auto;
+			color: #686868;
+
+			&:before {
+				content: '*';
+				font-size: 29px;
+				position: absolute;
+				top: 0;
+				left: -18px;
+				color: #F15922;
+			}
+  		}
+  	}
+
+	h2 {
+		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 18px !important;
+		line-height: 30px;
+		text-align: justify;
+		width: 70%;
+		margin: 0 auto;
+		font-family: 'PT Sans', sans-serif;
+		color: #747474;
+  	}
+  }
+
+  section.experts {
+	background-image: none;
+
+  	h2 {
+  		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+  	}
+
+  	h4 {
+  		margin: 5px 0;
+  		color: #F15922;
+  	}
+
+ h3 {
+	margin-bottom: 10px;
+	color: #919191;
+ }
+
+ p {
+ 	color: #686868;
+ 	padding-bottom: 10px;
+ 	margin-top: 10px;
+ }
+
+ .ux-expert-card-picture {
+    border-radius: 100%;
+}
+
+  }
+
+}
+
+@media (max-width: 1056px) {
+.page-template-page-landingpage-workshop {
+	.e-showcase, .e-hero, .e-can {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+  	section.uxworkshop {
+			h1 {
+			width: 93%;
+			padding: 0 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+.page-template-page-landingpage-workshop {
+  	section.uxworkshop {
+			h1 {
+			font-size: 45px;
+			line-height: 55px;
+			}
+
+			.uxworkshop-label {
+				font-size: 19px;
+
+				&:after {
+					font-size: 14px;
+					right: -188px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.page-template-page-landingpage-workshop {
+
+		section.uxcontent h2 {
+			font-size: 25px;
+		}
+
+		.experts h2 {
+			font-size: 25px !important;
+		}
+
+		.ux-expert-card-picture {
+			width: 201px;
+			margin: 0 auto;
+		}
+
+		.content-container {
+			text-align: center;
+		}
+		.social-box {
+			text-align: center;
+
+			a {
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 400px) {
+.page-template-page-landingpage-workshop {
+	.ux-expert-card {
+		text-align: center;
+	}
+	.ux-expert-card-picture {
+		border-radius: 0;
+		width: 201px;
+		margin: 0 auto;
+	}
+  	section.uxworkshop {
+
+  		.date {
+			font-size: 14px;
+  		}
+
+  		.uxworkshop-label {
+  			margin-left: 0;
+  		}
+			h1 {
+			font-size: 30px;
+			line-height: 40px;
+
+			span {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+			.uxworkshop-label {
+				font-size: 14px;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+.page-template-page-workshopsandra {
+
+	footer {
+		position: relative;
+
+		.logo {
+			background: url(http://ux.nearsoft.com/wp/wp-content/uploads/2016/03/ns-logo.png) no-repeat;
+			height: 56px;
+			width: 189px;
+			background-size: cover;
+		}
+	}
+
+	.footer-padding-div {
+		height: auto;
+	}
+
+	section.catapulta {
+
+		h1 {
+			color: #FFFFFF;
+			font-weight: 300;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		padding: 30px 0;
+		background-color: #CCC;
+		text-align: center;
+
+		.logos img {
+			height: 176px;
+		}
+	}
+  section.uxworkshop {
+
+		.soldout img {
+			height: 160px;
+			margin-top: 40px;
+		}
+
+	.date {
+		padding: 25px 7px;
+		margin-top: 85px;
+		background-color: #333;
+		font-size: 18px;
+		text-transform: uppercase;
+
+		span {
+			color: #F15922;
+			margin: 0 10px;
+			font-size: 18px;
+		}
+	}
+
+	.boleto-submit {
+		border-radius: 100px;
+		background: #0ac10a;
+		font-family: lato;
+		font-weight: 700;
+		color: #FFF;
+		display: inline-block;
+		padding: 15px 0px;
+		font-size: 18px;
+		cursor: pointer;
+		width: 200px;
+		text-shadow: none;
+		margin-top: 50px;
+	}
+
+	.uxworkshop-label {
+		display: inline-block;
+		font-size: 28px;
+		text-transform: uppercase;
+		font-weight: 700;
+		background-color: #333;
+		padding: 10px 20px;
+		position: relative;
+		margin-left: -200px;
+		visibility: hidden;
+
+		 &:after {
+			content: 'By: Nearsoft’s UX Team';
+			position: absolute;
+			top: 15px;
+			right: -266px;
+			font-weight: 300;
+			font-size: 20px;
+			text-shadow: none;
+		 }
+	}
+
+	h1 {
+		font-weight: 700;
+		text-shadow: none;
+		text-transform: uppercase;
+		font-size: 58px;
+		width: 75%;
+		line-height: 68px;
+		margin-top: 20px;
+
+		span {
+			font-weight: 300;
+			font-size: 23px;
+			display: block;
+			text-transform: none;
+			width: 85%;
+			margin: 0 auto;
+			line-height: 27px;
+			margin-top: 20px;
+			visibility: hidden;
+		}
+	}
+
+    background-image: url(http://ux.nearsoft.com/wp/wp-content/uploads/2016/03/uxworkshop-img.jpg) !important;
+    padding-top: 235px;
+    padding-bottom: 0;
+  }
+
+  section.uxcontent {
+
+	border-bottom: 1px solid #e4e4e4;
+	
+	p {
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 25px auto;
+    color: #686868;
+	}
+
+  	ul {
+			list-style-type: none;
+			margin: 0;
+	    padding: 0;
+
+  		li {
+
+			position: relative;
+			font-size: 20px;
+			text-align: left;
+			width: 80%;
+			margin: 25px auto;
+			color: #686868;
+
+			&:before {
+				content: '*';
+				font-size: 29px;
+				position: absolute;
+				top: 0;
+				left: -18px;
+				color: #F15922;
+			}
+  		}
+  	}
+
+	h2 {
+		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	p {
+/*
+		font-size: 18px !important;
+		line-height: 30px;
+		text-align: justify;
+		width: 70%;
+		margin: 0 auto;
+		font-family: 'PT Sans', sans-serif;
+		color: #747474;
+*/
+		position: relative;
+    font-size: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 25px auto;
+    color: #686868;
+    line-height: 30px;
+		
+  	}
+  }
+
+  section.experts {
+	background-image: none;
+
+  	h2 {
+  		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+  	}
+
+  	h4 {
+  		margin: 5px 0;
+  		color: #F15922;
+  	}
+
+ h3 {
+	margin-bottom: 10px;
+	color: #919191;
+ }
+
+ p {
+ 	color: #686868;
+ 	padding-bottom: 10px;
+ 	margin-top: 10px;
+ }
+
+ .ux-expert-card-picture {
+    border-radius: 100%;
+}
+
+  }
+
+}
+
+@media (max-width: 1056px) {
+.page-template-page-workshopsandra {
+	.e-showcase, .e-hero, .e-can {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+  	section.uxworkshop {
+			h1 {
+			width: 93%;
+			padding: 0 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+.page-template-page-workshopsandra {
+  	section.uxworkshop {
+			h1 {
+			font-size: 45px;
+			line-height: 55px;
+			}
+
+			.uxworkshop-label {
+				font-size: 19px;
+
+				&:after {
+					font-size: 14px;
+					right: -188px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.page-template-page-workshopsandra {
+
+		section.uxcontent h2 {
+			font-size: 25px;
+		}
+
+		.experts h2 {
+			font-size: 25px !important;
+		}
+
+		.ux-expert-card-picture {
+			width: 201px;
+			margin: 0 auto;
+		}
+
+		.content-container {
+			text-align: center;
+		}
+		.social-box {
+			text-align: center;
+
+			a {
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 400px) {
+.page-template-page-workshopsandra {
+	.ux-expert-card {
+		text-align: center;
+	}
+	.ux-expert-card-picture {
+		border-radius: 0;
+		width: 201px;
+		margin: 0 auto;
+	}
+  	section.uxworkshop {
+
+  		.date {
+			font-size: 14px;
+  		}
+
+  		.uxworkshop-label {
+  			margin-left: 0;
+  		}
+			h1 {
+			font-size: 30px;
+			line-height: 40px;
+
+			span {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+			.uxworkshop-label {
+				font-size: 14px;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+.page-template-page-webinar {
+
+	footer {
+		position: relative;
+
+		.logo {
+			background: url(http://ux.nearsoft.com/wp/wp-content/uploads/2016/03/ns-logo.png) no-repeat;
+			height: 56px;
+			width: 189px;
+			background-size: cover;
+		}
+	}
+
+	.footer-padding-div {
+		height: auto;
+	}
+
+	section.catapulta {
+
+		h1 {
+			color: #FFFFFF;
+			font-weight: 300;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+
+		padding: 30px 0;
+		background-color: #CCC;
+		text-align: center;
+
+		.logos img {
+			height: 176px;
+		}
+	}
+  section.uxworkshop {
+
+		.soldout img {
+			height: 160px;
+			margin-top: 40px;
+		}
+
+	.date {
+		padding: 25px 7px;
+		margin-top: 85px;
+		background-color: #333;
+		font-size: 18px;
+		text-transform: uppercase;
+
+		span {
+			color: #F15922;
+			margin: 0 10px;
+			font-size: 18px;
+		}
+	}
+
+	.boleto-submit {
+		border-radius: 100px;
+		background: #0ac10a;
+		font-family: lato;
+		font-weight: 700;
+		color: #FFF;
+		display: inline-block;
+		padding: 15px 0px;
+		font-size: 18px;
+		cursor: pointer;
+		width: 200px;
+		text-shadow: none;
+// 		margin-top: 50px;
+	}
+
+	.uxworkshop-label {
+		display: inline-block;
+		font-size: 28px;
+		text-transform: uppercase;
+		font-weight: 700;
+		background-color: #333;
+		padding: 10px 20px;
+		position: relative;
+		margin-left: -200px;
+		visibility: hidden;
+
+		 &:after {
+			content: 'By: Nearsoft’s UX Team';
+			position: absolute;
+			top: 15px;
+			right: -266px;
+			font-weight: 300;
+			font-size: 20px;
+			text-shadow: none;
+		 }
+	}
+
+	h1 {
+		font-weight: 700;
+		text-shadow: none;
+		text-transform: uppercase;
+		font-size: 58px;
+		width: 75%;
+		line-height: 68px;
+		margin-top: 20px;
+
+		span {
+			font-weight: 300;
+			font-size: 23px;
+			display: block;
+			text-transform: none;
+			width: 85%;
+			margin: 0 auto;
+			line-height: 27px;
+			margin-top: 20px;
+			visibility: hidden;
+		}
+	}
+
+    background-image: url(http://ux.nearsoft.com/wp/wp-content/themes/uxclinic/img/webinar-cover.png) !important;
+    padding-top: 235px;
+    padding-bottom: 0;
+    background-size: cover;
+  }
+
+  section.uxcontent {
+
+	border-bottom: 1px solid #e4e4e4;
+	
+	p {
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 25px auto;
+    color: #686868;
+	}
+
+  	ul {
+			list-style-type: none;
+			margin: 0;
+	    padding: 0;
+
+  		li {
+
+			position: relative;
+			font-size: 20px;
+			text-align: left;
+			width: 80%;
+			margin: 25px auto;
+			color: #686868;
+
+			&:before {
+				content: '*';
+				font-size: 29px;
+				position: absolute;
+				top: 0;
+				left: -18px;
+				color: #F15922;
+			}
+  		}
+  	}
+
+	h2 {
+		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	p {
+/*
+		font-size: 18px !important;
+		line-height: 30px;
+		text-align: justify;
+		width: 70%;
+		margin: 0 auto;
+		font-family: 'PT Sans', sans-serif;
+		color: #747474;
+*/
+		position: relative;
+    font-size: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 25px auto;
+    color: #686868;
+    line-height: 30px;
+		
+  	}
+  }
+
+  section.experts {
+	background-image: none;
+
+  	h2 {
+  		font-size: 30px;
+		color: #919191;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+  	}
+
+  	h4 {
+  		margin: 5px 0;
+  		color: #F15922;
+  	}
+
+ h3 {
+	margin-bottom: 10px;
+	color: #919191;
+ }
+
+ p {
+ 	color: #686868;
+ 	padding-bottom: 10px;
+ 	margin-top: 10px;
+ 	width: 90%;
+ }
+
+ .ux-expert-card-picture {
+    border-radius: 100%;
+}
+
+  }
+
+}
+
+.remodal-wrapper h2 {
+	color: #6f6f6f;
+	font-weight: 400;
+	font-size: 34px;
+}
+
+.minilogo {
+	width: 160px;
+	height: 55px;
+	background-image: url(http://ux.nearsoft.com/wp/wp-content/themes/uxclinic/img/ux-clinic-design-logo.png) !important;
+	background-size: cover;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width: 1056px) {
+.page-template-page-webinar {
+	.e-showcase, .e-hero, .e-can {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+  	section.uxworkshop {
+			h1 {
+			width: 93%;
+			padding: 0 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+.page-template-page-webinar {
+  	section.uxworkshop {
+			h1 {
+			font-size: 45px;
+			line-height: 55px;
+			}
+
+			.uxworkshop-label {
+				font-size: 19px;
+
+				&:after {
+					font-size: 14px;
+					right: -188px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.page-template-page-webinar {
+
+		section.uxcontent h2 {
+			font-size: 25px;
+		}
+
+		.experts h2 {
+			font-size: 25px !important;
+		}
+
+		.ux-expert-card-picture {
+			width: 201px;
+			margin: 0 auto;
+		}
+
+		.content-container {
+			text-align: center;
+		}
+		.social-box {
+			text-align: center;
+
+			a {
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 400px) {
+.page-template-page-webinar {
+	.ux-expert-card {
+		text-align: center;
+	}
+	.ux-expert-card-picture {
+		border-radius: 0;
+		width: 201px;
+		margin: 0 auto;
+	}
+  	section.uxworkshop {
+
+  		.date {
+			font-size: 14px;
+  		}
+
+  		.uxworkshop-label {
+  			margin-left: 0;
+  		}
+			h1 {
+			font-size: 30px;
+			line-height: 40px;
+
+			span {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+			.uxworkshop-label {
+				font-size: 14px;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+

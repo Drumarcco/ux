@@ -1,0 +1,8 @@
+.message-input:focus {
+	background: #FFF;
+	border-color: #85c8ec;
+}
+
+.message-input {
+	color: red;
+}

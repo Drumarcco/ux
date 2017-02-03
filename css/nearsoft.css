@@ -1,0 +1,477 @@
+/*
+Theme Name: Project Mayhem
+Theme URI: http://ns.local/
+Description: A reboot
+Version: 0.1
+Author: Axel Valdez, Arturo Ruiz;
+*/
+.self-clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.nopadding {
+  width: calc(100% + 8rem);
+  margin-left: -4rem;
+}
+.nopadding > * {
+  padding-right: 0;
+}
+.pair {
+  width: calc(100% + 1rem);
+  margin: 1em 0;
+}
+.pair:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.pair > * {
+  float: left;
+  width: 50%;
+  padding-right: 1rem;
+}
+.trio {
+  width: calc(100% + 1rem);
+  margin: 1em 0;
+}
+.trio:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.trio > * {
+  float: left;
+  width: 33.33333333%;
+  padding-right: 1rem;
+}
+.quartet {
+  width: calc(100% + 1rem);
+  margin: 1em 0;
+}
+.quartet:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.quartet > * {
+  float: left;
+  width: 25%;
+  padding-right: 1rem;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Open Sans, sans-serif;
+  line-height: 1.5;
+  color: #33373c;
+  background: #616a74;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.953em;
+  line-height: 1.1;
+}
+h2 {
+  font-size: 1.562em;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.1;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.8em;
+}
+h6 {
+  font-size: 0.64em;
+}
+h1:first-child {
+  margin: 0;
+}
+h2:first-child {
+  margin-top: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: #e54800;
+  text-decoration: none;
+/*   border-bottom: 1px solid #e8eaec; */
+}
+a:hover {
+/*   border-bottom-color: #e54800; */
+}
+.post-full {
+  background: #fff;
+  max-width: 60rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+.post-full-header {
+  padding: 2rem 4rem;
+  background: white;
+}
+.post-full-header > * {
+  margin: 0;
+}
+.post-full-media {
+  background: #33373c;
+}
+.post-full-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.post-full-content {
+  padding: 2rem 4rem;
+}
+.post-full__2columns {
+  background: linear-gradient(to right, #ffffff 66.66%, #e8eaec 66.66%);
+}
+.post-full__2columns .post-full-content {
+  width: 66.67%;
+  box-sizing: border-box;
+  float: left;
+}
+.post-full-sidebar {
+  width: 33.33%;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  float: right;
+}
+.post-full-header + .post-full-content {
+  border-top: 1px solid #e8eaec;
+}
+.share-panel {
+  background: #e8eaec;
+  padding: 1.5rem 6rem;
+  text-align: center;
+  clear: both;
+}
+nav {
+  font-size: 14px;
+}
+nav ul {
+  list-style: none;
+  padding: 0 calc(50% - 32rem);
+  margin: 0 auto;
+}
+.nav-super {
+  background: #e8eaec;
+  overflow: hidden;
+  line-height: 40px;
+}
+.nav-super li {
+  float: left;
+  margin-right: 1rem;
+}
+.nav-super li:last-child {
+  margin-right: 0;
+}
+.nav-super a {
+  color: #616a74;
+  text-decoration: none;
+}
+.nav-local {
+  background: #fff;
+  overflow: hidden;
+  line-height: 60px;
+  height: 60px;
+  margin-bottom: 3rem;
+}
+.nav-local li {
+  float: left;
+  margin-right: 2rem;
+}
+.nav-local a {
+  color: #33373c;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-local img {
+  height: 60px;
+  width: auto;
+}
+.nav-local li:not(:first-child) a {
+  display: block;
+  padding-top: 19px;
+  border-bottom: 5px solid transparent;
+  line-height: 36px;
+  box-sizing: border-box;
+}
+.nav-local li.current-menu-item a {
+  border-bottom: 5px solid #e54800;
+}
+.nav-local li:last-child {
+  float: right;
+  margin-right: 0;
+}
+.search-box {
+  height: 30px;
+  width: 180px;
+  float: right;
+  margin-top: 15px;
+  position: relative;
+  border-radius: 15px;
+}
+.search-box input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  width: 180px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: transparent;
+  border: 1px solid #e8eaec;
+  padding: 0 30px 0 10px;
+}
+.search-box input:focus {
+  border: 1px solid #616a74;
+  outline: none;
+}
+.search-box input:focus + button {
+  background: #e54800;
+}
+.search-box button {
+  position: absolute;
+  background: #e8eaec;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  background: #616a74;
+  color: #fff;
+  border-radius: .25rem;
+  border-bottom: 4px solid #4a5158;
+}
+.button:hover {
+  background: #6d7782;
+  border-color: #4a5158;
+}
+.primary {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  background: #e54800;
+  color: #fff;
+  border-radius: .25rem;
+  border-bottom: 4px solid #b23800;
+}
+.primary:hover {
+  background: #ff5000;
+  border-color: #b23800;
+}
+.blog-paging {
+  overflow: hidden;
+}
+.blog-paging a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  background: #616a74;
+  color: #fff;
+  border-radius: .25rem;
+  border-bottom: 4px solid #4a5158;
+}
+.blog-paging a:hover {
+  background: #6d7782;
+  border-color: #4a5158;
+}
+.blog-paging .prev {
+  float: left;
+}
+.blog-paging .next {
+  float: right;
+}
+.post-tiny__title {
+  padding: 1em;
+  margin: 0;
+  background: #e8eaec;
+}
+.post-full-sidebar .post-tiny__title {
+  background: #fff;
+}
+.post-tiny--fullbleed {
+  position: relative;
+}
+.post-tiny--fullbleed:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.post-tiny--fullbleed .post-tiny__title {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: none;
+  z-index: 2;
+}
+.post-card--medium .post-card__meta {
+  margin: 0 0 .5rem;
+  font-size: 0.64em;
+}
+.post-card--medium .post-card__title {
+  margin: 0;
+  font-size: 1.25em;
+}
+.post-card__content {
+  padding: 1rem;
+  background: #e8eaec;
+}
+.post-card--fullbleed {
+  position: relative;
+}
+.post-card--fullbleed:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.post-card--fullbleed .post-card__content {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: none;
+  z-index: 2;
+}
+.post-summary {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 6rem;
+}
+.post-summary .wp-post-image {
+  border-radius: 0.25rem;
+  width: 5rem;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post-summary:after {
+  content: "";
+  display: block;
+  width: 5rem;
+  background: #e8eaec;
+  height: .25rem;
+  margin: 3rem auto;
+  border-radius: .125rem;
+  position: relative;
+  left: -3rem;
+}
+.post-summary--small {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 6rem;
+}
+.post-summary--small .post-summary-title {
+  margin-bottom: 0;
+}
+.post-summary--small p {
+  margin-top: 0;
+}
+.list {
+  margin: 1rem auto;
+}
+.list-title {
+  margin-bottom: 0;
+  padding: .125rem 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #dadde0;
+}
+.list li {
+  border-bottom: 1px solid #dadde0;
+}
+.list a {
+  display: block;
+  border: none;
+  padding: .125rem 0;
+}
+.list ul ul li {
+  padding-left: 1rem;
+  border-bottom-style: dotted;
+}
+.list ul ul li:last-child {
+  border-bottom: none;
+}
+footer {
+  background: #33373c;
+  overflow: hidden;
+  margin-top: 3rem;
+  color: #616a74;
+  padding: 3rem calc(50% - 32rem);
+  font-size: 14px;
+}
+footer a {
+  color: #616a74;
+  border-bottom-color: #616a74;
+}
+footer a:hover {
+  color: white;
+  border-bottom-color: #616a74;
+}
+footer ul {
+  float: left;
+  list-style: none;
+  padding: 0 3rem 0 0;
+  margin: 0;
+  width: 16.66%;
+}

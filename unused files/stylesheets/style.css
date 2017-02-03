@@ -1,0 +1,5287 @@
+@charset "UTF-8";
+/* line 1, ../sass/modules/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0 calc(51% - 625px);
+  padding-top: 25px;
+  height: 79px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+/* line 14, ../sass/modules/_header.scss */
+header .logo {
+  float: left;
+  width: 160px;
+  height: 55px;
+  background: url(../img/ux-clinic-design-logo.png) no-repeat;
+  background-size: cover;
+  margin: 0 0 0 28px;
+}
+
+/* line 23, ../sass/modules/_header.scss */
+nav {
+  overflow: hidden;
+  float: right;
+}
+
+/* line 28, ../sass/modules/_header.scss */
+nav ul li {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 15px;
+}
+
+/* line 36, ../sass/modules/_header.scss */
+nav ul li a {
+  color: #768389;
+  font-size: 20px;
+  font-weight: 300;
+  transition: background .3s;
+}
+
+/* line 43, ../sass/modules/_header.scss */
+nav ul li a:hover::before {
+  width: 78%;
+  content: '';
+  height: 6px;
+  background-color: #ea4b0a;
+  position: absolute;
+  top: 32px;
+  border-radius: 5px;
+  right: 0;
+}
+
+/* line 54, ../sass/modules/_header.scss */
+nav ul li a:hover::after {
+  width: 15%;
+  content: '';
+  height: 6px;
+  background-color: #ea4b0a;
+  position: absolute;
+  top: 32px;
+  border-radius: 5px;
+  left: 0;
+}
+
+/* line 65, ../sass/modules/_header.scss */
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* line 69, ../sass/modules/_header.scss */
+.mobilenav-toggle {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url(../img/menuicon.png) no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+/* line 80, ../sass/modules/_header.scss */
+.mobilenav {
+  display: none;
+  float: none;
+  position: relative;
+  top: -100px;
+  overflow: hidden;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+/* line 92, ../sass/modules/_header.scss */
+.mobilenav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 98, ../sass/modules/_header.scss */
+.mobilenav li a {
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 15px 33px;
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px solid #DB521E;
+}
+
+/* line 108, ../sass/modules/_header.scss */
+.displaymobilemenu {
+  height: 180px;
+}
+
+/* line 112, ../sass/modules/_header.scss */
+.displaymobilemenu .mobilenav {
+  display: block !important;
+  top: 10px;
+  width: 100%;
+  background-color: #ef5a21;
+  padding-bottom: 10px;
+  z-index: 999;
+  transition: all 1s;
+}
+
+/* line 122, ../sass/modules/_header.scss */
+.displaymobilemenu {
+  height: 180px;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, ../sass/modules/_defaults.scss */
+html {
+  height: 100%;
+}
+
+/* line 4, ../sass/modules/_defaults.scss */
+body {
+  font-family: lato;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+}
+
+/* line 11, ../sass/modules/_defaults.scss */
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 16, ../sass/modules/_defaults.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 26, ../sass/modules/_defaults.scss */
+.hero,
+.howitworks,
+.experts,
+.submit,
+.episode-hero,
+.report-hero,
+.faq {
+  text-align: center;
+}
+
+/* line 34, ../sass/modules/_defaults.scss */
+.hero h1,
+.howitworks h2,
+.experts h2,
+.submit h2,
+.faq h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  color: #606a70;
+}
+
+/* ELEMENTS */
+/* line 44, ../sass/modules/_defaults.scss */
+.button {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+/* line 56, ../sass/modules/_defaults.scss */
+.button:hover {
+  background: #09ae09;
+  transition: background .3s;
+}
+
+/* line 61, ../sass/modules/_defaults.scss */
+.button:active {
+  background: #0b9b0b;
+  transition: background .2s;
+}
+
+/* line 66, ../sass/modules/_defaults.scss */
+.big-button {
+  padding: 12px 20px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* line 72, ../sass/modules/_defaults.scss */
+.designmethod {
+  font-size: 19px;
+  font-weight: 300;
+  color: #FFF;
+  background: #5e6a71;
+  padding: 11px 20px;
+  border-radius: 4px;
+}
+
+/* line 2, ../sass/modules/_section-submit.scss */
+.home .submit {
+  padding-bottom: 80px;
+}
+
+/* line 7, ../sass/modules/_section-submit.scss */
+.submit {
+  background: url(../img/ux-lab-background.gif) repeat;
+  padding: 0 calc(50% - 465px);
+  padding-top: 80px;
+  padding-bottom: 300px;
+  overflow: auto;
+}
+/* line 14, ../sass/modules/_section-submit.scss */
+.submit h2 {
+  color: #f8f8f8;
+}
+/* line 18, ../sass/modules/_section-submit.scss */
+.submit p {
+  color: #f8f8f8;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 20px 0 0 0;
+}
+
+/* line 27, ../sass/modules/_section-submit.scss */
+.submit > p {
+  margin-bottom: 50px;
+}
+
+/* line 36, ../sass/modules/_section-submit.scss */
+input.contactform-name,
+input.contactform-email,
+input.contactform-url,
+textarea.contactform-description,
+input.contactform-job-title,
+input.contactform-company {
+  width: 40%;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  float: left;
+  color: #A1A1A1;
+  font-family: lato;
+}
+
+/* line 49, ../sass/modules/_section-submit.scss */
+input.contactform-name,
+input.contactform-email {
+  width: 34%;
+}
+
+/* line 54, ../sass/modules/_section-submit.scss */
+input.contactform-job-title,
+input.contactform-company {
+  width: 34%;
+  margin-top: 20px;
+}
+
+/* line 60, ../sass/modules/_section-submit.scss */
+input.contactform-name,
+input.contactform-company {
+  margin-right: 25px;
+}
+
+/* line 64, ../sass/modules/_section-submit.scss */
+textarea.contactform-description {
+  width: 97%;
+  height: 20px;
+  margin-top: 20px;
+}
+
+/* line 70, ../sass/modules/_section-submit.scss */
+input::-webkit-input-placeholder {
+  color: #A1A1A1;
+}
+
+/* line 74, ../sass/modules/_section-submit.scss */
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #333;
+}
+
+/* line 78, ../sass/modules/_section-submit.scss */
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #333;
+}
+
+/* line 82, ../sass/modules/_section-submit.scss */
+input:-ms-input-placeholder {
+  color: #A1A1A1;
+}
+
+/* line 86, ../sass/modules/_section-submit.scss */
+.field-error::-webkit-input-placeholder {
+  color: #A83201 !important;
+  font-weight: 700;
+}
+
+/* line 91, ../sass/modules/_section-submit.scss */
+.field-error:-moz-placeholder {
+  color: #A83201 !important;
+  font-weight: 700;
+}
+
+/* line 96, ../sass/modules/_section-submit.scss */
+.field-error::-moz-placeholder {
+  color: #A83201 !important;
+  font-weight: 700;
+}
+
+/* line 101, ../sass/modules/_section-submit.scss */
+.error-tags {
+  background-color: #A83201;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* line 110, ../sass/modules/_section-submit.scss */
+.error {
+  padding-bottom: 25px;
+}
+
+/* line 114, ../sass/modules/_section-submit.scss */
+.contactform-submit {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-family: lato;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 18px;
+  transition: background .3s;
+  border: 0;
+  position: absolute;
+  z-index: 99;
+  right: 1px;
+  cursor: pointer;
+}
+
+/* line 131, ../sass/modules/_section-submit.scss */
+.contactform-submit:hover {
+  background: #09ae09;
+  transition: background .3s;
+}
+
+/*
+Theme Name: UX Clinic
+Theme URI: http://uxclinic.nearsoft.com
+Author URI: http://nearsoft.com
+Description:
+Version: 0.1
+*/
+/* FONTS */
+/*@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);*/
+/* GENERAL FORMATING */
+/*html {
+  height: 100%;
+}
+body {
+  font-family: lato;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero,
+.howitworks,
+.experts,
+.submit,
+.episode-hero,
+.report-hero,
+.faq {
+  text-align: center;
+}
+
+.hero h1,
+.howitworks h2,
+.experts h2,
+.submit h2,
+.faq h1 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  color: #606a70;
+}
+
+
+/* ELEMENTS */
+/* line 59, ../sass/modules/_all.scss */
+.button {
+  border-radius: 100px;
+  background: #0ac10a;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background .3s;
+  cursor: pointer;
+}
+
+/* line 71, ../sass/modules/_all.scss */
+.button:hover {
+  background: #09ae09;
+  transition: background .3s;
+}
+
+/* line 76, ../sass/modules/_all.scss */
+.button:active {
+  background: #0b9b0b;
+  transition: background .2s;
+}
+
+/* line 81, ../sass/modules/_all.scss */
+.big-button {
+  padding: 12px 20px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* line 87, ../sass/modules/_all.scss */
+.designmethod {
+  font-size: 19px;
+  font-weight: 300;
+  color: #FFF;
+  background: #5e6a71;
+  padding: 11px 20px;
+  border-radius: 4px;
+}
+
+/* SITE HEADER */
+/*header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0 calc(51% - 625px);
+  padding-top: 25px;
+  height: 79px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+header .logo {
+  float: left;
+  width: 160px;
+  height: 55px;
+  background: url(img/ux-clinic-design-logo.png) no-repeat;
+  background-size: cover;
+  margin: 0 0 0 28px;
+}
+
+nav {
+  overflow: hidden;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 15px;
+}
+
+nav ul li a {
+  color: #768389;
+  font-size: 20px;
+  font-weight: 300;
+  transition: background .3s;
+}
+
+nav ul li a:hover::before {
+  width: 78%;
+  content: '';
+  height: 6px;
+  background-color: #ea4b0a;
+  position: absolute;
+  top: 32px;
+  border-radius: 5px;
+  right: 0;
+}
+
+nav ul li a:hover::after {
+  width: 15%;
+  content: '';
+  height: 6px;
+  background-color: #ea4b0a;
+  position: absolute;
+  top: 32px;
+  border-radius: 5px;
+  left: 0;
+}
+
+nav ul li:last-child a {
+  margin-right: 0;
+}
+
+.mobilenav-toggle {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url(img/menuicon.png) no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+.mobilenav {
+  display: none;
+  float: none;
+  position: relative;
+  top: -100px;
+  overflow: hidden;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.mobilenav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mobilenav li a {
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 15px 33px;
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px solid #DB521E;
+}
+
+.displaymobilemenu {
+  height: 180px;
+}
+
+.displaymobilemenu .mobilenav {
+  display: block!important;
+  top: 10px;
+  width: 100%;
+  background-color: #ef5a21;
+  padding-bottom: 10px;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.displaymobilemenu{
+  height: 180px;
+}*/
+/* HERO */
+/* line 227, ../sass/modules/_all.scss */
+.hero,
+.report-hero {
+  margin-top: 130px;
+  padding-top: 70px;
+  width: 100%;
+  height: 571px;
+}
+
+/* line 234, ../sass/modules/_all.scss */
+.report-hero {
+  height: 385px;
+}
+
+/* line 238, ../sass/modules/_all.scss */
+.hero h1 {
+  width: 41%;
+  margin: 0 auto;
+  font-size: 41px;
+  margin-top: 3px;
+}
+
+/* line 245, ../sass/modules/_all.scss */
+.hero h1 b {
+  color: #5F6A6F;
+}
+
+/* line 249, ../sass/modules/_all.scss */
+section.hero img {
+  max-width: 85%;
+  height: auto;
+}
+
+/* line 254, ../sass/modules/_all.scss */
+.hero p {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 300;
+  max-width: 680px;
+  margin: 0 auto;
+  color: #6c6c6c;
+  margin-top: 20px;
+}
+
+/*REPORT*/
+/* line 265, ../sass/modules/_all.scss */
+.report-hero {
+  padding-bottom: 100px;
+  height: auto;
+}
+
+/* line 270, ../sass/modules/_all.scss */
+.report-hero p {
+  color: #fff;
+  width: auto;
+  padding: 10px 23%;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 278, ../sass/modules/_all.scss */
+.report-hero h3 {
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+/* line 285, ../sass/modules/_all.scss */
+.report-casestudy,
+.report-analysis {
+  padding: 0 calc(50% - 580px);
+  overflow: auto;
+}
+
+/* line 290, ../sass/modules/_all.scss */
+.report-casestudy {
+  padding-bottom: 0;
+  padding-top: 105px;
+}
+
+/* line 295, ../sass/modules/_all.scss */
+.border-class {
+  padding-bottom: 85px;
+  overflow: auto;
+}
+
+/* line 300, ../sass/modules/_all.scss */
+.report-download {
+  padding: 75px calc(50% - 580px);
+  background: url(../img/footerbg.png);
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* line 308, ../sass/modules/_all.scss */
+.report-download h2 {
+  font-weight: 100;
+  padding: 0 20px;
+}
+
+/* line 314, ../sass/modules/_all.scss */
+.report-casestudy p,
+.report-analysis p {
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 321, ../sass/modules/_all.scss */
+.report-textcont {
+  display: inline-block;
+  width: 45%;
+  padding-right: 25px;
+}
+
+/* line 328, ../sass/modules/_all.scss */
+.report-analysis .report-textcont {
+  padding-left: 25px;
+  padding-right: 0;
+  float: right;
+}
+
+/* line 335, ../sass/modules/_all.scss */
+.report-casestudy img,
+.report-analysis img {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  width: 603px;
+}
+
+/* line 342, ../sass/modules/_all.scss */
+.report-textcont h2 span {
+  color: #ef5a21;
+}
+
+/* line 346, ../sass/modules/_all.scss */
+.report-textcont h2 {
+  font-size: 25px;
+  color: #5e6a71;
+  margin-top: 0;
+}
+
+/* line 352, ../sass/modules/_all.scss */
+.report-pagination {
+  overflow: auto;
+  padding: 60px calc(50% - 580px);
+  border-top: 1px solid #F3F3F3;
+}
+
+/* line 358, ../sass/modules/_all.scss */
+.previouspost {
+  float: left;
+  max-width: 40%;
+  margin-left: 90px;
+}
+
+/* line 364, ../sass/modules/_all.scss */
+.nexpost {
+  float: right;
+  max-width: 40%;
+  text-align: right;
+  margin-right: 90px;
+}
+
+/* line 372, ../sass/modules/_all.scss */
+.previouspost a span,
+.nexpost a span {
+  color: #ef5a21;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* line 378, ../sass/modules/_all.scss */
+.previouspost a,
+.nexpost a {
+  color: #5e6b72;
+  font-size: 25px;
+  position: relative;
+}
+
+/* line 385, ../sass/modules/_all.scss */
+.previouspost a:before,
+.nexpost a:after {
+  content: '\2039';
+  position: absolute;
+  background-color: #ef5a21;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  top: 4px;
+  font-size: 55px;
+  width: 55px;
+  font-weight: 900;
+  height: 55px;
+  line-height: 44px;
+  transition: background .2s;
+}
+
+/* line 402, ../sass/modules/_all.scss */
+.previouspost a:hover:before,
+.nexpost a:hover:after {
+  background-color: #dc3d00;
+}
+
+/* line 406, ../sass/modules/_all.scss */
+.nexpost a:after {
+  content: '\203A';
+  right: -80px;
+}
+
+/* line 411, ../sass/modules/_all.scss */
+.previouspost a:before {
+  left: -80px;
+}
+
+/* line 415, ../sass/modules/_all.scss */
+section.report-pagination b {
+  color: #EF5A21;
+}
+
+/* HOW IT WORKS */
+/* line 421, ../sass/modules/_all.scss */
+.howitworks {
+  padding: 0 calc(50% - 580px);
+  padding-top: 120px;
+  padding-bottom: 110px;
+  position: relative;
+  overflow: auto;
+}
+
+/* line 429, ../sass/modules/_all.scss */
+.howitworks li img {
+  width: 90%;
+}
+
+/* line 433, ../sass/modules/_all.scss */
+.howitworks h2 {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 20px;
+  z-index: 9;
+}
+
+/* line 440, ../sass/modules/_all.scss */
+.howitworks ol::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: -41px;
+  left: 0;
+  z-index: -9;
+}
+
+/* line 451, ../sass/modules/_all.scss */
+.howitworks ol {
+  padding-top: 100px;
+  list-style: none;
+  position: relative;
+  padding: 60px 0;
+}
+
+/* line 458, ../sass/modules/_all.scss */
+.howitworks li {
+  display: block;
+  float: left;
+  width: calc(27% - 20px);
+  padding: 0px 40px;
+  list-style: decimal;
+}
+
+/* line 466, ../sass/modules/_all.scss */
+.howitworks li:before {
+  display: block;
+  background: aqua;
+}
+
+/* line 471, ../sass/modules/_all.scss */
+.howitworks li h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #606B70;
+  /*  height: 105px;*/
+  margin: 43px 0 0 0;
+}
+
+/* line 479, ../sass/modules/_all.scss */
+.howitworks li p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #6c6c6c;
+}
+
+/*.howitworks li h3:before {
+  background: #0ac10a;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 35px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+  border: 4px solid #f1f2f1;
+}
+
+.howitworks li:nth-child(1) h3:before {
+  content: "1";
+  display: block;
+}
+
+.howitworks li:nth-child(2) h3:before {
+  content: "2";
+  display: block;
+}
+
+.howitworks li:nth-child(3) h3:before {
+  content: "3";
+  display: block;
+}
+
+.howitworks li:nth-child(4) h3:before {
+  content: "4";
+  display: block;
+}
+
+.howitworks li:nth-child(5) h3:before {
+  content: "5";
+  display: block;
+}*/
+/* EXPERTS */
+/* line 528, ../sass/modules/_all.scss */
+.experts {
+  background: url(../img/experts-bgpattern.gif);
+  padding: 0 calc(50% - 580px);
+  padding-top: 73px;
+  padding-bottom: 110px;
+  overflow: hidden;
+}
+
+/* line 536, ../sass/modules/_all.scss */
+.experts ul {
+  margin-top: 70px;
+  padding: 0;
+  overflow: auto;
+}
+
+/* line 542, ../sass/modules/_all.scss */
+.experts ul li {
+  float: left;
+  width: 50%;
+  height: 360px;
+  list-style: none;
+}
+
+/* line 548, ../sass/modules/_all.scss */
+section.experts h3 {
+  font-size: 22px;
+  color: #5f6a6f;
+  font-weight: 500;
+}
+
+/* line 554, ../sass/modules/_all.scss */
+.experts ul li h3 {
+  font-size: 44px;
+  font-weight: 300;
+  color: #FFF;
+  margin-top: 130px;
+  margin-bottom: 0px;
+  padding: 0px;
+  height: 70px;
+}
+
+/* line 564, ../sass/modules/_all.scss */
+.experts ul li h3:after {
+  content: url("../img/expertunderline01.png");
+  display: block;
+  position: relative;
+  top: -30px;
+}
+
+/* line 573, ../sass/modules/_all.scss */
+.experts ul li:nth-child(2) h3:after,
+.experts ul li:nth-child(3) h3:after,
+.experts ul li:nth-child(6) h3:after {
+  content: url("../img/expertunderline02.png");
+}
+
+/* line 577, ../sass/modules/_all.scss */
+.experts p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 calc(50% - 185px);
+}
+
+/* line 612, ../sass/modules/_all.scss */
+.experts .button {
+  display: none;
+}
+
+/* SIGNUP */
+/* line 618, ../sass/modules/_all.scss */
+.signup {
+  padding-top: 80px;
+}
+
+/* line 621, ../sass/modules/_all.scss */
+.signup-btn {
+  height: 55px;
+}
+
+/* line 625, ../sass/modules/_all.scss */
+.signup p {
+  font-size: 21px;
+  color: #FFF;
+  font-weight: 300;
+}
+
+/* line 631, ../sass/modules/_all.scss */
+.signup h1 {
+  font-family: lato;
+  color: #FFF;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 0;
+}
+
+/* line 640, ../sass/modules/_all.scss */
+#mc_embed_signup {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  margin-top: 40px;
+}
+
+/* line 647, ../sass/modules/_all.scss */
+#mc_embed_signup_scroll {
+  width: 100%;
+  position: relative;
+}
+
+/* line 652, ../sass/modules/_all.scss */
+.signup .contactform-submit {
+  padding: 14px 50px;
+}
+
+/* EPISODES */
+/* line 658, ../sass/modules/_all.scss */
+.episodes {
+  padding: 0 calc(50% - 580px);
+  padding-top: 85px;
+  padding-bottom: 295px;
+  overflow: hidden;
+}
+
+/* line 665, ../sass/modules/_all.scss */
+.episodes h2 {
+  color: #606a70;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+/* line 671, ../sass/modules/_all.scss */
+.episodes ul {
+  padding: 0;
+  overflow: hidden;
+  margin-top: 30px;
+  height: 527px;
+}
+
+/* line 678, ../sass/modules/_all.scss */
+.episodes li {
+  list-style: none;
+  height: 505px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+}
+
+/* line 687, ../sass/modules/_all.scss */
+.episodes li img {
+  width: 100%;
+}
+
+/* line 691, ../sass/modules/_all.scss */
+span.vid-flag {
+  width: 189px;
+  height: 35px;
+  background-color: #ef5a21;
+  top: 50px;
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  transition: background .2s;
+  z-index: 9;
+}
+
+/* line 703, ../sass/modules/_all.scss */
+.vid-flag::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-image: url(../img/flag-vid.png);
+}
+
+/* line 713, ../sass/modules/_all.scss */
+.vid-flag::after {
+  position: absolute;
+  content: 'Latest Case study';
+  color: #fff;
+  right: 0;
+  top: 6px;
+  font-size: 17px;
+  padding-right: 12px;
+  font-weight: 700;
+}
+
+/* line 724, ../sass/modules/_all.scss */
+li a:hover span {
+  color: #0ac10a;
+}
+
+/* line 728, ../sass/modules/_all.scss */
+li a img:hover {
+  opacity: .9;
+}
+
+/* line 732, ../sass/modules/_all.scss */
+.episodes li:hover span.vid-flag {
+  background-color: #0ac10a;
+}
+
+/* line 737, ../sass/modules/_all.scss */
+.episodes li:nth-child(2) span.vid-flag::after,
+.episodes li:nth-child(3) span.vid-flag::after {
+  content: ' ';
+}
+
+/* line 742, ../sass/modules/_all.scss */
+.episodes li:nth-child(2) span.vid-flag,
+.episodes li:nth-child(3) span.vid-flag {
+  top: 35px;
+  width: 48px;
+}
+
+/* line 747, ../sass/modules/_all.scss */
+.episodes li:first-child {
+  border-right: 4px solid #404b50;
+  width: 60%;
+  float: left;
+}
+
+/* line 754, ../sass/modules/_all.scss */
+.episodes li:nth-child(2),
+.episodes li:nth-child(3) {
+  height: 246px;
+  width: calc(40% - 4px);
+  float: right;
+}
+
+/* line 760, ../sass/modules/_all.scss */
+.episodes h3 {
+  background: #475054;
+  padding: 19px 20px 10px 20px;
+  text-align: left;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF;
+  position: relative;
+  top: -14px;
+  display: block;
+}
+
+/* line 773, ../sass/modules/_all.scss */
+.episodes h3 span {
+  color: #ef5a21;
+  transition: color .2s;
+}
+
+/* line 778, ../sass/modules/_all.scss */
+.episodes p {
+  background: #475054;
+  width: calc(100% - 40px);
+  padding: 10px 20px 25px 20px;
+  text-align: left;
+  margin: 0;
+  height: 55px;
+  max-height: 55px;
+  color: #FFF;
+  position: relative;
+  top: -21px;
+  line-height: 24px;
+}
+
+/* line 793, ../sass/modules/_all.scss */
+.episodes li:nth-child(2) h3,
+.episodes li:nth-child(3) h3 {
+  background: #475054;
+  padding: 10px 20px 15px 20px;
+  text-align: left;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF;
+  position: relative;
+  top: -11px;
+  z-index: 9;
+}
+
+/* line 806, ../sass/modules/_all.scss */
+.episodes h2 {
+  display: inline;
+}
+
+/* line 810, ../sass/modules/_all.scss */
+.episodes .button {
+  float: right;
+}
+
+/* line 814, ../sass/modules/_all.scss */
+.episodes li .image-container {
+  width: 100%;
+  height: 383px;
+}
+
+/* line 820, ../sass/modules/_all.scss */
+.episodes li:nth-child(2) .image-container,
+.episodes li:nth-child(3) .image-container {
+  max-height: 221px;
+}
+
+/* line 824, ../sass/modules/_all.scss */
+.cont-h1 h1 b {
+  color: #ef5a21;
+}
+
+/* line 828, ../sass/modules/_all.scss */
+.casestudy_outcome_img2 {
+  margin-top: 70px;
+}
+
+/* line 832, ../sass/modules/_all.scss */
+.casestudy-video-hero {
+  padding: 0 calc(50% - 580px);
+  margin-bottom: 120px !important;
+  margin-top: 0 !important;
+  overflow: hidden;
+  color: #6c6c6c;
+}
+
+/*.cont-h1 h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #606a70;
+  width: auto;
+  margin: 20px 0 45px 0;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 20px;
+}
+*/
+/*.cont-h1 h1:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -9;
+}
+*/
+/* line 862, ../sass/modules/_all.scss */
+.margin-top-diy {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* line 867, ../sass/modules/_all.scss */
+.video-h3-title {
+  font-size: 25px;
+  float: right;
+  margin: 0 0 20px 0;
+  width: calc(100% - 830px);
+  text-align: left;
+  line-height: 30px;
+}
+
+/* line 876, ../sass/modules/_all.scss */
+.casestudy-video-hero h3 span {
+  color: #ef5a21;
+}
+
+/* line 882, ../sass/modules/_all.scss */
+.title-new-casestudy,
+.subtitle-new-casestudy {
+  width: 1160px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 35px;
+}
+
+/* line 892, ../sass/modules/_all.scss */
+.subtitle-new-casestudy {
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 0 0 40px 0;
+  line-height: 30px;
+}
+
+/* line 899, ../sass/modules/_all.scss */
+b {
+  color: #792200;
+}
+
+/* line 903, ../sass/modules/_all.scss */
+img.after-image {
+  width: auto;
+  margin-top: 10px;
+}
+
+/* line 908, ../sass/modules/_all.scss */
+.process-img-cont {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 913, ../sass/modules/_all.scss */
+.process-img-cont h5 {
+  color: #8B8B8B;
+  font-size: 13px;
+  font-weight: 300;
+  border-top: 1px solid #e4e4e4;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+/* FOOTER */
+/* line 924, ../sass/modules/_all.scss */
+footer {
+  background: url(../img/footerbg.png);
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 935, ../sass/modules/_all.scss */
+.footer-cont {
+  padding: 0 calc(50% - 524px);
+}
+
+/* line 939, ../sass/modules/_all.scss */
+footer .logo {
+  background: url(../img/uxclinic-logo.png) no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 56px;
+  float: left;
+}
+
+/* line 948, ../sass/modules/_all.scss */
+footer .social,
+footer .contact {
+  float: right;
+  color: #FFF;
+}
+
+/* line 954, ../sass/modules/_all.scss */
+footer .social h3,
+footer .contact h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 960, ../sass/modules/_all.scss */
+footer .social ul,
+footer .contact ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 966, ../sass/modules/_all.scss */
+footer .social li,
+footer .contact li {
+  list-style: none;
+  margin: 0;
+  color: #bcc1c3;
+}
+
+/* line 973, ../sass/modules/_all.scss */
+footer .social a,
+footer .contact a {
+  color: #bcc1c3;
+}
+
+/* line 978, ../sass/modules/_all.scss */
+footer .social a:hover,
+footer .contact a:hover {
+  text-decoration: underline;
+}
+
+/* line 982, ../sass/modules/_all.scss */
+footer .social {
+  margin-left: 50px;
+}
+
+/* line 986, ../sass/modules/_all.scss */
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  color: #bcc1c3;
+  float: left;
+}
+
+/* line 993, ../sass/modules/_all.scss */
+footer .copyright a {
+  color: #0ac10a;
+}
+
+/* Episode hero */
+/* line 1000, ../sass/modules/_all.scss */
+.episode-hero {
+  padding: 0 calc(50% - 580px);
+  margin-top: 126px;
+  overflow: hidden;
+  color: #6c6c6c;
+}
+
+/* line 1008, ../sass/modules/_all.scss */
+.episode-hero h1,
+.faq h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #606a70;
+  width: auto;
+  margin: 20px 0 45px 0;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+/* line 1019, ../sass/modules/_all.scss */
+.cont-h1 {
+  position: relative;
+  text-align: center;
+  margin: 60px 0 45px 0;
+}
+
+/* line 1026, ../sass/modules/_all.scss */
+.episode-hero h1::before,
+.faq h1:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -9;
+}
+
+/* line 1037, ../sass/modules/_all.scss */
+.episode-hero .video-wrapper {
+  width: 800px;
+  float: left;
+  position: relative;
+  padding-bottom: 40%;
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 1046, ../sass/modules/_all.scss */
+.episode-hero iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1054, ../sass/modules/_all.scss */
+.episode-hero p {
+  float: right;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  width: calc(100% - 830px);
+  text-align: left;
+}
+
+/* line 1064, ../sass/modules/_all.scss */
+.report-button {
+  font-weight: 700;
+  padding: 15px 40px;
+  text-align: center;
+  max-width: 180px;
+}
+
+/* line 1071, ../sass/modules/_all.scss */
+.report-button:hover {
+  background: #09ae09;
+}
+
+/* line 1075, ../sass/modules/_all.scss */
+.client-img {
+  width: 340px;
+  height: 180px;
+  float: left;
+  border-radius: 5px;
+}
+
+/* line 1082, ../sass/modules/_all.scss */
+.sub-episode-hero {
+  float: left;
+  width: 100%;
+  padding: 55px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* line 1089, ../sass/modules/_all.scss */
+.sub-episode-hero p {
+  width: calc(100% - 380px);
+  padding-top: 5px;
+}
+
+/* line 1094, ../sass/modules/_all.scss */
+section.display-our-work {
+  height: 500px;
+  background-color: #FAFAFA;
+  padding: 0 calc(50% - 580px);
+  overflow: inherit;
+}
+
+/* line 1101, ../sass/modules/_all.scss */
+.display-work-cont {
+  position: relative;
+  top: -34px;
+}
+
+/* line 1106, ../sass/modules/_all.scss */
+.report-textcont ul {
+  padding: 0;
+  margin: 20px;
+  list-style: url(../img/bullet-list.gif);
+}
+
+/* line 1112, ../sass/modules/_all.scss */
+.report-textcont li {
+  font-size: 17px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  font-weight: 400;
+  color: #656565;
+}
+
+/* line 1120, ../sass/modules/_all.scss */
+.report-textcont b {
+  color: #EF5A21;
+}
+
+/* Episode resources */
+/* line 1126, ../sass/modules/_all.scss */
+.episode-resources {
+  padding: 0 calc(50% - 580px);
+  padding-bottom: 80px;
+  margin-top: -15px;
+  overflow: hidden;
+  color: #6c6c6c;
+  padding-top: 50px;
+}
+
+/* line 1135, ../sass/modules/_all.scss */
+.episode-resources h2 {
+  color: #909090;
+  font-weight: 300;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+/* line 1142, ../sass/modules/_all.scss */
+.episode-resources h2 span {
+  color: #ef5a21;
+}
+
+/* line 1146, ../sass/modules/_all.scss */
+.episode-resources ol {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1151, ../sass/modules/_all.scss */
+.episode-resources li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+}
+
+/*FORM*/
+/* line 1265, ../sass/modules/_all.scss */
+form p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* line 1272, ../sass/modules/_all.scss */
+div.wpcf7 img.ajax-loader {
+  display: block;
+}
+
+/* line 1276, ../sass/modules/_all.scss */
+span.wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+/* line 1280, ../sass/modules/_all.scss */
+div.wpcf7 img.ajax-loader {
+  display: none;
+}
+
+/* line 1285, ../sass/modules/_all.scss */
+div.wpcf7-validation-errors,
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  border: 0 !important;
+  color: #fff;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  display: block !important;
+  margin: 0 !important;
+  padding: 45px 0 0 0 !important;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 1299, ../sass/modules/_all.scss */
+.faq {
+  padding: 0 calc(44% - 500px);
+  margin-top: 126px;
+  overflow: hidden;
+  color: #6c6c6c;
+  padding-top: 50px;
+}
+
+/* line 1307, ../sass/modules/_all.scss */
+.faq h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 1312, ../sass/modules/_all.scss */
+.faq p  {
+  font-weight: 300;
+}
+
+/* Episodes index */
+/* line 1318, ../sass/modules/_all.scss */
+.episodesindex {
+  overflow: hidden;
+  padding: 0 calc(50% - 580px);
+  text-align: center;
+  margin-top: 130px;
+  padding-bottom: 65px;
+}
+
+/* line 1326, ../sass/modules/_all.scss */
+.episodesindex h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #606a70;
+  width: auto;
+  margin: 20px 0 45px 0;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+/* line 1338, ../sass/modules/_all.scss */
+.episodesindex .cont-h1 h1::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -9;
+}
+
+/* line 1349, ../sass/modules/_all.scss */
+.faq-content {
+  overflow: hidden;
+  padding: 0 calc(50% - 580px);
+  padding-bottom: 65px;
+  font-size: 19px;
+  line-height: 28px;
+  color: #595959;
+}
+
+/* line 1358, ../sass/modules/_all.scss */
+.the_content {
+  /* width: calc(100% - 320px); */
+  width: 100%;
+  /*  float: left;
+    display: block;*/
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1368, ../sass/modules/_all.scss */
+.loop-single:first-child {
+  border: 0;
+}
+
+/* line 1372, ../sass/modules/_all.scss */
+.episodesindex .sidebar {
+  float: right;
+  width: 300px;
+  margin-left: 20px;
+}
+
+/* line 1378, ../sass/modules/_all.scss */
+.loop-single {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 18px 45px 18px;
+  position: relative;
+}
+
+/* line 1386, ../sass/modules/_all.scss */
+.loop-single .excerpt b {
+  color: inherit;
+}
+
+/* line 1390, ../sass/modules/_all.scss */
+.loop-single .thumb {
+  width: 100%;
+  height: 280px;
+  /*  float: left;*/
+  border-radius: 3px;
+  /*  overflow: hidden;*/
+}
+
+/* line 1398, ../sass/modules/_all.scss */
+.loop-single .excerpt {
+  /*  float: right;
+    width: calc(100% - 360px);*/
+  text-align: left;
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #EFEFEF;
+  padding: 20px;
+  margin-top: -4px;
+  background-color: #FFF;
+  color: #000;
+  box-shadow: 0px 1px 1px #ECECEC;
+  z-index: 999999;
+  border-radius: 0px 0px 3px 3px;
+  width: calc(100% - 40px);
+}
+
+/* line 1416, ../sass/modules/_all.scss */
+.loop-single .excerpt p {
+  font-size: 18px;
+  line-height: 26px;
+  display: none;
+}
+
+/* line 1422, ../sass/modules/_all.scss */
+.excerpt h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* line 1428, ../sass/modules/_all.scss */
+.excerpt a {
+  color: #4f585e;
+  transition: color .3s;
+  text-decoration: none !important;
+}
+
+/* line 1434, ../sass/modules/_all.scss */
+.excerpt a:hover {
+  color: #ec4d0a;
+  text-decoration: none !important;
+}
+
+/* line 1439, ../sass/modules/_all.scss */
+.loop-single .excerpt a:hover {
+  text-decoration: underline;
+}
+
+/* line 1443, ../sass/modules/_all.scss */
+.excerpt span {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: #EB4D0A;
+  font-style: normal;
+}
+
+/* line 1452, ../sass/modules/_all.scss */
+.excerpt h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1458, ../sass/modules/_all.scss */
+.why-diy {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 15px;
+  text-transform: none;
+  line-height: 26px;
+}
+
+/* line 1466, ../sass/modules/_all.scss */
+.when-diy {
+  font-size: 17px;
+  color: #606a70;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* line 1473, ../sass/modules/_all.scss */
+.bg-op {
+  position: absolute;
+  background-color: #EF5A21;
+  height: 276px;
+  width: 100%;
+  opacity: 0;
+  border-radius: 3px;
+}
+
+/* line 1482, ../sass/modules/_all.scss */
+.loop-single:hover .bg-op {
+  opacity: .9;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+/*Hover logos for case studies*/
+/* line 1490, ../sass/modules/_all.scss */
+.bg-op:before {
+  content: '';
+  position: relative;
+  top: 100px;
+  width: 90%;
+  height: 200px;
+  display: inline-block;
+}
+
+/* line 1499, ../sass/modules/_all.scss */
+.diy-loop:before {
+  content: 'View More';
+  position: relative;
+  top: 0;
+  width: 90%;
+  height: 200px;
+  display: inline-block;
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/view-more-icon.png) no-repeat center 96px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-top: 178px;
+}
+
+/*SocialCentiv*/
+/* line 1514, ../sass/modules/_all.scss */
+#post-725 .bg-op {
+  background-color: #19a4dd;
+}
+
+/* line 1518, ../sass/modules/_all.scss */
+#post-725 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/socialcentiv-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*skedio*/
+/* line 1525, ../sass/modules/_all.scss */
+#post-712 .bg-op {
+  background-color: #0b355e;
+}
+
+/* line 1529, ../sass/modules/_all.scss */
+#post-712 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/skedio-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Staytuned*/
+/* line 1535, ../sass/modules/_all.scss */
+#post-703 .bg-op {
+  background-color: #d32c36;
+}
+
+/* line 1539, ../sass/modules/_all.scss */
+#post-703 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/staytuned-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Salescaddy*/
+/* line 1545, ../sass/modules/_all.scss */
+#post-669 .bg-op {
+  background-color: #2d2d2d;
+}
+
+/* line 1549, ../sass/modules/_all.scss */
+#post-669 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/salescaddy-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Cogia Intelligence*/
+/* line 1555, ../sass/modules/_all.scss */
+#post-647 .bg-op {
+  background-color: #1e6aae;
+}
+
+/* line 1559, ../sass/modules/_all.scss */
+#post-647 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/cogiaintelligence-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Mapillary*/
+/* line 1565, ../sass/modules/_all.scss */
+#post-605 .bg-op {
+  background-color: #35af6d;
+}
+
+/* line 1569, ../sass/modules/_all.scss */
+#post-605 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/mapillary-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Desma*/
+/* line 1575, ../sass/modules/_all.scss */
+#post-461 .bg-op {
+  background-color: #8224e3;
+}
+
+/* line 1579, ../sass/modules/_all.scss */
+#post-461 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/desma-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*7guesse*/
+/* line 1585, ../sass/modules/_all.scss */
+#post-418 .bg-op {
+  background-color: #002f47;
+}
+
+/* line 1589, ../sass/modules/_all.scss */
+#post-418 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/7geese.png) no-repeat;
+  background-size: contain;
+}
+
+/*Planning poker for hangouts*/
+/* line 1596, ../sass/modules/_all.scss */
+#post-417 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/planing-poker-logo.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+/*Sureify*/
+/* line 1603, ../sass/modules/_all.scss */
+#post-416 .bg-op {
+  background-color: #bcd377;
+}
+
+/* line 1607, ../sass/modules/_all.scss */
+#post-416 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/sureify-logo.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+/*Olset*/
+/* line 1614, ../sass/modules/_all.scss */
+#post-415 .bg-op {
+  background-color: #0099cc;
+}
+
+/* line 1618, ../sass/modules/_all.scss */
+#post-415 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/oldset-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Crowdswell*/
+/* line 1624, ../sass/modules/_all.scss */
+#post-414 .bg-op {
+  background-color: #ff0946;
+}
+
+/* line 1628, ../sass/modules/_all.scss */
+#post-414 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/crowdswell.png) no-repeat;
+  background-size: contain;
+}
+
+/*Bidaway*/
+/* line 1634, ../sass/modules/_all.scss */
+#post-412 .bg-op {
+  background-color: #fbab1b;
+}
+
+/* line 1638, ../sass/modules/_all.scss */
+#post-412 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/bidaway-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Spork*/
+/* line 1644, ../sass/modules/_all.scss */
+#post-411 .bg-op {
+  background-color: #b7461b;
+}
+
+/* line 1648, ../sass/modules/_all.scss */
+#post-411 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/spork-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*Daisy Wheel*/
+/* line 1654, ../sass/modules/_all.scss */
+#post-410 .bg-op {
+  background-color: #e95472;
+}
+
+/* line 1658, ../sass/modules/_all.scss */
+#post-410 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/daisy-wheel.png) no-repeat;
+  background-size: contain;
+}
+
+/*pijonbox & soundbetter*/
+/* line 1664, ../sass/modules/_all.scss */
+#post-409 .bg-op {
+  background-color: #015968;
+}
+
+/* line 1668, ../sass/modules/_all.scss */
+#post-409 .bg-op:before {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/07/soundbetter-logo.png) no-repeat;
+  background-size: contain;
+}
+
+/*ABOUT US*/
+/* line 1675, ../sass/modules/_all.scss */
+.about-hero {
+  margin-top: 130px;
+  padding-top: 70px;
+  width: 100%;
+  height: auto;
+  background: url(../img/ux-report-bidaway-background.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 1684, ../sass/modules/_all.scss */
+.about-hero div {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  line-height: 26px;
+  font-size: 19px;
+  color: #fff;
+}
+
+/* line 1694, ../sass/modules/_all.scss */
+.about-hero h1 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* line 1700, ../sass/modules/_all.scss */
+.about-hero-icons {
+  padding-top: 35px;
+}
+
+/* line 1704, ../sass/modules/_all.scss */
+.aboutus {
+  padding: 0 calc(50% - 580px);
+  overflow: hidden;
+  color: #6c6c6c;
+  padding-bottom: 50px;
+}
+
+/* line 1712, ../sass/modules/_all.scss */
+.left-column,
+.right-column2 {
+  display: inline-block;
+  width: 45%;
+  margin-top: 30px;
+  padding-right: 100px;
+  vertical-align: top;
+  background: url(../img/ux-report-results-sureify-image.jpg) no-repeat;
+  background-size: 92%;
+}
+
+/* line 1723, ../sass/modules/_all.scss */
+.left-column {
+  background-image: none;
+}
+
+/* line 1727, ../sass/modules/_all.scss */
+.right-column2 {
+  height: 390px;
+  margin-top: 50px;
+}
+
+/* line 1733, ../sass/modules/_all.scss */
+.left-column p,
+.right-column2 p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 1738, ../sass/modules/_all.scss */
+.left-column {
+  padding-right: 0;
+}
+
+/* line 1742, ../sass/modules/_all.scss */
+.right-column {
+  margin-top: 60px;
+}
+
+/* line 1746, ../sass/modules/_all.scss */
+.right-column ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1752, ../sass/modules/_all.scss */
+.right-column ol li {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+
+/* line 1759, ../sass/modules/_all.scss */
+.right-column ol li img {
+  border-radius: 100%;
+  max-width: 85px;
+  height: 85px;
+  display: inline-block;
+}
+
+/* line 1766, ../sass/modules/_all.scss */
+.right-column ol li h3 {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+/* line 1772, ../sass/modules/_all.scss */
+.right-column ol li p {
+  margin-top: 0;
+}
+
+/* line 1776, ../sass/modules/_all.scss */
+.right-column ol li {
+  margin-bottom: 20px;
+}
+
+/* line 1780, ../sass/modules/_all.scss */
+.right-column ol li div {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  margin-top: -15px;
+  margin-left: 15px;
+}
+
+/* line 1788, ../sass/modules/_all.scss */
+.scnd-case-link {
+  color: #ef5a21;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/*404ERROR*/
+/* line 1798, ../sass/modules/_all.scss */
+.error-404,
+.thankyou-page {
+  padding: 75px calc(61% - 580px);
+  overflow: auto;
+  margin-top: 75px;
+  background: url(../img/ux-team-404-image.jpg) no-repeat 35% 100px;
+}
+
+/* line 1805, ../sass/modules/_all.scss */
+.thankyou-page {
+  background: url(../img/ux-team-thankyou-image.png) no-repeat 29% 100px;
+  padding: 75px calc(60% - 580px);
+}
+
+/* line 1811, ../sass/modules/_all.scss */
+.error-404 div,
+.thankyou-page div {
+  display: inline-block;
+  margin-bottom: 50px;
+  width: 48%;
+  float: right;
+}
+
+/* line 1818, ../sass/modules/_all.scss */
+.thankyou-page div {
+  width: 60%;
+}
+
+/* line 1823, ../sass/modules/_all.scss */
+.error-404 div h1,
+.thankyou-page div h1 {
+  font-size: 120px;
+  color: #5f6a6f;
+  font-weight: 700;
+  margin: 35px 0 0 0;
+  position: relative;
+  width: auto;
+}
+
+/* line 1832, ../sass/modules/_all.scss */
+.error-404 div h1:before {
+  content: '';
+  width: 71px;
+  height: 104px;
+  position: absolute;
+  background: url(../img/ux-team-404-icon.jpg) no-repeat;
+  left: 228px;
+  top: 20px;
+}
+
+/* line 1843, ../sass/modules/_all.scss */
+.error-404 div p,
+.thankyou-page div p {
+  font-size: 30px;
+  font-weight: 300;
+  color: #777777;
+  width: auto;
+  margin-top: 5px;
+}
+
+/* line 1855, ../sass/modules/_all.scss */
+.error-404 div a {
+  margin-left: 70px;
+}
+
+/* line 1860, ../sass/modules/_all.scss */
+.error-404:before,
+.thankyou-page:before {
+  content: '';
+  width: auto;
+  position: relative;
+  border-bottom: 2px solid #e4e4e4;
+  display: block;
+  bottom: 0;
+  top: 425px;
+}
+
+/* line 1870, ../sass/modules/_all.scss */
+.thankyou-page:before {
+  border-bottom: none;
+}
+
+/* line 1874, ../sass/modules/_all.scss */
+.episode-resources-hidden {
+  display: none;
+}
+
+/* line 1879, ../sass/modules/_all.scss */
+.episodes li:nth-child(3) p,
+.episodes li:nth-child(2) p {
+  display: none;
+}
+
+/* Media Queries */
+/*MAX 1180PX*/
+@media (max-width: 1180px) {
+  /*EPISODES*/
+  /* line 1889, ../sass/modules/_all.scss */
+  .episodes, .episode-hero, .episodesindex {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  /* line 1894, ../sass/modules/_all.scss */
+  .episodes ul {
+    height: auto;
+    overflow: hidden;
+  }
+
+  /* line 1899, ../sass/modules/_all.scss */
+  .episodes li:nth-child(2),
+  .episodes li:nth-child(3) {
+    width: calc(50% - 0px);
+    height: auto;
+    display: block;
+  }
+
+  /* line 1905, ../sass/modules/_all.scss */
+  .loop-single {
+    width: 44%;
+  }
+
+  /* line 1909, ../sass/modules/_all.scss */
+  .episodes li:first-child {
+    float: left;
+    /* width: auto; */
+    width: 100%;
+    height: auto;
+    border-right: none;
+    margin-bottom: -21px;
+  }
+
+  /* line 1919, ../sass/modules/_all.scss */
+  .episodes li:nth-child(2) img,
+  .episodes li:nth-child(3) img {
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+  }
+
+  /* line 1925, ../sass/modules/_all.scss */
+  .episodes li:nth-child(2) h3,
+  .episodes li:nth-child(3) h3 {
+    top: 0;
+  }
+
+  /*FOOTER*/
+  /*  footer {
+      padding: 25px 35px;
+    }*/
+  /* line 1934, ../sass/modules/_all.scss */
+  .footer-cont {
+    padding: 0 50px;
+  }
+
+  /* line 1938, ../sass/modules/_all.scss */
+  footer .copyright {
+    margin-top: 40px;
+  }
+
+  /*SENDA CASE*/
+  /* line 1943, ../sass/modules/_all.scss */
+  .submit {
+    padding: 50px 35px;
+    overflow: auto;
+  }
+
+  /*EXPERTS*/
+  /* line 1949, ../sass/modules/_all.scss */
+  .experts {
+    padding: 0 20px;
+    padding-top: 73px;
+    padding-bottom: 110px;
+  }
+
+  /* line 1955, ../sass/modules/_all.scss */
+  .experts ul li h3 {
+    margin-top: 106px;
+  }
+
+  /* line 1959, ../sass/modules/_all.scss */
+  .experts p {
+    padding: 0 45px;
+  }
+
+  /* line 1963, ../sass/modules/_all.scss */
+  .experts .button {
+    display: none;
+  }
+
+  /* line 1967, ../sass/modules/_all.scss */
+  .experts .button {
+    display: none;
+  }
+
+  /*HERO*/
+  /* line 1972, ../sass/modules/_all.scss */
+  .hero h1 {
+    width: 55%;
+  }
+
+  /*EPISODE HERO*/
+  /* line 1978, ../sass/modules/_all.scss */
+  .episode-hero p {
+    margin-top: 20px;
+  }
+
+  /* line 1982, ../sass/modules/_all.scss */
+  .episode-hero .video-wrapper {
+    width: 100%;
+    height: 185px;
+  }
+
+  /* line 1986, ../sass/modules/_all.scss */
+  .episode-resources {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* line 1991, ../sass/modules/_all.scss */
+  .episode-hero > p {
+    margin-top: 35px;
+    width: auto;
+  }
+
+  /* line 1996, ../sass/modules/_all.scss */
+  .sub-episode-hero {
+    margin-top: 25px;
+  }
+
+  /* line 2000, ../sass/modules/_all.scss */
+  .sub-episode-hero p {
+    margin-top: 0;
+  }
+
+  /* line 2004, ../sass/modules/_all.scss */
+  .process-img-cont {
+    width: 52%;
+  }
+
+  /* line 2008, ../sass/modules/_all.scss */
+  .process-img-cont img {
+    width: 100%;
+  }
+
+  /* line 2012, ../sass/modules/_all.scss */
+  .video-h3-title {
+    float: none;
+    width: auto;
+    margin: 0 0 40px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  /*FAQ*/
+  /* line 2022, ../sass/modules/_all.scss */
+  .faq-content {
+    padding: 0 30px 30px 30px;
+  }
+
+  /*REPORT*/
+  /* line 2028, ../sass/modules/_all.scss */
+  .report-casestudy,
+  .report-analysis {
+    padding: 160px 50px 0;
+  }
+
+  /* line 2032, ../sass/modules/_all.scss */
+  .report-analysis {
+    padding-top: 0;
+  }
+
+  /* line 2036, ../sass/modules/_all.scss */
+  .report-analysis .process-img-cont {
+    float: left;
+  }
+
+  /* line 2040, ../sass/modules/_all.scss */
+  .report-casestudy .process-img-cont {
+    float: right;
+  }
+
+  /* line 2045, ../sass/modules/_all.scss */
+  .report-casestudy img,
+  .report-analysis img {
+    /*width: 52%;*/
+  }
+
+  /* line 2049, ../sass/modules/_all.scss */
+  .report-analysis .report-textcont {
+    padding-left: 0;
+  }
+
+  /* line 2053, ../sass/modules/_all.scss */
+  .report-casestudy .report-textcont {
+    padding-right: 0 !important;
+  }
+
+  /* line 2057, ../sass/modules/_all.scss */
+  .breakpoint-width {
+    width: 100%;
+  }
+
+  /*ABOUT US*/
+  /* line 2062, ../sass/modules/_all.scss */
+  .aboutus {
+    padding: 0 30px 50px 30px;
+  }
+
+  /* line 2066, ../sass/modules/_all.scss */
+  .right-column ol li div {
+    width: 65%;
+  }
+
+  /* line 2070, ../sass/modules/_all.scss */
+  .right-column {
+    padding-right: 0;
+    width: 43%;
+  }
+
+  /* line 2075, ../sass/modules/_all.scss */
+  .error-404 {
+    padding: 75px calc(72% - 580px);
+    background-position: 25% 100px;
+  }
+
+  /* line 2080, ../sass/modules/_all.scss */
+  .left-column {
+    width: 42%;
+  }
+
+  /* line 2083, ../sass/modules/_all.scss */
+  .title-new-casestudy {
+    width: 91%;
+    padding: 35px 20px;
+  }
+
+  /* line 2087, ../sass/modules/_all.scss */
+  .subtitle-new-casestudy {
+    width: 91%;
+    padding: 0 20px 40px 20px;
+    margin-top: 0;
+  }
+
+  /* line 2092, ../sass/modules/_all.scss */
+  #at4-share {
+    display: none !important;
+  }
+
+  /* line 2095, ../sass/modules/_all.scss */
+  section.display-our-work {
+    height: auto;
+  }
+
+  /* line 2098, ../sass/modules/_all.scss */
+  section.display-our-work img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* line 2102, ../sass/modules/_all.scss */
+  .lol {
+    display: none;
+  }
+}
+@media (max-width: 1002px) {
+  /* line 2108, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: calc(26% - 20px);
+  }
+}
+/*MAX 955PX*/
+@media (max-width: 955px) {
+  /*HOW IT WORKS*/
+  /* line 2118, ../sass/modules/_all.scss */
+  .howitworks {
+    padding-bottom: 20px;
+  }
+
+  /* line 2121, ../sass/modules/_all.scss */
+  .howitworks li {
+    display: inline-block;
+    float: none;
+    width: 34%;
+    vertical-align: top;
+    padding: 0px 15px;
+  }
+
+  /* line 2129, ../sass/modules/_all.scss */
+  .howitworks li h3 {
+    height: auto;
+  }
+
+  /* line 2133, ../sass/modules/_all.scss */
+  .howitworks li:nth-child(4),
+  .howitworks li:nth-child(5) {
+    margin-top: 45px;
+  }
+
+  /*FORM*/
+  /* line 2139, ../sass/modules/_all.scss */
+  .contactform-submit {
+    position: inherit;
+    margin-top: 20px;
+  }
+
+  /* line 2145, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email {
+    width: 97%;
+  }
+
+  /* line 2149, ../sass/modules/_all.scss */
+  input.contactform-name {
+    margin-bottom: 20px;
+  }
+
+  /*REPORT*/
+  /* line 2155, ../sass/modules/_all.scss */
+  .report-casestudy img,
+  .report-analysis img {
+    width: 100%;
+    margin: 40px auto 0 auto;
+    display: block;
+  }
+
+  /* line 2161, ../sass/modules/_all.scss */
+  .report-analysis img {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  /* line 2166, ../sass/modules/_all.scss */
+  .report-textcont {
+    width: 100%;
+    padding-right: 0;
+    /*padding: 0 20px;*/
+  }
+
+  /* line 2172, ../sass/modules/_all.scss */
+  .report-textcont h2 {
+    font-size: 25px;
+    color: #5e6a71;
+    text-align: center;
+  }
+
+  /* line 2178, ../sass/modules/_all.scss */
+  .report-analysis .report-textcont {
+    float: none;
+  }
+
+  /* line 2183, ../sass/modules/_all.scss */
+  .report-casestudy,
+  .report-analysis {
+    padding: 65px 35px;
+  }
+
+  /* line 2187, ../sass/modules/_all.scss */
+  .report-casestudy {
+    padding-bottom: 40px;
+  }
+
+  /* line 2191, ../sass/modules/_all.scss */
+  .report-analysis {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  /* line 2196, ../sass/modules/_all.scss */
+  .report-hero p {
+    padding: 10px 7%;
+  }
+
+  /* line 2200, ../sass/modules/_all.scss */
+  .previouspost {
+    max-width: 35%;
+  }
+
+  /* line 2204, ../sass/modules/_all.scss */
+  .nexpost {
+    max-width: 35%;
+  }
+
+  /*FORM*/
+  /* line 2213, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email,
+  textarea.contactform-description,
+  input.contactform-company,
+  input.contactform-job-title {
+    width: 94%;
+  }
+
+  /* line 2217, ../sass/modules/_all.scss */
+  .about-hero div {
+    width: 75%;
+  }
+
+  /* line 2221, ../sass/modules/_all.scss */
+  .error-404 {
+    padding: 75px calc(76% - 580px);
+    background-position: 22% 100px;
+  }
+
+  /* line 2226, ../sass/modules/_all.scss */
+  .episode-hero {
+    padding-top: 50px;
+  }
+
+  /* line 2230, ../sass/modules/_all.scss */
+  .video-h3-title {
+    width: 93%;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+    line-height: 40px;
+  }
+
+  /* line 2238, ../sass/modules/_all.scss */
+  .cont-h1 {
+    margin: 75px 0 0 0;
+  }
+
+  /* line 2242, ../sass/modules/_all.scss */
+  .video-wrapper {
+    margin-top: 65px;
+  }
+
+  /* line 2246, ../sass/modules/_all.scss */
+  .title-new-casestudy {
+    font-size: 50px;
+    text-align: center;
+    width: 86%;
+  }
+
+  /* line 2251, ../sass/modules/_all.scss */
+  .subtitle-new-casestudy {
+    font-size: 20px;
+    padding-bottom: 35px;
+    text-align: center;
+    width: 86%;
+  }
+
+  /* line 2257, ../sass/modules/_all.scss */
+  .process-img-cont {
+    width: 100%;
+  }
+
+  /* line 2261, ../sass/modules/_all.scss */
+  .border-class {
+    padding-bottom: 0;
+  }
+
+  /* line 2265, ../sass/modules/_all.scss */
+  .casestudy-video-hero {
+    margin-bottom: 75px !important;
+  }
+
+  /* line 2269, ../sass/modules/_all.scss */
+  .loop-single {
+    width: 40%;
+  }
+}
+/*MAX 900PX*/
+@media (max-width: 900px) {
+  /* line 2277, ../sass/modules/_all.scss */
+  .episode-hero .video-wrapper {
+    width: 100%;
+    padding-bottom: 56%;
+  }
+
+  /* line 2282, ../sass/modules/_all.scss */
+  .episode-hero p {
+    width: 100%;
+    margin-top: 35px;
+  }
+
+  /* line 2287, ../sass/modules/_all.scss */
+  .episode-hero p a {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  /* line 2292, ../sass/modules/_all.scss */
+  .sub-episode-hero img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 2297, ../sass/modules/_all.scss */
+  .client-img {
+    float: none;
+  }
+
+  /* line 2301, ../sass/modules/_all.scss */
+  .right-column2 {
+    width: 95%;
+    background-size: 78%;
+    background-position: 35%;
+  }
+
+  /* line 2307, ../sass/modules/_all.scss */
+  .sub-episode-hero p {
+    margin: 20px 0 40px 0;
+  }
+
+  /* line 2311, ../sass/modules/_all.scss */
+  .hero h1 {
+    width: 73%;
+  }
+
+  /* line 2315, ../sass/modules/_all.scss */
+  .episodesindex .excerpt {
+    float: none;
+    /*    margin: 10px auto;*/
+    /*    width: 340px;*/
+  }
+
+  /* line 2321, ../sass/modules/_all.scss */
+  .episodesindex .thumb {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 2326, ../sass/modules/_all.scss */
+  .excerpt h2 {
+    margin-top: 30px;
+  }
+
+  /* line 2330, ../sass/modules/_all.scss */
+  .right-column {
+    padding-right: 0;
+    width: 100%;
+    border: 0;
+    padding-left: 0;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 50px;
+  }
+
+  /* line 2339, ../sass/modules/_all.scss */
+  .left-column {
+    padding-right: 45px;
+    width: 100%;
+  }
+
+  /* line 2344, ../sass/modules/_all.scss */
+  .left-column h2 {
+    text-align: center;
+  }
+
+  /* line 2348, ../sass/modules/_all.scss */
+  .error-404 {
+    padding: 0 30px;
+    background-image: none;
+  }
+
+  /* line 2353, ../sass/modules/_all.scss */
+  .error-404 div {
+    display: block;
+    width: 75%;
+    margin: 70px auto;
+    text-align: center;
+    float: none;
+  }
+
+  /* line 2361, ../sass/modules/_all.scss */
+  .error-404 div h1:before {
+    display: none;
+  }
+
+  /* line 2365, ../sass/modules/_all.scss */
+  .error-404 div a {
+    margin-left: 0;
+  }
+
+  /* line 2369, ../sass/modules/_all.scss */
+  .error-404:before {
+    display: none;
+  }
+
+  /* line 2373, ../sass/modules/_all.scss */
+  .recruitment-page h1 {
+    font-size: 65px !important;
+  }
+
+  /* line 2377, ../sass/modules/_all.scss */
+  .thankyou-page {
+    background-image: none !important;
+    text-align: center;
+  }
+
+  /* line 2382, ../sass/modules/_all.scss */
+  .thankyou-page div {
+    float: none;
+    text-align: center;
+  }
+}
+/*MAX 722PX*/
+@media (max-width: 722px) {
+  /* line 2391, ../sass/modules/_all.scss */
+  header {
+    text-align: center;
+    height: auto;
+  }
+
+  /* line 2395, ../sass/modules/_all.scss */
+  header .logo {
+    margin-bottom: 15px;
+  }
+
+  /* line 2399, ../sass/modules/_all.scss */
+  header ul {
+    text-align: center;
+  }
+
+  /* line 2403, ../sass/modules/_all.scss */
+  header nav ul li {
+    float: none;
+    display: inline;
+  }
+
+  /* line 2408, ../sass/modules/_all.scss */
+  header nav ul li a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  /* line 2413, ../sass/modules/_all.scss */
+  header nav {
+    display: none;
+  }
+
+  /* line 2417, ../sass/modules/_all.scss */
+  header .mobilenav-toggle {
+    display: block;
+    margin-right: 30px;
+  }
+
+  /* line 2421, ../sass/modules/_all.scss */
+  .right-column2 {
+    background-position: 28%;
+    height: 300px;
+  }
+
+  /* line 2426, ../sass/modules/_all.scss */
+  .loop-single {
+    width: 93%;
+  }
+
+  /* line 2430, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: 40%;
+    padding: 0px 14px;
+  }
+}
+/*MAX 680px*/
+@media (max-width: 680px) {
+  /*EPISODES*/
+  /* line 2441, ../sass/modules/_all.scss */
+  .episodes li:nth-child(2),
+  .episodes li:nth-child(3) {
+    display: none;
+  }
+
+  /* line 2444, ../sass/modules/_all.scss */
+  .episodes p {
+    height: auto;
+    max-height: inherit;
+  }
+
+  /* line 2448, ../sass/modules/_all.scss */
+  .episodes h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /* line 2454, ../sass/modules/_all.scss */
+  .episodes .button {
+    position: absolute;
+    bottom: 33px;
+    left: 19%;
+    right: 36%;
+    width: 50%;
+    text-align: center;
+  }
+
+  /*FOOTER*/
+  /* line 2464, ../sass/modules/_all.scss */
+  footer {
+    margin-top: 45px;
+    text-align: left !important;
+  }
+
+  /* line 2468, ../sass/modules/_all.scss */
+  .orange {
+    margin-top: 0px !important;
+  }
+
+  /* line 2471, ../sass/modules/_all.scss */
+  footer .copyright {
+    margin-top: 40px;
+  }
+
+  /* line 2474, ../sass/modules/_all.scss */
+  footer .logo {
+    display: block;
+    margin: 10px 0;
+    float: none;
+  }
+
+  /* line 2480, ../sass/modules/_all.scss */
+  footer .social,
+  footer .contact {
+    margin-left: 0;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 2486, ../sass/modules/_all.scss */
+  footer .contact {
+    margin-left: 15px;
+  }
+
+  /*EXPERTS*/
+  /* line 2491, ../sass/modules/_all.scss */
+  .experts ul li {
+    width: 100%;
+  }
+
+  /* line 2495, ../sass/modules/_all.scss */
+  .experts ul li h3 {
+    margin-top: 170px;
+  }
+
+  /* line 2499, ../sass/modules/_all.scss */
+  .experts {
+    padding: 73px 40px 110px 40px;
+  }
+
+  /*HOW IT WORKS*/
+  /* line 2504, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: 43%;
+  }
+
+  /* line 2507, ../sass/modules/_all.scss */
+  .howitworks li:nth-child(4) {
+    margin-top: 0;
+  }
+
+  /*HERO*/
+  /* line 2512, ../sass/modules/_all.scss */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  /* line 2515, ../sass/modules/_all.scss */
+  .hero p {
+    padding: 0 40px;
+    margin-top: 12px;
+  }
+
+  /*FORM*/
+  /* line 2523, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email,
+  textarea.contactform-description {
+    width: 94%;
+  }
+
+  /* line 2527, ../sass/modules/_all.scss */
+  .title-new-casestudy {
+    font-size: 35px;
+  }
+
+  /* line 2530, ../sass/modules/_all.scss */
+  .the_content {
+    width: auto;
+    overflow: auto;
+  }
+
+  /* line 2534, ../sass/modules/_all.scss */
+  .loop-single {
+    padding: 0;
+  }
+}
+/*MAX 620px*/
+@media (max-width: 620px) {
+  /*HOWITWORKS*/
+  /* line 2543, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  /* line 2547, ../sass/modules/_all.scss */
+  .howitworks {
+    padding-top: 70px;
+  }
+
+  /*HERO*/
+  /* line 2551, ../sass/modules/_all.scss */
+  .hero {
+    margin-top: 110px;
+  }
+
+  /* line 2554, ../sass/modules/_all.scss */
+  .hero h1 {
+    font-size: 37px;
+  }
+
+  /* Episodes responsive */
+  /* line 2559, ../sass/modules/_all.scss */
+  .episodesindex .thumb {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 2564, ../sass/modules/_all.scss */
+  .episodesindex .excerpt {
+    float: none;
+  }
+
+  /* line 2569, ../sass/modules/_all.scss */
+  .previouspost,
+  .nexpost {
+    display: block;
+    max-width: 80%;
+    float: none;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  /* line 2579, ../sass/modules/_all.scss */
+  .nexpost {
+    padding-bottom: 0;
+  }
+
+  /* line 2584, ../sass/modules/_all.scss */
+  .previouspost a:before,
+  .nexpost a:after {
+    display: none;
+  }
+
+  /* line 2591, ../sass/modules/_all.scss */
+  .right-column2 {
+    background-position: 0;
+    width: 100%;
+    background-size: 100%;
+    padding: 0;
+  }
+
+  /* line 2598, ../sass/modules/_all.scss */
+  .recruitment-company-logo img {
+    height: 40px !important;
+  }
+
+  /* line 2602, ../sass/modules/_all.scss */
+  .thankyou-page div {
+    width: auto;
+  }
+
+  /* line 2606, ../sass/modules/_all.scss */
+  .thankyou-page {
+    padding-top: 0 15px;
+  }
+
+  /* line 2609, ../sass/modules/_all.scss */
+  .thankyou-page div h1 {
+    font-size: 70px;
+  }
+}
+/*MAX 600px*/
+@media (max-width: 600px) {
+  /*EPISODES*/
+  /* line 2619, ../sass/modules/_all.scss */
+  .episode-hero h1 {
+    font-size: 40px;
+  }
+
+  /* line 2624, ../sass/modules/_all.scss */
+  .sub-episode-hero,
+  .episode-resources {
+    text-align: center;
+  }
+
+  /* line 2629, ../sass/modules/_all.scss */
+  .client-img,
+  .episode-resources li {
+    float: none;
+    margin: 20px 0;
+    display: block;
+  }
+
+  /* line 2638, ../sass/modules/_all.scss */
+  .hero h1,
+  .howitworks h2,
+  .experts h2,
+  .submit h2 {
+    font-size: 35px;
+  }
+
+  /*HERO*/
+  /* line 2643, ../sass/modules/_all.scss */
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  /* line 2646, ../sass/modules/_all.scss */
+  .hero p {
+    padding: 0 40px;
+    margin-top: 12px;
+  }
+
+  /*FORM*/
+  /* line 2654, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email,
+  textarea.contactform-description {
+    width: 94%;
+  }
+
+  /* line 2658, ../sass/modules/_all.scss */
+  .report-download h2 {
+    padding: 0 20px;
+    font-size: 30px;
+  }
+}
+/*MAX 530*/
+@media (max-width: 530px) {
+  /* line 2667, ../sass/modules/_all.scss */
+  header nav ul li a {
+    font-size: 14px !important;
+  }
+
+  /* line 2671, ../sass/modules/_all.scss */
+  .experts ul li h3 {
+    margin-top: 128px;
+  }
+
+  /*FORM*/
+  /* line 2678, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email,
+  textarea.contactform-description {
+    width: 92%;
+  }
+
+  /* line 2682, ../sass/modules/_all.scss */
+  .hero p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* line 2687, ../sass/modules/_all.scss */
+  .episode-hero h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  /* line 2694, ../sass/modules/_all.scss */
+  .cont-h1 {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 25px 0;
+  }
+
+  /*REPORT*/
+  /* line 2702, ../sass/modules/_all.scss */
+  .report-casestudy img,
+  .report-analysis img {
+    width: 100%;
+  }
+
+  /* line 2706, ../sass/modules/_all.scss */
+  .video-h3-title {
+    width: 90%;
+    font-size: 25px;
+  }
+
+  /* line 2711, ../sass/modules/_all.scss */
+  .cont-h1 {
+    margin: 60px 0 0 0;
+  }
+
+  /* line 2715, ../sass/modules/_all.scss */
+  .recruitment-page h1 {
+    font-size: 45px !important;
+  }
+
+  /* line 2718, ../sass/modules/_all.scss */
+  .recruitment-page h2 {
+    padding: 0 20px;
+  }
+
+  /* line 2722, ../sass/modules/_all.scss */
+  .recruitment-company-logo {
+    text-align: center;
+  }
+
+  /* line 2726, ../sass/modules/_all.scss */
+  .uxlcinic-recruitment-logo {
+    float: none !important;
+    margin-top: 15px;
+  }
+
+  /* line 2731, ../sass/modules/_all.scss */
+  .recruitment-page h1 {
+    padding-top: 0 !important;
+  }
+}
+/*MAX 460*/
+@media (max-width: 460px) {
+  /* line 2740, ../sass/modules/_all.scss */
+  .right-column2 {
+    height: 235px;
+  }
+
+  /* line 2743, ../sass/modules/_all.scss */
+  .left-column {
+    margin-top: 0;
+  }
+
+  /* line 2747, ../sass/modules/_all.scss */
+  .cont-h1 h1 {
+    font-size: 28px;
+    padding: 0;
+    margin-bottom: 41px;
+  }
+
+  /* line 2753, ../sass/modules/_all.scss */
+  .subtitle-new-casestudy {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  /* line 2758, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: 75%;
+  }
+
+  /* line 2762, ../sass/modules/_all.scss */
+  .recruitment-company-logo {
+    text-align: center;
+    top: -40px;
+  }
+
+  /* line 2767, ../sass/modules/_all.scss */
+  .uxlcinic-recruitment-logo {
+    float: none !important;
+    margin-top: 15px;
+  }
+
+  /* line 2772, ../sass/modules/_all.scss */
+  .recruitment-company-logo img {
+    height: 40px !important;
+    display: inline-block;
+  }
+
+  /* line 2778, ../sass/modules/_all.scss */
+  .recruitment-page h1 {
+    padding: 0 !important;
+  }
+}
+/*MAX 416*/
+@media (max-width: 416px) {
+  /*HOWITWORKS*/
+  /* line 2788, ../sass/modules/_all.scss */
+  .howitworks li {
+    width: 85%;
+  }
+
+  /* line 2791, ../sass/modules/_all.scss */
+  .experts ul {
+    display: none;
+  }
+
+  /* line 2794, ../sass/modules/_all.scss */
+  .experts .button {
+    display: block;
+    width: 60%;
+    margin: 45px auto 0 auto;
+  }
+
+  /*FORM*/
+  /* line 2803, ../sass/modules/_all.scss */
+  input.contactform-name,
+  input.contactform-email,
+  textarea.contactform-description {
+    width: 89%;
+  }
+
+  /* line 2807, ../sass/modules/_all.scss */
+  .sub-episode-hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 2812, ../sass/modules/_all.scss */
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  /* line 2816, ../sass/modules/_all.scss */
+  .right-column ol li img {
+    display: block;
+    margin: 0 auto 5px auto;
+  }
+
+  /* line 2821, ../sass/modules/_all.scss */
+  .right-column ol li div {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* line 2827, ../sass/modules/_all.scss */
+  .left-column h2 {
+    text-align: center;
+  }
+
+  /* line 2830, ../sass/modules/_all.scss */
+  .episode-hero {
+    padding-top: 55px;
+  }
+
+  /* line 2833, ../sass/modules/_all.scss */
+  .video-h3-title {
+    top: -38px;
+    margin-top: 50px;
+  }
+
+  /* line 2838, ../sass/modules/_all.scss */
+  .excerpt h1 {
+    font-size: 20px;
+  }
+}
+/*MAX 400*/
+@media (max-width: 400px) {
+  /* line 2846, ../sass/modules/_all.scss */
+  header nav ul li a {
+    font-size: 14px !important;
+  }
+
+  /* line 2849, ../sass/modules/_all.scss */
+  .experts ul li h3 {
+    margin-top: 80px;
+    font-size: 30px;
+  }
+
+  /* line 2853, ../sass/modules/_all.scss */
+  .experts ul li h3:after {
+    top: -15px;
+  }
+
+  /* line 2857, ../sass/modules/_all.scss */
+  .experts p {
+    margin-top: 0;
+  }
+
+  /* line 2861, ../sass/modules/_all.scss */
+  .hero p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* line 2867, ../sass/modules/_all.scss */
+  .episodesindex .thumb,
+  .episodesindex .excerpt {
+    /*    width: 100%;*/
+  }
+
+  /* line 2870, ../sass/modules/_all.scss */
+  footer {
+    padding-top: 50px;
+  }
+}
+/*MAX 350*/
+@media (max-width: 350px) {
+  /*FOOTER*/
+  /* line 2879, ../sass/modules/_all.scss */
+  footer .contact {
+    margin-left: 0;
+  }
+
+  /* line 2882, ../sass/modules/_all.scss */
+  footer .social {
+    margin-right: 15px;
+  }
+
+  /* line 2885, ../sass/modules/_all.scss */
+  footer .logo {
+    margin: 10px 0;
+  }
+
+  /*REPORT*/
+  /* line 2890, ../sass/modules/_all.scss */
+  .report-hero img {
+    width: 70%;
+  }
+
+  /* line 2894, ../sass/modules/_all.scss */
+  .right-column2 {
+    height: 180px;
+  }
+}
+/*MAX 1160*/
+@media (max-width: 1160px) {
+  /* line 2901, ../sass/modules/_all.scss */
+  .howitworks {
+    padding-right: 20px;
+    padding-left: 20px;
+    background: none;
+  }
+
+  /* line 2906, ../sass/modules/_all.scss */
+  .thankyou-page {
+    background: url(../img/ux-team-thankyou-image.png) no-repeat 18% 100px;
+  }
+}
+@media (max-width: 1281px) {
+  /* line 2912, ../sass/modules/_all.scss */
+  .error-404 {
+    background-position: 25% 100px;
+  }
+
+  /* line 2916, ../sass/modules/_all.scss */
+  .thankyou-page {
+    background: url(../img/ux-team-thankyou-image.png) no-repeat 25% 100px;
+  }
+}
+/*// hide socials on other pages */
+/* line 2924, ../sass/modules/_all.scss */
+.post-type-archive-uxclinic_episode .at4-share-outer,
+.post-type-archive-uxclinic_report .at4-share-outer {
+  display: none;
+}
+
+/* Landing page CEO's */
+/*
+.section {
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 100px calc(50% - 500px);
+  position: relative;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.lp-hero {
+  background: url(../img/hero-cover.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 218px;
+  padding-top: 248px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5),0 2px 50px #000;
+  background-attachment: fixed;
+}
+
+.lp-hero h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.lp-hero p {
+  font-size: 1.2em;
+  margin: .5em auto;
+  width: 650px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.lp-why {
+  padding: 50px calc(50% - 350px);
+  text-align: center;
+}
+
+.lp-why h2 {
+  font-size: 1.562em;
+  color: #31363a;
+}
+
+.lp-why p {
+  margin: 1em 0;
+}
+
+a.next {
+  font-family: "FontAwesome";
+  vertical-align: middle;
+  font-size: 1.5em;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  line-height: 60px;
+  text-align: center;
+  color: #46535A;
+  background: #DFE2E4;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -30px;
+  box-sizing: border-box;
+  z-index: 5;
+  text-decoration: none;
+  text-shadow: none;
+  z-index: 4;
+  background: url(../img/next-back.png) no-repeat center center;
+}
+
+.lp-quotes {
+  background: url(../img/quotes-bg-red.png) no-repeat center center;
+  background-size: cover;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5),0 2px 50px #000;
+  background-attachment: fixed;
+  padding: 0 calc(50% - 640px);
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #FFF;
+}
+
+.participants {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin-top: 60px;
+}
+
+.third {
+  padding: 20px 40px;
+  float: left;
+  margin-right: 4.5%;
+  background: #f9f9f9;
+  width: calc(47.5% - 80px);
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,.5);
+  text-shadow: none;
+  color: #474747;
+  text-align: left;
+  font-size: .9em;
+  line-height: 1.5em;
+  min-height: 265px;
+  position: relative;
+  transition: all .3s;
+}
+
+.third:last-child {
+  margin-right: 0;
+}
+
+.third:hover {
+  top: -5px;
+  transition: all .3s;
+}
+
+.third p {
+  margin: 0;
+  position: relative;
+}
+
+.third p:before {
+  content: url(../img/quote-start.png);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+}
+
+.third p:after {
+  content: url(../img/quote-end.png);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.third .client {
+  display: block;
+  float: right;
+  width: 90%;
+  height: 30px;
+  margin-top: 20px;
+  text-align: right;
+
+}
+
+.third .photo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 100px;
+}
+
+.quote01 {
+  background: url(../img/quote01.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.quote02 {
+  background: url(../img/quote02.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+.quote03 {
+  background: url(../img/quote03.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+.third b {
+  font-weight: 400;
+}
+
+.lp-previous h3 {
+  font-size: 1.25em;
+  color: #31363a;
+}
+
+.previous-card {
+  width: calc(50% - 62px);
+  float: left;
+  padding: 30px;
+  transition: all .3s;
+  border: 1px solid #FFF;
+}
+
+.previous-card:hover {
+  background: #f1f1f1;
+  transition: all .3s;
+  border: 1px solid #e1e1e1;
+}
+
+.previous-card p {
+  text-align: left;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.previous-card:first-child h2 {
+  margin-bottom: 60px;
+}
+
+.lp-submit {
+  background: #2e3235 url(../img/submit-bg.png) no-repeat -220px center;
+  background-size: auto 100%;
+  text-shadow: 0 1px 1px rgba(0,0,0,.5),0 2px 50px #000;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #FFF;
+  text-align: center;
+  padding-left: calc(50% - 70px);
+}
+
+.lp-submit p {
+  text-align: center;
+  padding: 0;
+}
+
+.apply-hero {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.apply-hero input {
+  display: block;
+  width: calc(100% - 30px);
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #b8b8b8;
+  margin-bottom: 10px;
+  padding: 4px 14px;
+}
+
+.apply-hero input[type='submit'] {
+  width: 100%;
+}
+
+.apply-hero textarea {
+  display: block;
+  width: calc(100% - 30px);
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #b8b8b8;
+  margin-bottom: 10px;
+  padding: 4px 14px;
+}
+
+.lp-form-submit {
+  border-radius: 100px!important;
+  background: #0ac10a;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block!important;
+  padding: 15px 20px!important;
+  font-size: 18px;
+  transition: background .3s;
+  cursor: pointer;
+  height: auto!important;
+}
+
+#participants {
+  margin-top: 105px;
+}
+
+.wrap {
+  padding: 40px;
+  text-align: center;
+}
+
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.modal:target:before {
+  display: block;
+}
+.modal:target .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+.modal-dialog {
+  background: #fefefe;
+  border: #333333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  padding: 15px 30px 30px 30px;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+.modal-header {
+  border-bottom: #eeeeee solid 1px;
+}
+.modal-header h2 {
+  font-size: 20px;
+}
+.modal-footer {
+  border-top: #eeeeee solid 1px;
+  text-align: right;
+}
+#close {
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.modal-dialog h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.lp-hero .button {
+  margin-top: 20px;
+}
+
+.apply-hero .wpcf7-response-output {
+  color: #616161!important;
+}
+*/
+@media (max-width: 1000px) {
+  /* line 3296, ../sass/modules/_all.scss */
+  .lp-hero,
+  .lp-why,
+  .lp-quotes,
+  .lp-previous,
+  .lp-submit {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 850px) {
+  /* line 3303, ../sass/modules/_all.scss */
+  .third {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 3312, ../sass/modules/_all.scss */
+  .previous-card {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 3321, ../sass/modules/_all.scss */
+  .previous-card {
+    width: calc(100% - 62px);
+    float: none;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 3329, ../sass/modules/_all.scss */
+  .third {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 300px;
+  }
+}
+/* line 3337, ../sass/modules/_all.scss */
+.spork-bg {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/02/rapid-paper-prototyping-ux-method.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 3343, ../sass/modules/_all.scss */
+.skedio-bg {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/06/backcasting-ux-method.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 3348, ../sass/modules/_all.scss */
+.exp-bg {
+  background: url(http://theuxclinic.com/wp/wp-content/uploads/2015/02/experience-prototyping-ux-method.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 3354, ../sass/modules/_all.scss */
+.lp-quotes .excerpt {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  font-weight: 300;
+}
+
+/* line 3359, ../sass/modules/_all.scss */
+.lp-quotes .excerpt h1 {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  font-weight: 300;
+  color: #606a70;
+}
+
+/* line 3365, ../sass/modules/_all.scss */
+.nomargin {
+  margin-bottom: 0.83em !important;
+}
+
+/* line 3369, ../sass/modules/_all.scss */
+#mc_embed_signup {
+  margin-top: 0 !important;
+}
+
+/* line 3373, ../sass/modules/_all.scss */
+.login h1 a {
+  background-image: url(http://theuxclinic.com/wp/wp-content/themes/uxclinic/img/ux-clinic-design-logo.png) !important;
+  width: 224px !important;
+  background-size: 224px !important;
+}
+
+/* line 3379, ../sass/modules/_all.scss */
+.post-body {
+  /*   width: calc(70% - 30px); */
+  width: 100%;
+  float: left;
+}
+
+/* line 3385, ../sass/modules/_all.scss */
+.postcontainer {
+  overflow: hidden;
+  padding: 0 calc(50% - 580px);
+  text-align: center;
+  margin-top: 130px;
+  padding-bottom: 65px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 3395, ../sass/modules/_all.scss */
+.post-content {
+  text-align: left;
+}
+
+/* line 3399, ../sass/modules/_all.scss */
+.postcontainer h1 {
+  margin: 0;
+  font-size: 38px;
+}
+
+/* line 3404, ../sass/modules/_all.scss */
+.date {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 3409, ../sass/modules/_all.scss */
+#comments {
+  display: none;
+}
+
+/* line 3413, ../sass/modules/_all.scss */
+.post-content {
+  color: #4a4a4a;
+  margin-top: 30px;
+}
+
+/* line 3418, ../sass/modules/_all.scss */
+.post-content h1 {
+  font-size: 34px;
+  color: #ee9505;
+}
+
+/* line 3423, ../sass/modules/_all.scss */
+.post-content h2 {
+  font-size: 26px;
+  color: #ee9505;
+}
+
+/* line 3428, ../sass/modules/_all.scss */
+.post-content blockquote {
+  background: #f2f2f2;
+  padding: 20px;
+  font-style: italic;
+  border-bottom: 3px solid #d5d5d5;
+  border-top: 3px solid #d5d5d5;
+  position: relative;
+}
+
+/* line 3437, ../sass/modules/_all.scss */
+.post-content blockquote:before {
+  content: url(../img/quote-start.png);
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  top: 10px;
+}
+
+/* line 3445, ../sass/modules/_all.scss */
+.post-content blockquote:after {
+  content: url(../img/quote-end.png);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 3452, ../sass/modules/_all.scss */
+.post-header {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  margin-top: 130px;
+  text-align: center;
+  padding-top: 50px;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 3465, ../sass/modules/_all.scss */
+.title-band {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 20px 0px 30px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 3473, ../sass/modules/_all.scss */
+.title-band h1 {
+  margin-top: 0;
+}
+
+/* DIY template styles */
+/* line 3479, ../sass/modules/_all.scss */
+body {
+  padding: 0;
+  margin: 0;
+  /* 	font-family: 'Lato', sans-serif; */
+}
+
+/* line 3487, ../sass/modules/_all.scss */
+.orange,
+.diy-header,
+.gray {
+  background: url(../img/hero-pattern.gif) repeat;
+  padding: 70px 115px;
+  overflow: auto;
+}
+
+/* line 3493, ../sass/modules/_all.scss */
+.diy-header {
+  margin-top: 104px;
+}
+
+/* line 3497, ../sass/modules/_all.scss */
+.diy-header a {
+  margin-left: 50px;
+  float: left;
+  display: none;
+}
+
+/* line 3503, ../sass/modules/_all.scss */
+.gray {
+  background: url(../img/footerbg.png) repeat;
+}
+
+/* line 3507, ../sass/modules/_all.scss */
+.method-cont {
+  width: 50%;
+  float: right;
+}
+
+/* line 3512, ../sass/modules/_all.scss */
+.method-cont h1 {
+  color: #fff;
+  font-size: 65px;
+  margin: 0;
+  position: relative;
+  margin-top: -13px;
+}
+
+/* line 3520, ../sass/modules/_all.scss */
+.method-cont h1:after {
+  content: " ";
+  display: block;
+  background: url(../img/infographic-ux-method-icon.png) no-repeat;
+  position: absolute;
+  top: 11px;
+  left: -77px;
+  width: 60px;
+  height: 60px;
+}
+
+/* line 3531, ../sass/modules/_all.scss */
+.method-cont h1 span {
+  font-weight: 300;
+  position: relative;
+  top: -15px;
+  display: block;
+}
+
+/* line 3538, ../sass/modules/_all.scss */
+.method-cont p {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/* line 3547, ../sass/modules/_all.scss */
+.section-bg,
+.section-bg-takeaways {
+  padding: 0 115px 70px 115px;
+  overflow: auto;
+  background: url(../img/persona-profile-bg-img.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 3554, ../sass/modules/_all.scss */
+.section-bg-takeaways {
+  background: url(../img/takeaways-bg-persona-profiles.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 3559, ../sass/modules/_all.scss */
+.why-cont {
+  background-color: #fff;
+  width: 40%;
+  padding: 50px;
+}
+
+/* line 3566, ../sass/modules/_all.scss */
+.why-cont h1,
+.takeaways-cont h1 {
+  font-size: 78px;
+  margin: 0;
+  color: #5f6a6f;
+}
+
+/* line 3572, ../sass/modules/_all.scss */
+.takeaways-cont h1 {
+  background-color: #fff;
+  width: 40%;
+  padding: 50px;
+}
+
+/* line 3578, ../sass/modules/_all.scss */
+.why-cont p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #5f6a6f;
+}
+
+/* line 3585, ../sass/modules/_all.scss */
+.how-cont h1 {
+  font-size: 78px;
+  margin: 0 0 0 50px;
+  color: #fff;
+}
+
+/* line 3591, ../sass/modules/_all.scss */
+.steps {
+  width: calc(54% + 100px);
+  float: right;
+}
+
+/* line 3596, ../sass/modules/_all.scss */
+.how-cont ul {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  list-style: none;
+}
+
+/* line 3606, ../sass/modules/_all.scss */
+.how-cont li {
+  margin: 55px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 3612, ../sass/modules/_all.scss */
+#persona-icon3 {
+  margin-top: 70px;
+}
+
+/* line 3616, ../sass/modules/_all.scss */
+.how-cont-icon {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+/* line 3622, ../sass/modules/_all.scss */
+.how-cont-icon img {
+  width: 100%;
+}
+
+/* line 3626, ../sass/modules/_all.scss */
+.how-cont-description {
+  float: left;
+  width: calc(100% - 100px);
+  margin-left: 30px;
+}
+
+/* line 3632, ../sass/modules/_all.scss */
+.steps li span {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* line 3638, ../sass/modules/_all.scss */
+.takeaways-box {
+  width: 57%;
+  float: right;
+  background-color: #5f6a6f;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 22px;
+  font-weight: 300;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* line 3651, ../sass/modules/_all.scss */
+.takeaways-box ul {
+  width: 78%;
+  float: right;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  list-style-image: url(../img/takeaways-icon.png);
+}
+
+/* line 3660, ../sass/modules/_all.scss */
+.takeaways-box li {
+  margin: 15px 0;
+}
+
+/* line 3664, ../sass/modules/_all.scss */
+.takeaways-box:after {
+  content: " ";
+  display: block;
+  background: url(../img/takeaways-img.png) no-repeat;
+  position: absolute;
+  top: 45px;
+  left: 35px;
+  width: 79px;
+  height: 79px;
+}
+
+/* line 3675, ../sass/modules/_all.scss */
+.references-cont h1 {
+  font-size: 78px;
+  margin: 0 0 0 50px;
+  color: #fff;
+}
+
+/* line 3681, ../sass/modules/_all.scss */
+.references-cont p {
+  padding-left: 50px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* line 3688, ../sass/modules/_all.scss */
+.references-cont a {
+  display: block;
+  color: #13bc15;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* line 3695, ../sass/modules/_all.scss */
+a.nearsof-logo {
+  margin-left: 35px;
+}
+
+/* line 3699, ../sass/modules/_all.scss */
+.references-cont a:hover {
+  text-decoration: underline;
+}
+
+/* line 3703, ../sass/modules/_all.scss */
+a.downlaod-infographic {
+  position: fixed;
+  right: 34px;
+  top: 120px;
+  z-index: 998;
+}
+
+@media (max-width: 1230px) {
+  /* line 3711, ../sass/modules/_all.scss */
+  .takeaways-cont h1 {
+    width: 396px;
+  }
+
+  /* line 3714, ../sass/modules/_all.scss */
+  .takeaways-box {
+    width: 65%;
+  }
+}
+@media (max-width: 1048px) {
+  /* line 3721, ../sass/modules/_all.scss */
+  .method-cont {
+    width: auto;
+    float: none;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  /* line 3727, ../sass/modules/_all.scss */
+  .method-cont h1 {
+    text-align: center;
+  }
+
+  /* line 3731, ../sass/modules/_all.scss */
+  .method-cont h1 span {
+    display: inline-block;
+    top: 0;
+  }
+
+  /* line 3736, ../sass/modules/_all.scss */
+  .method-cont p {
+    margin-top: 15px;
+  }
+
+  /* line 3740, ../sass/modules/_all.scss */
+  .method-cont h1:after {
+    display: none;
+  }
+
+  /* line 3744, ../sass/modules/_all.scss */
+  .why-cont {
+    width: auto;
+  }
+
+  /* line 3747, ../sass/modules/_all.scss */
+  .why-cont h1 {
+    text-align: center;
+  }
+
+  /* line 3751, ../sass/modules/_all.scss */
+  .takeaways-cont h1 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  /* line 3756, ../sass/modules/_all.scss */
+  .takeaways-box {
+    width: 96%;
+    padding: 30px 30px 30px 0;
+  }
+
+  /* line 3761, ../sass/modules/_all.scss */
+  .how-cont h1 {
+    text-align: center;
+  }
+
+  /* line 3765, ../sass/modules/_all.scss */
+  .steps {
+    width: auto;
+    float: none;
+    /*     margin-left: 92px; */
+  }
+
+  /* line 3771, ../sass/modules/_all.scss */
+  .references-cont h1 {
+    text-align: center;
+  }
+
+  /* line 3775, ../sass/modules/_all.scss */
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 915px) {
+  /* line 3782, ../sass/modules/_all.scss */
+  .section-bg,
+  .section-bg-takeaways {
+    padding: 0 45px 70px 45px;
+  }
+
+  /* line 3788, ../sass/modules/_all.scss */
+  .orange,
+  .diy-header,
+  .gray {
+    padding: 70px 45px;
+  }
+
+  /* line 3792, ../sass/modules/_all.scss */
+  .takeaways-box:after {
+    display: none;
+  }
+
+  /* line 3796, ../sass/modules/_all.scss */
+  .takeaways-box ul {
+    width: auto;
+    padding-left: 15px;
+  }
+
+  /* line 3801, ../sass/modules/_all.scss */
+  .takeaways-box {
+    padding: 30px;
+    width: auto;
+  }
+
+  /* line 3806, ../sass/modules/_all.scss */
+  .how-cont h1 {
+    margin: 0;
+  }
+
+  /* line 3810, ../sass/modules/_all.scss */
+  .references-cont p {
+    padding-left: 0;
+  }
+
+  /* line 3814, ../sass/modules/_all.scss */
+  .references-cont h1 {
+    margin: 0;
+  }
+
+  /* line 3818, ../sass/modules/_all.scss */
+  a.downlaod-infographic {
+    top: 120px;
+  }
+}
+@media (max-width: 541px) {
+  /* line 3828, ../sass/modules/_all.scss */
+  .takeaways-cont h1,
+  .how-cont h1,
+  .why-cont h1,
+  .method-cont h1,
+  .references-cont h1 {
+    font-size: 45px;
+  }
+
+  /* line 3834, ../sass/modules/_all.scss */
+  .orange,
+  .diy-header,
+  .gray {
+    padding: 70px 20px;
+  }
+
+  /* line 3839, ../sass/modules/_all.scss */
+  .section-bg,
+  .section-bg-takeaways {
+    padding: 0 20px 50px 20px;
+  }
+
+  /* line 3843, ../sass/modules/_all.scss */
+  .references-cont p {
+    padding-left: 0;
+    word-break: break-all;
+  }
+
+  /* line 3848, ../sass/modules/_all.scss */
+  .why-cont {
+    padding: 50px 30px;
+  }
+
+  /* line 3852, ../sass/modules/_all.scss */
+  a.nearsof-logo {
+    margin-left: 0;
+  }
+
+  /* line 3856, ../sass/modules/_all.scss */
+  a.nearsof-logo {
+    padding-top: 30px;
+    display: block;
+  }
+
+  /* line 3861, ../sass/modules/_all.scss */
+  a.downlaod-infographic {
+    top: 120px;
+  }
+
+  /* line 3865, ../sass/modules/_all.scss */
+  .diy-header {
+    padding: 70px 95px;
+  }
+}
+/* line 3871, ../sass/modules/_all.scss */
+.how-cont-description ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 3876, ../sass/modules/_all.scss */
+.steps ul li {
+  list-style: none;
+}
+
+/* line 3880, ../sass/modules/_all.scss */
+.how-cont-description li {
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+/* line 3885, ../sass/modules/_all.scss */
+.how-cont-description li:nth-child(2):after {
+  content: " ";
+  display: block;
+  background: url(../img/arrow.png) no-repeat;
+  position: absolute;
+  top: 7px;
+  left: -28px;
+  width: 21px;
+  height: 13px;
+}
+
+/* line 3896, ../sass/modules/_all.scss */
+.how-cont li ul li {
+  overflow: visible;
+}
+
+/* line 3900, ../sass/modules/_all.scss */
+.method-cont b {
+  color: #FFF;
+}
+
+/*user-recruitment page*/
+/* line 3909, ../sass/modules/_all.scss */
+.page-template-recruitment-users header,
+.page-template-recruitment-users footer,
+.user-recruitment-thanks header,
+.user-recruitment-thanks footer {
+  display: none;
+}
+
+/* line 3913, ../sass/modules/_all.scss */
+.uxlcinic-recruitment-logo {
+  background: url(../img/uxclinic-logo.png) no-repeat;
+}
+
+/* line 3917, ../sass/modules/_all.scss */
+.page-template-recruitment-users .howitworks li img {
+  width: 65%;
+}
+
+/* line 3921, ../sass/modules/_all.scss */
+.page-template-recruitment-users .howitworks li {
+  float: none;
+  display: inline-block;
+}
+
+/* line 3926, ../sass/modules/_all.scss */
+.page-template-recruitment-users .error-tags {
+  background-color: #DE2626;
+}
+
+/* line 3930, ../sass/modules/_all.scss */
+.page-template-recruitment-users .contactform-submit {
+  background-color: #262626;
+}
+
+/* line 3934, ../sass/modules/_all.scss */
+.page-template-recruitment-users .field-error::-webkit-input-placeholder {
+  color: #DE2626 !important;
+}
+
+/* line 3938, ../sass/modules/_all.scss */
+.page-template-recruitment-users .field-error:-moz-placeholder {
+  color: #DE2626 !important;
+}
+
+/* line 3942, ../sass/modules/_all.scss */
+.page-template-recruitment-users .field-error::-moz-placeholder {
+  color: #DE2626 !important;
+}
+
+/* line 3945, ../sass/modules/_all.scss */
+.recruitment-page {
+  padding: 0 calc(50% - 580px);
+  padding-top: 120px;
+  padding-bottom: 110px;
+  position: relative;
+  overflow: auto;
+  background-color: #343434;
+}
+
+/* line 3953, ../sass/modules/_all.scss */
+.recruitment-company-logo {
+  position: relative;
+  top: -80px;
+  padding: 0 55px;
+}
+
+/* line 3959, ../sass/modules/_all.scss */
+.recruitment-page h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 90px;
+  margin: 30px;
+  padding-top: 15px;
+}
+
+/* line 3967, ../sass/modules/_all.scss */
+.recruitment-page h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+/* line 3973, ../sass/modules/_all.scss */
+.recruitment-form {
+  background-color: #86bb3b;
+  background-image: none;
+}
+
+/* line 3978, ../sass/modules/_all.scss */
+.recruitment-company-logo img {
+  top: -80px;
+  background-size: cover;
+  height: 56px;
+}
+
+/* line 3984, ../sass/modules/_all.scss */
+.uxlcinic-recruitment-logo {
+  background: url(../img/uxclinic-logo.png) no-repeat;
+  display: inline-block;
+  background-size: cover;
+  width: 160px;
+  height: 56px;
+  float: right;
+}
+
+/* line 3993, ../sass/modules/_all.scss */
+a.arrow-down {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  margin: 23px auto;
+}
+
+/* line 4001, ../sass/modules/_all.scss */
+a.arrow-down:before {
+  position: absolute;
+  content: '\00A71C';
+  display: block;
+  top: 50px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  font-size: 58px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+}
+
+@keyframes stretch {
+  /* line 4018, ../sass/modules/_all.scss */
+  0% {
+    /*transform: scale(1);*/
+    line-height: 65px;
+  }
+
+  /* line 4023, ../sass/modules/_all.scss */
+  50% {
+    /*transform: scale(1.1);*/
+    line-height: 77px;
+  }
+
+  /* line 4028, ../sass/modules/_all.scss */
+  100% {
+    /*transform: scale(1.1);*/
+    line-height: 65px;
+  }
+}
+
+/* line 4033, ../sass/modules/_all.scss */
+a.arrow-down:before {
+  animation-name: stretch;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+/* line 1, ../sass/modules/_landingpage.scss */
+.section {
+  overflow: visible;
+  box-sizing: border-box;
+  padding: 100px calc(50% - 500px);
+  position: relative;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/* line 10, ../sass/modules/_landingpage.scss */
+.lp-hero {
+  background: url(../img/hero-cover.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 218px;
+  padding-top: 248px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 2px 50px black;
+  background-attachment: fixed;
+}
+
+/* line 21, ../sass/modules/_landingpage.scss */
+.lp-hero h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* line 27, ../sass/modules/_landingpage.scss */
+.lp-hero p {
+  font-size: 1.2em;
+  margin: .5em auto;
+  width: 650px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/* line 35, ../sass/modules/_landingpage.scss */
+.lp-why {
+  padding: 50px calc(50% - 350px);
+  text-align: center;
+}
+
+/* line 40, ../sass/modules/_landingpage.scss */
+.lp-why h2 {
+  font-size: 1.562em;
+  color: #31363a;
+}
+
+/* line 45, ../sass/modules/_landingpage.scss */
+.lp-why p {
+  margin: 1em 0;
+}
+
+/* line 49, ../sass/modules/_landingpage.scss */
+a.next {
+  font-family: "FontAwesome";
+  vertical-align: middle;
+  font-size: 1.5em;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  line-height: 60px;
+  text-align: center;
+  color: #46535A;
+  background: #DFE2E4;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -30px;
+  box-sizing: border-box;
+  z-index: 5;
+  text-decoration: none;
+  text-shadow: none;
+  z-index: 4;
+  background: url(../img/next-back.png) no-repeat center center;
+}
+
+/* line 72, ../sass/modules/_landingpage.scss */
+.lp-quotes {
+  background: url(../img/quotes-bg-red.png) no-repeat center center;
+  background-size: cover;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 2px 50px black;
+  background-attachment: fixed;
+  padding: 0 calc(50% - 640px);
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #FFF;
+}
+
+/* line 83, ../sass/modules/_landingpage.scss */
+.participants {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  margin-top: 60px;
+}
+
+/* line 91, ../sass/modules/_landingpage.scss */
+.third {
+  /*
+    width: calc(30% - 80px);
+  */
+  padding: 20px 40px;
+  float: left;
+  margin-right: 4.5%;
+  background: #f9f9f9;
+  width: calc(47.5% - 80px);
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  color: #474747;
+  text-align: left;
+  font-size: .9em;
+  line-height: 1.5em;
+  min-height: 265px;
+  position: relative;
+  transition: all .3s;
+}
+
+/* line 112, ../sass/modules/_landingpage.scss */
+.third:last-child {
+  margin-right: 0;
+}
+
+/* line 116, ../sass/modules/_landingpage.scss */
+.third:hover {
+  top: -5px;
+  transition: all .3s;
+}
+
+/* line 121, ../sass/modules/_landingpage.scss */
+.third p {
+  margin: 0;
+  position: relative;
+}
+
+/* line 126, ../sass/modules/_landingpage.scss */
+.third p:before {
+  content: url(../img/quote-start.png);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -30px;
+}
+
+/* line 134, ../sass/modules/_landingpage.scss */
+.third p:after {
+  content: url(../img/quote-end.png);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 141, ../sass/modules/_landingpage.scss */
+.third .client {
+  display: block;
+  float: right;
+  width: 90%;
+  height: 30px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* line 151, ../sass/modules/_landingpage.scss */
+.third .photo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 100px;
+}
+
+/* line 160, ../sass/modules/_landingpage.scss */
+.quote01 {
+  background: url(../img/quote01.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 165, ../sass/modules/_landingpage.scss */
+.quote02 {
+  background: url(../img/quote02.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 170, ../sass/modules/_landingpage.scss */
+.quote03 {
+  background: url(../img/quote03.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 176, ../sass/modules/_landingpage.scss */
+.third b {
+  font-weight: 400;
+}
+
+/* line 180, ../sass/modules/_landingpage.scss */
+.lp-previous h3 {
+  font-size: 1.25em;
+  color: #31363a;
+}
+
+/* line 185, ../sass/modules/_landingpage.scss */
+.previous-card {
+  width: calc(50% - 62px);
+  float: left;
+  padding: 30px;
+  transition: all .3s;
+  border: 1px solid #FFF;
+}
+
+/* line 193, ../sass/modules/_landingpage.scss */
+.previous-card:hover {
+  background: #f1f1f1;
+  transition: all .3s;
+  border: 1px solid #e1e1e1;
+}
+
+/* line 199, ../sass/modules/_landingpage.scss */
+.previous-card p {
+  text-align: left;
+}
+
+/* line 203, ../sass/modules/_landingpage.scss */
+.overflow {
+  overflow: hidden;
+}
+
+/* line 207, ../sass/modules/_landingpage.scss */
+.previous-card:first-child h2 {
+  margin-bottom: 60px;
+}
+
+/* line 211, ../sass/modules/_landingpage.scss */
+.lp-submit {
+  background: #2e3235 url(../img/submit-bg.png) no-repeat -220px center;
+  background-size: auto 100%;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 2px 50px black;
+  padding-top: 80px;
+  padding-bottom: 300px;
+  color: #FFF;
+  text-align: center;
+  padding-left: calc(50% - 70px);
+}
+
+/* line 222, ../sass/modules/_landingpage.scss */
+.lp-submit p {
+  text-align: center;
+  padding: 0;
+}
+
+/* line 227, ../sass/modules/_landingpage.scss */
+.apply-hero {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+/* line 234, ../sass/modules/_landingpage.scss */
+.apply-hero input {
+  display: block;
+  width: calc(100% - 30px);
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid #b8b8b8;
+  margin-bottom: 10px;
+  padding: 4px 14px;
+}
+
+/* line 244, ../sass/modules/_landingpage.scss */
+.apply-hero input[type='submit'] {
+  width: 100%;
+}
+
+/* line 248, ../sass/modules/_landingpage.scss */
+.apply-hero textarea {
+  display: block;
+  width: calc(100% - 30px);
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #b8b8b8;
+  margin-bottom: 10px;
+  padding: 4px 14px;
+}
+
+/* line 258, ../sass/modules/_landingpage.scss */
+.lp-form-submit {
+  border-radius: 100px !important;
+  background: #0ac10a;
+  font-weight: 700;
+  color: #FFF;
+  display: inline-block !important;
+  padding: 15px 20px !important;
+  font-size: 18px;
+  transition: background .3s;
+  cursor: pointer;
+  height: auto !important;
+}
+
+/* line 271, ../sass/modules/_landingpage.scss */
+#participants {
+  margin-top: 105px;
+}
+
+/* line 275, ../sass/modules/_landingpage.scss */
+.wrap {
+  padding: 40px;
+  text-align: center;
+}
+
+/* line 280, ../sass/modules/_landingpage.scss */
+.modal:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* line 291, ../sass/modules/_landingpage.scss */
+.modal:target:before {
+  display: block;
+}
+
+/* line 294, ../sass/modules/_landingpage.scss */
+.modal:target .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+
+/* line 300, ../sass/modules/_landingpage.scss */
+.modal-dialog {
+  background: #fefefe;
+  border: #333333 solid 1px;
+  border-radius: 5px;
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  padding: 15px 30px 30px 30px;
+}
+
+/* line 319, ../sass/modules/_landingpage.scss */
+.modal-body {
+  padding: 20px;
+}
+
+/* line 323, ../sass/modules/_landingpage.scss */
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+
+/* line 326, ../sass/modules/_landingpage.scss */
+.modal-header {
+  border-bottom: #eeeeee solid 1px;
+}
+
+/* line 329, ../sass/modules/_landingpage.scss */
+.modal-header h2 {
+  font-size: 20px;
+}
+
+/* line 332, ../sass/modules/_landingpage.scss */
+.modal-footer {
+  border-top: #eeeeee solid 1px;
+  text-align: right;
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+/* line 337, ../sass/modules/_landingpage.scss */
+#close {
+  display: none;
+}
+
+/* line 341, ../sass/modules/_landingpage.scss */
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 350, ../sass/modules/_landingpage.scss */
+.modal-dialog h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* line 355, ../sass/modules/_landingpage.scss */
+.lp-hero .button {
+  margin-top: 20px;
+}
+
+/* line 359, ../sass/modules/_landingpage.scss */
+.apply-hero .wpcf7-response-output {
+  color: #616161 !important;
+}
+
+/* line 363, ../sass/modules/_landingpage.scss */
+.apply-hero input[type='button'] {
+  position: relative;
+  float: none;
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  /* line 375, ../sass/modules/_landingpage.scss */
+  .lp-hero,
+  .lp-why,
+  .lp-quotes,
+  .lp-previous,
+  .lp-submit {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 850px) {
+  /* line 382, ../sass/modules/_landingpage.scss */
+  .third {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 391, ../sass/modules/_landingpage.scss */
+  .previous-card {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 200px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 400, ../sass/modules/_landingpage.scss */
+  .previous-card {
+    width: calc(100% - 62px);
+    float: none;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 408, ../sass/modules/_landingpage.scss */
+  .third {
+    width: calc(100% - 80px);
+    float: none;
+    margin-bottom: 30px;
+    min-height: 300px;
+  }
+}

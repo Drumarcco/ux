@@ -1,0 +1,213 @@
+/* EPISODES */
+
+.episodes {
+  padding: 0 calc(53% - 580px);
+  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.episodes h2 {
+  color: #606a70;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.episodes ul {
+  padding: 0;
+  overflow: hidden;
+//   margin-top: 60px;
+}
+
+.episodes li {
+    list-style: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 49.8%;
+    display: block;
+    float: left;
+}
+
+.episodes li img {
+  width: 100%;
+}
+
+li a img:hover {
+  opacity: .9;
+}
+
+.episodes h2:before {
+    top: 158px;
+    width: 64px;
+    content: '';
+    height: 3px;
+    background-color: #63615F;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.episodes h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #FFF;
+  display: block;
+  width: 84%;
+  padding: 35px 30px 0;
+  margin-bottom: 0;
+}
+
+.episodes h3 span {
+  color: #ef5a21;
+  transition: color .2s;
+}
+
+.episodes p {
+  padding: 10px 20px 25px 33px;
+  margin: 0;
+  color: #E76417;
+  font-weight: 700;
+
+  span {
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+.our-client-text {
+    float: right;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 26px;
+    width: 50%;
+
+    a {
+      display: inline-block;
+      color: #E76417;
+      text-decoration: underline;
+      font-weight: 400;
+    }
+}
+
+.episodes h2{
+  display: inline;
+}
+
+.episodes .button {
+  float: right;
+}
+
+.episodes li .image-container {
+  width: 100%;
+  height: 383px;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.cont-h1 h1 b {
+  color: #ef5a21;
+}
+
+.casestudy_outcome_img2 {
+  margin-top: 70px;
+}
+
+.casestudy-video-hero {
+  padding: 0 calc(50% - 580px);
+  margin-bottom: 120px !important;
+  margin-top: 0!important;
+  overflow: hidden;
+  color: #6c6c6c;
+}
+
+
+// Media Queries
+
+@media (max-width: 1180px) {
+  /*EPISODES*/
+  .episodes, .episode-hero, .episodesindex {
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 90px;
+    position: relative;
+  }
+  .episodes ul {
+    height: auto;
+    overflow: hidden;
+  }
+/*
+  .episodes li:nth-child(2),
+  .episodes li:nth-child(3) {
+    width: calc(50% - 0px);
+    height: auto;
+    display: block;
+  }
+*/
+
+  .loop-single {
+    width: 44%;
+  }
+
+// .episodes li:first-child {
+//   float: left;
+//   width: 100%;
+//   height: auto;
+//   border-right: none;
+//   margin-bottom: -21px;
+// }
+
+
+}
+
+@media (max-width: 990px) {
+
+.episodes h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:3px;
+
+    &:before {
+      display:none;
+    }
+}
+
+.our-client-text {
+    float: none;
+    margin: 15px 0 55px;
+    width: 100%;
+    text-align: center;
+}
+
+.episodes ul {
+  margin-top: 0;
+}
+
+}
+
+@media (max-width: 847px) {
+  .episodes li {
+    width: 100%;
+  }
+    .episodes li:nth-child(2) {
+//       display: none;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .episodes h3 {
+    padding: 35px 20px 0;
+  }
+
+  .episodes p {
+    padding: 10px 20px 25px 20px;
+  }
+}

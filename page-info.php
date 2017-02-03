@@ -1,0 +1,154 @@
+<?php
+/*
+Template Name: INFO PAGE
+*/
+?>
+
+<?php get_header(); ?>
+
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+<div class="blog-background">
+
+<div class="post-card" style="margin-bottom: 0;">
+  <h1><?php the_title(); ?></h1>
+  
+  <div class="podcast-image" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></div>
+  
+  <?php the_content(); ?>
+  
+  
+</div><!-- post card -->
+<?php include('inc-contact.php'); ?>
+	
+<?php $pagehide = get_field('page_active_selector');;
+  switch ($pagehide) {
+      case "userresearch":
+          echo "<div class='related-pages hide-case-one'>";
+          break;
+      case "findingpatterns":
+          echo "<div class='related-pages hide-case-two'>";
+          break;
+      case "uidesign":
+          echo "<div class='related-pages hide-case-three'>";
+          break;
+      default:
+          echo "<div>";
+  } ?>
+  
+  <h2>More About Our Services</h2>
+  
+  <div class="related_post case-one">
+    <a href="http://ux.nearsoft.com/user-research-is-key-to-understand-your-audience/">
+      <div class="image"></div>
+    </a>
+    
+    <a href="http://ux.nearsoft.com/user-research-is-key-to-understand-your-audience/"><h3>User Research is Key to Understand Your Audience</h3></a>
+  </div>
+  
+  <div class="related_post case-two">
+    <a href="http://ux.nearsoft.com/finding-patterns-through-data-analysis/">
+      <div class="image"></div>
+    </a>
+    
+    <a href="http://ux.nearsoft.com/finding-patterns-through-data-analysis/"><h3>Finding Patterns through Data Analysis</h3></a>
+  </div>
+  
+  <div class="related_post case-three">
+    <a href="http://ux.nearsoft.com/ui-design-must-reflect-the-ux-solution/">
+      <div class="image"></div>
+    </a>
+    
+    <a href="http://ux.nearsoft.com/ui-design-must-reflect-the-ux-solution/"><h3>UI Design Must Reflect the UX Solution</h3></a>
+  </div>
+  
+</div><!-- related pages -->	
+	
+</div>
+	
+	
+	<?php endwhile; ?> 
+	<?php endif; ?>
+	
+	
+<div class="remodal" data-remodal-id="reg" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  
+ 	<style>
+	 	.remodal #mc_embed_signup .mc-field-group {
+		 	display: block;
+		 	width: 100%;
+		 	overflow: hidden;
+	 	}
+	 	
+	 	.remodal #mc_embed_signup .mc-field-group label {
+		 	display: inline-block;
+		 	width: 30%;
+		 	float: left;
+	 	}
+	 	
+	 	.remodal #mc_embed_signup .mc-field-group input {
+		 	display: inline-block;
+		 	width: 90%;
+		 	margin: 0 auto;
+		 	padding: 10px;
+		 	border-radius: 3px;
+		 	font-size: 14px;
+		 	font-weight: 100;
+	 	}
+	</style>
+	 	<p class="request-instructions">Let us know how to contact you and we'll call you right away.<br/>All information is kept private</p>
+	 
+  	<form id="contactrequest" action="<?php echo get_stylesheet_directory_uri(); ?>/send.php" method="post">
+
+      <p class="error"></p>
+      <input type="text" id="name" class="name" name="name" placeholder="Name">
+      <input type="text" id="email" class="email" name="email" placeholder="Email:"></input>
+      <input type="text" id="telephone" class="telephone" name="telephone" placeholder="Phone [xxx-xxx-xxxx]:">
+      <input type="hidden" name="path" id="path" value="<?php echo $_COOKIE['pathcookie']; ?>">
+      <input type="button" value="Send Request" onclick="requestSubmit()">
+
+    </form>
+  
+  
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.min.js"><\/script>')</script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/remodal.js"></script>
+
+<!-- Events -->
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+  //  The second way to initialize:
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+</script>
+	
+		
+	<?php get_footer(); ?>

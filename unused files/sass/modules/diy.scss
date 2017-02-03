@@ -1,0 +1,278 @@
+/* DIY template styles */
+
+.orange,
+.diy-header,
+.gray  {
+	background: url(../img/hero-pattern.gif) repeat;
+	padding: 70px 0;
+	overflow: auto;
+}
+
+.gray {
+    background: url(../img/footerbg.png) repeat;
+    padding: 0 calc(62% - 580px);
+
+    .references-cont {
+      padding: 65px 0;
+    }
+}
+
+.diy-header {
+  margin-top: 104px;
+
+   a {
+    margin-left: 50px;
+    float: left;
+    display: none;
+  }
+
+  .method-cont {
+    padding: 0 calc(65% - 580px);
+
+     p {
+      margin: 20px 0 0 0;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+
+     h1 {
+      color: #fff;
+      font-size: 65px;
+      margin: 0;
+      position: relative;
+      margin-top: -13px;
+
+      span {
+        font-weight: 300;
+        position: relative;
+        top: -15px;
+        display: block;
+      }
+    }
+  }
+}
+
+.section-bg,
+.section-bg-takeaways {
+  padding: 0 115px 70px 115px;
+  overflow: auto;
+}
+
+.section-bg {
+  background: url(../img/persona-profile-bg-img.jpg) no-repeat;
+  background-size: cover;
+  padding: 0 calc(62% - 580px);
+
+  .why-cont {
+    background-color: #fff;
+    padding: 50px;
+
+    p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #5f6a6f;
+    }
+
+     h1 {
+      font-size: 78px;
+      margin: 0;
+      color: #5f6a6f;
+    }
+  }
+}
+
+.section-bg-takeaways {
+    background: url(../img/takeaways-bg-persona-profiles.jpg) no-repeat;
+    background-size: cover;
+    padding: 0 calc(62% - 580px);
+    padding-bottom: 100px;
+
+    .takeaways-cont h1 {
+      font-size: 78px;
+      margin: 0;
+      color: #5f6a6f;
+      background-color: #fff;
+      padding: 50px;
+    }
+
+    .takeaways-box {
+      float: right;
+      background-color: #5f6a6f;
+      padding: 30px;
+      border-radius: 10px;
+      color: #fff;
+      line-height: 22px;
+      font-weight: 300;
+      margin-top: 50px;
+      position: relative;
+
+     ul {
+      width: 78%;
+      float: right;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      list-style-image: url(../img/takeaways-icon.png);
+
+    li {
+        margin: 35px 0;
+        line-height:25px;
+      }
+    }
+      &:after{
+      content: " ";
+      display: block;
+      background: url(../img/takeaways-img.png) no-repeat;
+      position: absolute;
+      top: 45px;
+      left: 35px;
+      width: 79px;
+      height: 79px;
+    }
+  }
+}
+
+
+.orange {
+  padding: 0 calc(62% - 580px);
+
+  .how-cont {
+    h1 {
+      font-size: 78px;
+      color: #fff;
+      padding-left: 50px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
+      list-style: none;
+
+      li {
+        margin: 55px 0px;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+  }
+
+  #persona-icon3 {
+    margin-top: 70px;
+  }
+
+  .how-cont-icon {
+    float: left;
+    width: 70px;
+    height: 70px;
+  }
+
+  .how-cont-icon img{
+    width: 100%;
+  }
+
+  .how-cont-description {
+    float: left;
+    width: 78%;
+    margin-left: 30px;
+
+    ul {
+      li {
+        margin:0;
+        padding:0;
+      }
+    }
+  }
+}
+
+.references-cont {
+
+   h1 {
+    font-size: 78px;
+    margin: 0 0 0 50px;
+    color: #fff;
+  }
+
+   p {
+    padding-left: 50px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+   a {
+    display: block;
+    color: #13bc15;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer.orange {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.steps {
+    padding-left: 45px;
+
+    li span {
+      display: block;
+      margin-top: 10px;
+      position: relative;
+    }
+}
+
+a.nearsof-logo {
+  margin-left: 35px;
+}
+
+a.downlaod-infographic {
+  position: fixed;
+  right: 34px;
+  top: 120px;
+  z-index: 998;
+}
+
+.how-cont-description ul {
+  margin: 0;
+  padding: 0;
+}
+
+.steps ul li {
+  list-style: none;
+}
+
+.how-cont-description li {
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.how-cont-description li:nth-child(2):after {
+  content: " ";
+  display: block;
+  background: url(../img/arrow.png) no-repeat;
+  position: absolute;
+  top: 7px;
+  left: -28px;
+  width: 21px;
+  height: 13px;
+}
+
+.how-cont li ul li {
+  overflow: visible;
+}
+
+.method-cont b {
+  color: #FFF;
+}

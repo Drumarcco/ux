@@ -1,0 +1,219 @@
+header {
+//   position: fixed;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0 calc(50% - 500px);
+  padding-top: 35px;
+  height: 75px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0px 0px 8px rgba(0,0,0, 0.1);
+}
+
+header .logo {
+  float: left;
+  width: 160px;
+  height: 55px;
+  background: url(../img/ux-clinic-design-logo.png) no-repeat;
+  background-size: cover;
+  margin: 0 0 0 0px;
+}
+
+.home {
+  header {
+    background-color: transparent;
+    position: absolute; 
+    .logo {
+      background: url(../img/uxclinic-logo.png) no-repeat;
+      background-size: cover;
+    }
+    a {
+      color: #fff;
+    }
+    .mobilenav-toggle {
+      background: url(../img/menuicon-white.png) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+nav {
+  overflow: hidden;
+  float: right;
+
+  ul {
+      li {
+    display: inline;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    padding-bottom: 15px;
+
+    &:last-child a {
+      margin-right: 0;
+    }
+      a {
+        color: #768389;;
+        font-size: 20px;
+        font-weight: 300;
+        transition: background .3s;
+
+        &:hover::before {
+          width: 78%;
+          content: '';
+          height: 6px;
+          background-color: #ea4b0a;
+          position: absolute;
+          top: 32px;
+          border-radius: 5px;
+          right: 0;
+        }
+        &:hover::after {
+          width: 15%;
+          content: '';
+          height: 6px;
+          background-color: #ea4b0a;
+          position: absolute;
+          top: 32px;
+          border-radius: 5px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.mobilenav-toggle {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url(../img/menuicon.png) no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+  display: none;
+  cursor: pointer;
+}
+
+.past-main .mobilenav-toggle {
+  background: url(../img/menuicon.png) no-repeat !important;
+  background-size: cover !important;
+}
+
+.mobilenav {
+  display: none;
+  float: none;
+  position: relative;
+  top: -100px;
+  overflow: hidden;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  transition: all 1s;
+}
+
+.mobilenav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mobilenav li a {
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 15px 33px;
+  font-size: 25px;
+  font-weight: 300;
+  border-bottom: 1px solid #DB521E;
+}
+
+.displaymobilemenu {
+  height: 180px;
+}
+
+.displaymobilemenu .mobilenav {
+  display: block!important;
+  top: 10px;
+  width: 100%;
+  background-color: #ef5a21;
+  padding-bottom: 10px;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.displaymobilemenu{
+  height: 180px;
+}
+
+.home div#at4-share {
+    display: none !important;
+}
+
+.webinarpromo {
+	padding: 10px calc(50% - 500px);
+	background: #0ac10a;
+	background: #f15922;
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	background-image: url(../img/pattern-light.png);
+	background-repeat: repeat;
+}
+
+.webinarpromo .subs-btn {
+	color: #FFF;
+	display: inline-block;
+	border: 1px solid rgba(255,255,255,.2);
+	padding: 8px 15px;
+	padding: 8px 30px;
+	margin-left: 20px;
+	border-radius: 4px;
+	border-radius: 100px;
+	background: rgba(255,255,255,.2);
+	background-color: #0ac10a;
+}
+
+.webinarpromo .subs-btn:hover {
+	background-color: #09ae09;
+}
+
+
+
+/*MAX 722PX*/
+
+@media (max-width: 722px) {
+  header {
+    text-align: center;
+    height: auto;
+  }
+  header .logo {
+   margin-bottom: 15px;
+  }
+
+  header ul {
+    text-align: center;
+  }
+
+  header nav ul li {
+    float: none;
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .mobilenav-toggle {
+    display: block;
+    margin-right: 30px;
+  }
+}

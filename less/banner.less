@@ -1,0 +1,56 @@
+.banner{
+	background: @darker;
+	color: @white;
+	text-transform: uppercase;
+	text-align: center;
+	height: 350px;
+	position: relative;
+
+	&.landing{
+		height: 650px;
+	}
+
+	.img{
+		opacity: .7;
+		background-size: cover;
+		background-position: center center;
+  		background-image: url(img/banner-home-blur.jpg);
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	h1{
+		position: relative;
+		z-index: 1;
+	}
+
+	&.about .img{
+		background-image: url(img/banner-about.jpg);
+	}
+	&.clients .img{
+		background-image: url(/admin/wp-content/uploads/2014/12/summit-darkened-1.jpg);
+		opacity: 1;
+		background-position: center top;
+	}
+	&.contact .img{
+		background-image: url(img/banner-contact.jpg);
+	}
+	&.blog .img{
+		background-image: url(img/banner-blog.jpg);
+	}
+	&.faq .img{
+		background-image: url(img/banner-faq.jpg);
+	}
+	&.join-us .img{
+		background-image: url(img/banner-join-us.jpg);
+	}
+}
+
+.home .banner{
+	padding: ((@spc * 3.5)+50px) 0 (@spc * 6.5);
+	height: auto;
+}

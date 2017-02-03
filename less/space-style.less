@@ -1,0 +1,628 @@
+/*
+NOTES
+
+base font size: 16px
+main h1 is 40px (2.5rem)
+h2 is 24px (1.5 rem)
+h3 is 20px (1.25 rem)
+h4 is 16px (1 rem)
+
+*/
+
+
+/* NEW MIXINS */
+
+.full-width(){
+  width: 100%;
+  max-width: 100%;
+  margin-top: @spc * 2;
+  margin-bottom: @spc * 2;
+}
+.fixed-width(){
+  width: calc(~"100% - 80px");
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: @spc * 2;
+  margin-bottom: @spc * 2;
+}
+.no-vertical-margins(){
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slide{
+  width: calc(~"100% - 80px") !important;
+  max-width: 1000px !important;
+  margin: 60px auto 2px !important;
+  background: #fff !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.space{
+  font-size: 16px;
+  background: #fff;
+  margin-bottom: -20px;
+  overflow: hidden;
+
+  &.color{
+    background: #f0f0f0;
+
+    background-size: cover;
+    background-attachment:fixed;
+    padding: 0 0 60px 0;
+  }
+
+
+  h1{
+    font-size: 40px;
+    line-height: 1.1;
+    margin: @spc 0;
+  }
+  h2{
+    font-size: 24px;
+    line-height: 1.25;
+    margin: @spc 0;
+  }
+  h3{
+    font-size: 20px;
+    margin: @spc 0;
+  }
+  h4{
+    font-size: 16px;
+    margin: @spc 0;
+  }
+
+  p:empty{
+    display: none;
+  }
+
+  .button{
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .ns-hero{
+    .fixed-width();
+    .no-vertical-margins();
+    padding: 120px 0;
+    text-align: center;
+    color: #5F6972;
+
+    &.short{
+      padding: 80px 0;
+    }
+
+    h1{
+      color: #5F6972;
+    }
+
+    &.slide{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .img-caption{
+    position: relative;
+
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    & > p{
+      text-align: center;
+      padding: @spc;
+      margin: 0;
+      font-weight: bold;
+      z-index: 2;
+      .button{
+        display: inline-block;
+        margin-top: 10px;
+      }
+      span{
+        font-size: 1.5em;
+        display: block;
+      }
+    }
+  }
+
+  .ns-2-columns{
+    .fixed-width();
+    overflow: hidden;
+    margin-bottom: @spc * 3;
+    padding-bottom: @spc * 3;
+    border-bottom: 1px solid #dedede;
+
+    &.slide{
+      padding-bottom: 0;
+      border: none;
+
+      .img-caption p{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    &.nopadding .box{
+      background: #f5f5f5;
+      padding-left: 0 !important;
+      padding-bottom: @spc;
+      border-left: 1px solid #fff;
+      &:first-child{
+        padding-right: 0;
+        border-left: none;
+        border-right: 1px solid #fff;
+      }
+      p:empty{
+        display: none;
+      }
+    }
+    &:not(.wide) > :nth-child(2){
+      padding-right: 20px;
+    }
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &.wide{
+      .full-width();
+      margin-bottom: @spc * 3;
+    }
+
+    &.noborder{
+      border: none !important;
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    & > *{
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+    }
+
+    & > :first-child{
+      padding-right: @spc;
+    }
+    & > :nth-child(2){
+      padding-left: @spc;
+    }
+
+    &.nopadding{
+      & > :first-child{
+        padding-right: 1px;
+      }
+      & > :nth-child(2){
+        padding-left: 1px;
+      }
+    }
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  // INTRODUCED FOR HOME PAGE E (STEPS)
+
+  .ns-hero.steps{
+    h1{
+      color: @accent;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    p{
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+
+  .ns-2-columns.wide.step{
+    padding: 60px calc(~"50% - 500px");
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    &>* {
+      float: left;
+    }
+    > :first-child{
+      padding: 0 @spc 0 0;
+      img{
+        border-radius: 6px;
+      }
+    }
+    > :nth-child(2){
+      padding: 0 0 0 @spc;
+    }
+    &.alt{
+      background: #f5f5f5;
+    }
+  }
+
+  @media all and (max-width: 1040px){
+    .ns-2-columns.wide.step{
+      padding: 40px 20px;
+    }
+  }
+
+  .continue{
+    text-align: center;
+    > * {
+      float: left !important;
+    }
+    > :first-child{
+      float: none;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    h3{
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    .video{
+      width: 230px;
+      float: left;
+      img{
+        margin-bottom: -15px;
+      }
+    }
+    .contact{
+      width: 430px;
+      margin: 0 auto;
+      text-align: left;
+      img{
+        width: 138px;
+        height: 138px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+      }
+      p{
+        padding-top: 20px;
+      }
+    }
+  }
+
+  @media all and (max-width: 1000px){
+    .continue > *{
+      float: none;
+      width: 100%;
+      &:nth-child(2){
+        margin-bottom: 60px;
+      }
+      .video{
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+
+  @media all and (max-width: 520px){
+    .continue > *{
+      &:nth-child(2){
+        margin-bottom: 60px;
+      }
+      .video{
+        float: none;
+        width: 75%;
+        &:nth-child(2){
+          margin-bottom: 40px;
+        }
+      }
+      .contact{
+        width: 100%;
+        text-align: center;
+        img{
+          float: none;
+          margin: 0 auto 20px;
+        }
+        p{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+
+  // END - INTRODUCED FOR HOME PAGE E (STEPS)
+
+
+  .ns-header{
+    .fixed-width();
+    text-align: center;
+
+    h1{
+      font-size: 42px;
+      margin-bottom: @spc;
+      color: @accent;
+    }
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .ns-main{
+    .fixed-width();
+    padding: 0 0 60px;
+    overflow: hidden;
+  }
+
+  .ns-content{
+    width: 70%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .ns-sidebar{
+    width: 24%;
+    float: right;
+
+    .sec{
+      width: 100%;
+    }
+  }
+
+  .section{
+    .fixed-width();
+    text-align: center;
+    padding: 30px 100px;
+  }
+
+
+  .button{
+    border-radius: 6px;
+    padding-bottom: 14px;
+    box-shadow: 0 -4px 0 rgba(0,0,0,0.2) inset,0 2px 3px rgba(0,0,0,0.3);
+  }
+
+  .ns-title{
+    .fixed-width();
+    margin-bottom: @spc;
+    text-align: center;
+    &.slide{
+      padding: 20px;
+      margin-bottom: -62px !important;
+    }
+  }
+
+  .video-home{
+    background: #f5f5f5;
+    padding: 60px 0;
+  }
+
+  .video{
+    text-align: center;
+  }
+
+  .ns-team{
+    .fixed-width();
+
+    .team-member{
+      width: 20%;
+      float: left;
+      padding: 0 1  0px;
+      text-align: center;
+
+      .avatar-100{
+        border-radius: 50px;
+        margin-bottom: 0;
+      }
+
+      h3{
+        margin: 0;
+        &+ p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+
+
+  /* VIDEO EMBEDS */
+  .video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.authorcard{
+  text-align: center;
+  .avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    &+p{
+      margin-bottom: 0;
+      &+p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 650px){
+  .space{
+    font-size: 14px;
+    h1{
+      font-size: 35px;
+    }
+    h2{
+      font-size: 21px;
+    }
+    h3{
+      font-size: 17.5px;
+    }
+    h4{
+      font-size: 14px;
+    }
+
+    .ns-hero{
+      padding: 60px 0 20px;
+      text-align: center;
+      color: #5F6972;
+    }
+
+    .ns-2-columns{
+      & > *{
+        width: 100%;
+        float: none;
+        padding: 0 !important;
+        &:first-child{
+          margin-bottom: @spc;
+        }
+      }
+
+      &:not(.wide) > :nth-child(2){
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+      }
+
+    }
+    .slide{
+      width: calc(~"100% - 20px") !important;
+      margin: 20px auto 2px !important;
+      background: #fff !important;
+      box-shadow: 0 1px 2px rgba(0,0,0,.2);
+
+      &.ns-title{
+        margin-bottom: -22px !important;
+      }
+    }
+  }
+}
+
+
+.portfolio{
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  li{
+    list-style: none;
+    width: 25%;
+    float: left;
+    position: relative;
+    border: 1px solid #fff;
+    a{
+      color: #fff;
+      text-decoration: none;
+      &:hover{
+        color: #fff;
+      }
+    }
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .caption{
+      position: absolute;
+      background: rgba(0,0,0,.75);
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transition: .2s ease-in opacity;
+      h3{
+        color: #fff;
+        margin: 0;
+      }
+      p{
+        margin: 0;
+      }
+    }
+    &:hover .caption{
+      opacity: 1;
+    }
+  }
+}
+
+@media all and (max-width: 1280px){
+  .portfolio li{
+    width: 33.33%;
+  }
+}
+
+@media all and (max-width: 960px){
+  .portfolio li{
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 960px){
+  .portfolio li{
+    width: 100%;
+    float: none;
+  }
+}
+
+
+// got to clean up and integrate this to the above.
+.ns-content h2{ margin: 40px 0 20px; clear: none; }
+.ns-content .bookref { border: 1px solid rgba(229, 72, 0, 0.25); padding: 5px; margin-left: -6px; }
+.ns-content blockquote.citation { font-size: larger; margin: auto 45px auto 15px; font-family: Georgia, serif; }
+.ns-content blockquote.source, blockquote.p { font-size: smaller; color: rgba(97, 106, 116, 0.5); }
+.ns-content a:link:not(.button) { color: rgb(229, 72, 0); }
+.ns-content a:visited:not(.button), a:hover:not(.button), a:active:not(.button) { color: rgb(97, 106, 116); }
+.ns-content div.blog-image-right, div.blog-image-left { background-color: white; border: 1px solid #ccc; text-align: center; width: 50%; padding: 5px; }
+.ns-content div.blog-image-right p, div.blog-image-left p { color: rgba(97, 106, 116, 0.5); font-size: smaller; margin: 0; text-align: center; }
+.ns-content div.blog-image-right a:link, div.blog-image-left a:link { color: rgba(97, 106, 116, 0.5); }
+.ns-content div.blog-image-right img, div.blog-image-left img { padding-bottom: 10px; float: none; margin: auto; }
+.ns-content div.blog-image-right { float: right; margin-left: 15px; }
+.ns-content div.blog-image-left { float: left; margin-right: 15px; }
+.ns-content ul, ol { margin-left: 15px !important; margin-bottom: 6px !important;  }
+.ns-content ul ul, ul ol, ol ol, ol ul { margin-top: 0 !important; }
+.ns-content li { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.ns-content code.block { display: block; margin: 12px 0; padding-top: 4px;  text-align: center; font-size: larger; }
+
+.code { font-family: "Courier New", sans; }
+
+.space .ns-content {
+  width: 70%;
+  float: none;
+  margin: 0 auto;
+}
+
+.ns-sidebar{
+display: none;
+}
+
+hr{
+border: none;
+  border-top: 5px solid #e54800;
+  margin: 60px 150px;
+}
+
+@media all and (max-width: 780px){
+.space .ns-content {
+  width: 100%;
+}
+hr{
+  margin: 60px;
+}
+}
