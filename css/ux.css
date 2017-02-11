@@ -166,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .orange {
   color: #FFF!important;
-/*   background-color: #f45111; */
   background-color: #FF632A;
   border-color: #f45111;
 }
@@ -239,40 +238,27 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .2s;
   right: 30px;
 }
-
-/*
-.remodal form div.indicates-required {
-  color: #aeaeae;
+  /* Ajax Load More */
+.alm-btn-wrap {
+  display: flex;
+  justify-content: center;
 }
 
-.home .remodal .button:hover {
+.alm-btn-wrap .button {
+  background-color: #3587D2;
+  border-color: #3587D2;
   color: #FFF;
-  border-color: #9ce858;
+  margin: 50px 0;
 }
 
-.home .remodal .orange:hover {
-  color: #FFF;
-  border-color: #f45111;
-  border: 0px;
-}
-*/
-
-/*
-a.button {
-  color: #FFF;
-  text-decoration: none;
-  text-shadow: none;
-  border: 0;
+.alm-btn-wrap .button:hover {
+  background-color: #FFF;
+  color: #3587D2;
 }
 
-a.button:hover {
-  color: #FFF;
-  text-decoration: none;
-  text-shadow: none;
-  border: 0;
+.alm-btn-wrap .button.done {
+  display: none;
 }
-*/
-
 
 /* Nav */
 
@@ -1074,7 +1060,6 @@ h6.post-card__title a:hover {
 
 .contact .button {
   float: right;
-/*   margin-right: 3rem; */
   margin-top: 1rem;
 }
 
@@ -2953,11 +2938,6 @@ h2 {
 
 
 /* Home */
-
-#process-anchor {
-  
-}
-
 .process-anchor {
   top: -220px;
   display: block;
@@ -2970,11 +2950,9 @@ h2 {
   background-repeat: no-repeat;
   background-position: -0px 0;
   background-size: contain;
-/*   height: 653px; */
   height: 585px;
   overflow: hidden;
   margin-top: -20px!important;
-/*   padding-top: 65px; */
 }
 
 .home-hero .white-block {
@@ -2989,25 +2967,10 @@ h2 {
   margin-right: calc(50% - 640px);
 }
 
-/*
-.home-hero .white-block:before {
-  content: '';
-  display: block;
-  height: 700px;
-  background: #FFF;
-  width: 700px;
-  position: absolute;
-  z-index: 1;
-  top: -190px;
-  right: -380px;
-}
-*/
-
 .home-hero .white-block h1 {
   font-size: 60px;
   color: #4A4A4A;
   line-height: 73px;
-/*   margin-bottom: 90px; */
 }
 
 .home-hero .tagline {
@@ -3765,20 +3728,13 @@ section.participants .participant:last-child {
 
 .h-carousel li {
   overflow: hidden;
-/*   transition: opacity .1s, -webkit-transform .4s; */
   opacity: 1;
-/*   -webkit-transform: scale(0.4,0.4) rotate(0deg); */
-/*   transform: scale(0.4,0.4); */
   height: calc(100% + 25%);
   list-style: none;
 }
 
 .h-carousel li.active-slide {
   opacity: 1;
-/*   transition: opacity .1s, -webkit-transform .4s; */
-/*   -webkit-transform: scale(1,1) rotate(0deg); */
-/*   transition-delay: .5s; */
-/*   transform: scale(1,1); */
 }
 
 .process-card {
@@ -3790,8 +3746,6 @@ section.participants .participant:last-child {
   height: 300px;
   position: relative;
   margin-bottom: 30px;
-/*   top: 36%; */
-/*   right: calc(50% - 590px); */
   right: calc(50% - 355px);
   right: 0;
 }
@@ -3841,32 +3795,11 @@ section.participants .participant:last-child {
 ul.h-carousel {
   padding-left: 0;
   height: 400px;
-/*   width: 100vw!important; */
 }
-
-/*
-#bx-pager {
-  list-style: none;
-}
-*/
 
 .bx-wrapper .bx-loading {
   display: none!important;
 }
-
-
-
-/*
-ul.h-carousel li {
-  width: calc(100% + 500px)!important;
-}
-*/
-
-/*
-.home-process .bx-viewport {
-  overflow: visible!important;
-}
-*/
 
 .h-carousel li:last-child .process-card .process-card-content p {
   font-weight: normal!important;
@@ -3884,13 +3817,6 @@ ul.h-carousel li {
   
 }
 
-/*
-.process-carousel .scrollto {
-  height: 100%;
-  padding-top: 110px;
-}
-*/
-
 .testimonials-anchor {
   position: relative;
   top: -110px;
@@ -3904,7 +3830,6 @@ ul.h-carousel li {
   position: absolute;
   width: 300px;
   top: 50px;
-/*   left: 0; */
   left: calc(50% - 590px);
   height: 200px;
   top: 30px;
@@ -3956,19 +3881,162 @@ ul.h-carousel li {
   text-align: center;
 }
 
-.post-type-archive-uxclinic_workshop .home-hero {
-  background-color: #FFF;
-  background-image: url(../img/workshop-archive-background.png);
-  background-repeat: no-repeat;
-  background-position: 0px center;
-  background-size: auto 150%;
-  height: 515px;
-  overflow: hidden;
-  margin-top: 0!important;
+.post-type-archive-uxclinic_webinar .home-hero h1 {
+  font-size: 42px;
 }
 
-.post-type-archive-uxclinic_workshop .home-hero .white-block {
-  top: 40px;
+.post-type-archive-uxclinic_webinar .home-hero .white-block .button {
+  margin-top: 20px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars h2 {
+  padding: 50px calc(50% - 590px) 0 calc(50% - 590px);
+}
+
+.post-type-archive-uxclinic_webinar .webinars ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-type-archive-uxclinic_webinar .webinar {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left:  calc(50% - 590px);
+  padding-right: calc(50% - 590px);
+  margin-bottom: 0;
+  border-bottom: 1px solid #ECECEC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-type-archive-uxclinic_webinar .webinar .description {
+  flex: 3;
+}
+
+.post-type-archive-uxclinic_webinar .webinar .webinar-meta img {
+  position: inherit;
+}
+
+.post-type-archive-uxclinic_webinar .watch {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-type-archive-uxclinic_webinar .webinar:nth-child(even) {
+  background-color: #FBFBFB;
+}
+
+.post-type-archive-uxclinic_webinar .webinar-meta {
+  display: inline-flex;
+  align-items: flex-end;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "poppins";
+  color: #5C5C5C;
+}
+
+.post-type-archive-uxclinic_webinar .webinar-meta > * {
+  padding-right: 20px;
+  margin-top: 22px;
+}
+
+.post-type-archive-uxclinic_webinar .webinar-meta .guest-logo {
+  height: 24px;
+}
+
+.post-type-archive-uxclinic_webinar .webinar-meta .duration {
+  display: inherit;
+  text-transform: uppercase;
+}
+
+.post-type-archive-uxclinic_webinar .webinar-meta .icon {
+  padding-right: 5px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFF;
+  background-position: -0px 0;
+  height: 585px;
+  overflow: hidden;
+  margin-top: -20px!important;
+  height: 585px;
+  right: 15%;
+  position: relative;  
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .white-block > *,
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime > * {
+  z-index: 2;
+  position: relative;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  background-color: white;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .white-block {
+  background-color: #FFF;
+  width: 450px;
+  max-height: 80%;
+  padding: 80px 40px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .white-block h1 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 60px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Poppins";
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime .description {
+  font-size: 24px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime .countdown {
+  color: #7B61A8;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime .time {
+  text-align: right;
+  position: relative;
+  right: 16px;
+  margin-bottom: 28px;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime .date {
+  color: #FFF;
+  background-color: #7B61A8;
+  padding: 18px 24px;
+  font-weight: bold;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+}
+
+.post-type-archive-uxclinic_webinar .webinars-home-hero .datetime .date img {
+  margin-right: 12px;
 }
 
 .post-type-archive-uxclinic_workshop .home-hero .white-block h1 {
