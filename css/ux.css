@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .alm-btn-wrap .button.done {
-  display: none;
+  visibility: hidden;
 }
 
 /* Nav */
@@ -3896,7 +3896,7 @@ ul.h-carousel {
 }
 
 .post-type-archive-uxclinic_webinar .webinars h2 {
-  padding: 50px calc(50% - 590px) 0 calc(50% - 590px);
+  padding: 90px calc(50% - 590px) 0 calc(50% - 590px);
 }
 
 .post-type-archive-uxclinic_webinar .webinars ul {
@@ -3905,8 +3905,8 @@ ul.h-carousel {
 }
 
 .post-type-archive-uxclinic_webinar .webinar {
-  padding-top: 30px;
-  padding-bottom: 15px;
+  padding-top: 40px;
+  padding-bottom: 25px;
   padding-left:  calc(50% - 590px);
   padding-right: calc(50% - 590px);
   margin-bottom: 0;
@@ -3918,6 +3918,10 @@ ul.h-carousel {
 
 .post-type-archive-uxclinic_webinar .webinar .description {
   flex: 3;
+}
+
+.post-type-archive-uxclinic_webinar .webinar .description p {
+  margin-bottom: 0;
 }
 
 .post-type-archive-uxclinic_webinar .webinar .webinar-meta img {
@@ -3967,13 +3971,11 @@ ul.h-carousel {
   justify-content: flex-end;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: #FFF;
   background-position: -0px 0;
   height: 585px;
   overflow: hidden;
-  margin-top: -20px!important;
-  height: 585px;
   right: 15%;
   position: relative;  
 }
@@ -4005,7 +4007,7 @@ ul.h-carousel {
 .post-type-archive-uxclinic_webinar .webinars-home-hero .white-block h1 {
   margin-bottom: 20px;
   font-size: 42px;
-  line-height: 60px;
+  line-height: 54px;
 }
 
 .post-type-archive-uxclinic_webinar .webinars-home-hero .datetime {
@@ -4045,14 +4047,37 @@ ul.h-carousel {
   margin-right: 12px;
 }
 
+.post-type-archive-uxclinic_webinar .alm-load-more-btn.done {
+    visibility: hidden;
+  }
+
 /* WEBINARS ARCHIVE MOBILE */
 @media (max-width:875px) {
+  .post-type-archive-uxclinic_webinar .webinars h2 {
+    padding: 90px 12px 0 12px;
+    font-size: 21px;
+  }
+
   .post-type-archive-uxclinic_webinar .webinar {
     flex-direction: column;
     padding-left: 12px;
     padding-right: 12px;
+    padding-bottom: 0;
+    padding-top: 18px;
   }
-  
+
+  .post-type-archive-uxclinic_webinar .webinar .description h3 {
+    font-size: 16px;
+  }
+
+  .post-type-archive-uxclinic_webinar .webinar .description p {
+    display: none;
+  }
+
+  .post-type-archive-uxclinic_webinar .webinar .webinar-meta .duration {
+    display: none;
+  }
+
   .post-type-archive-uxclinic_webinar .watch {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -4080,12 +4105,14 @@ ul.h-carousel {
     flex-direction: column-reverse;
     background-size: cover;
     right: 0%;
+    max-height: 450px;
   }
 
   .post-type-archive-uxclinic_webinar .webinars-home-hero .white-block {
     width: 90%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -4094,7 +4121,7 @@ ul.h-carousel {
 
   .post-type-archive-uxclinic_webinar .webinars-home-hero .white-block h1 {
     font-size: 22px;
-    line-height: 40px;
+    line-height: 28px;
   }
 
   .post-type-archive-uxclinic_webinar .webinars-home-hero .datetime {
