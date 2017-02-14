@@ -4063,11 +4063,12 @@ ul.h-carousel {
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: 0;
-    padding-top: 18px;
+    padding-top: 30px;
   }
 
   .post-type-archive-uxclinic_webinar .webinar .description h3 {
     font-size: 16px;
+    line-height: 1.4;
   }
 
   .post-type-archive-uxclinic_webinar .webinar .description p {
@@ -4076,6 +4077,10 @@ ul.h-carousel {
 
   .post-type-archive-uxclinic_webinar .webinar .webinar-meta .duration {
     display: none;
+  }
+
+  .post-type-archive-uxclinic_webinar .webinar .webinar-meta .guest-logo {
+    margin-top: 5px;
   }
 
   .post-type-archive-uxclinic_webinar .watch {
@@ -5698,23 +5703,3 @@ ul.h-carousel {
 html{
 -webkit-font-smoothing: antialiased;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
