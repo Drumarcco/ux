@@ -24,11 +24,11 @@
   <div class="content-footer">
     <div class="content-footer-left">
       <div class="calendar-icon"></div>
-      <span>Thu January 19th, 2017 at 3:00 pm PST</span>
+      <span>Wed February 22nd, at 11:00 am PST</span>
     </div>
     <div class="content-footer-right">
       <span>SHARE |</span>
-      <a class="twitter-circle" target="_blank" href="https://twitter.com/intent/tweet?url=https://goo.gl/y8wyUt&text=<?php the_title(); ?>. Save your spot!&hashtags=NearsoftUXWebinar"></a>
+      <a class="twitter-circle" target="_blank" href="https://twitter.com/intent/tweet?url=http://bit.ly/2kesKEc&text=<?php the_title(); ?>. Save your spot!&hashtags=NearsoftUXWebinar"></a>
       <a class="facebook-circle" target="_blank" href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?php the_permalink(); ?>&p[images][0]=<?php the_post_thumbnail_url(); ?>&p[title]=<?php the_title(); ?>&p[summary]=<?php the_excerpt(); ?>"></a>
       <a class="google-circle" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
     </div>
@@ -49,24 +49,24 @@
 <section class="participants">
   <h2>Participants</h2>
   <div class="participant">
-    <div class="picture misael"></div>
+    <div class="picture miguel"></div>
     <div class="participant-info">
-      <h3>Misael León</h3>
-      <h4>Product Designer</h4>
+      <h3>Miguel Medina</h3>
+      <h4>UX/UI Designer at Nearsoft</h4>
       <div class="webinar-partner partner-nearsoft"></div>
-      <a class="social-link social-linkedin" href="https://www.linkedin.com/in/misaelleon" target="_blank">LinkedIn</a>
-      <a class="social-link social-twitter" href="https://twitter.com/misaello?lang=en" target="_blank">Twitter</a>
+      <a class="social-link social-linkedin" href="https://www.linkedin.com/in/miguel-angel-medina-fontes-9b818a4a" target="_blank">LinkedIn</a>
+      <a class="social-link social-twitter" href="https://twitter.com/MiigueelMediina" target="_blank">Twitter</a>
     </div>
   </div>
   
   <div class="participant">
-    <div class="picture georgie"></div>
+    <div class="picture federico"></div>
     <div class="participant-info">
-      <h3>Georgie Bottomley</h3>
-      <h4>Senior UX Researcher</h4>
+      <h3>Federico Soria</h3>
+      <h4>Software Engineer at Airbnb</h4>
       <div class="webinar-partner partner-atlassian"></div>
-      <a class="social-link social-linkedin" href="https://www.linkedin.com/in/georgiebottomley" target="_blank">LinkedIn</a>
-      <a class="social-link social-twitter" href="https://twitter.com/bottomley_g?lang=en" target="_blank">Twitter</a>
+      <a class="social-link social-linkedin" href="https://www.linkedin.com/in/fedesoria/" target="_blank">LinkedIn</a>
+      <a class="social-link social-twitter" href="#" target="_blank">Twitter</a>
   </div>
 </section>
 
@@ -76,7 +76,7 @@
   
   <div class="minilogo"></div>
   
-  <h2>Join our UX Team next January 19, to learn How to Do User Research in Agile Teams.</h2>
+  <h2>Join our UX Team next February 22, to learn How to structure your content to win online bookings</h2>
 
 <div class="form-center">
 <?php echo do_shortcode( '[easy_sign_up phone="0" fnln="0"]' ); ?>

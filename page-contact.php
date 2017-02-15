@@ -15,8 +15,8 @@ Template Name: CONTACT PAGE
   <h4>Talk to our <span class="purple">business developer</span> Sandra Vazquez</h4>
   <div class="sandra-details">
     <div class="contact-copy">
-      <a class="button orange" href="tel:4088902114">(408) 890-2114</a>
-      <h3>svazquez@nearsoft.com</h3>
+      <a class="button orange" href="tel:408-890-2114">(408) 890-2114</a>
+      <h3><a href="mailto:svazquez@nearsoft.com">svazquez@nearsoft.com</a></h3>
     </div>
   </div>
 </div>
@@ -31,7 +31,7 @@ Template Name: CONTACT PAGE
        <div class="input-holder input-holder-mail"><input type="text" class="telephone" id="telephone" name="telephone" placeholder="Phone (optional) [xxx-xxx-xxxx]"></div>
       <input type="hidden" name="path" id="path" value="<?php echo $_COOKIE['pathcookie']; ?>">
       <p class="error"></p>
-      <p class="center"><input type="button" value="Send" class="button form-button" onclick="requestSubmit()"><a href="#" class="close"><i class="icon-remove"></i></a></p>
+      <p class="center"><input type="button" value="Send" class="button form-button" onclick="requestSubmit()" style="-webkit-appearance: none; font-family: Poppins;"><a href="#" class="close"><i class="icon-remove"></i></a></p>
       <input type="hidden" id="company" name="company" value="nearsoft">
     </form>
   </section>

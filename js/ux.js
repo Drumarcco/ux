@@ -122,7 +122,7 @@ function requestSubmit(){
     }
 }
 
-$(".send-button").after("add your smiley here");
+$(".send-button").after("");
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {

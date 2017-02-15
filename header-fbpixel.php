@@ -49,8 +49,6 @@
 	<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.event.move.js"></script>
   <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.twentytwenty.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.min.js"></script>
-  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-  <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/protranscript.js"></script>
 	
 	
 	<!-- Twitter Cards -->
@@ -60,7 +58,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@uxclinic">
 		<meta name="twitter:title" content="<?php the_title(); ?>">
-		<meta name="twitter:description" content="<?php echo substr(strip_tags(get_the_content()),0,130) . '…'; ?>">
+		<meta name="twitter:description" content="<?php the_field('webinar_meta_description'); ?>">
 		<meta name="twitter:image" content="<?php the_post_thumbnail_url('large'); ?>">
 	<?php endwhile; else : ?>
 	<?php endif; ?>

@@ -4,7 +4,7 @@
   <div class="white-block">
     <h1>Create Products Poeple <span class="purple">Love</span></h1>
     <span class="tagline">With the Scale Up! UX Workshop Series</span>
-    <a class="button arrow-button" href="#">See Our Workshops</a>
+    <a class="button arrow-button" href="#process-anchor">See Our Workshops</a>
   </div>
 </section>
 
@@ -31,6 +31,7 @@
 <section class="workshop-archive-gallery">
   
   <div class="wa-gallery-intro">
+    <a name="process-anchor" class="process-anchor"></a>
     <h2>Our Workshops</h2>
     <p>We can help you in <span class="purple">every phase</span> of your product's development
       <br><b>Which phase is your product in?</b>

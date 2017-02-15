@@ -50,7 +50,7 @@
   
   <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&summary=<?php the_excerpt(); ?>&source=LinkedIn"></a>
   
-  <a class="google" href="https://plus.google.com/share?url={<?php the_permalink(); ?>}"></a>
+  <a class="google" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
   </div>
   
 </div>
