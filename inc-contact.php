@@ -13,10 +13,14 @@
   <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
     
     <h2>Want to Know More. Let’s Talk.</h2>
-    <div class="sandra"></div>
-    <div class="contact-copy">
-      <h3>Call us at (408) 890-2114</h3>
+    <div class="remodal-contact">
+      <div class="sandra" style="margin-left: 0;"></div>
+      <div class="contact-copy" style="margin-left: 20px;">
+        <h3 style="margin-top: 20px;">Call us at (408) 890-2114</h3>
+      </div>
     </div>
+    
+    
     
   
     <form id="contactrequest" action="<?php echo get_stylesheet_directory_uri(); ?>/send.php" method="post">

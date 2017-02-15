@@ -70,6 +70,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .single .post-content h3 {
   margin-bottom: 0;
+  font-weight: bold!important;
+}
+
+.single .post-content h3 span {
+  font-weight: bold!important;
 }
 
 .post-card a {
@@ -154,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/paper-plane.png);
   content: '';
   display: block;
-  top: 12px;
+  top: 19px;
   background-size: cover;
 }
 
@@ -1289,6 +1294,7 @@ footer h3 {
 .single-blogpost {
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .single-blogpost:last-child {
@@ -1528,6 +1534,8 @@ span.cats ul li a:hover {
 
 .share-bar h3 {
   margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .facebook {
@@ -2966,7 +2974,7 @@ h2 {
 
 .home-hero {
   background-color: #FFF;
-  background-image: url(../img/home-background.png);
+  background-image: url(../img/software-product.png);
   background-repeat: no-repeat;
   background-position: -0px 0;
   background-size: contain;
@@ -3027,8 +3035,75 @@ h2 {
   background-image: url(../img/shopwell-hero-image.jpg);
 }
 
+.olset-travel-back {
+  background-image: url(../img/travel-olset-background.png);
+}
+
+.bidaway-travel-back {
+  background-image: url(../img/travel-bidaway-background.png);
+}
+
 .single-case-title {
   margin-top: 25px;
+}
+
+.t-optimize {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.optimize-left {
+  float: left;
+  width: 620px;
+  padding: 60px 42px;
+  background-image: url(../img/travel-plane.png);
+  background-size: cover;
+  background-position: left center;
+  height: 550px;
+  position: relative;
+}
+
+.optimize-left .icon-row {
+  height: 50px;
+  width: 366px;
+  background: url(../img/icon-row.png) no-repeat center center;
+  position: absolute;
+  bottom: 50px;
+  background-size: contain;
+}
+
+.optimize-left h1 {
+  font-size: 48px;
+  line-height: 56px;
+  width: 380px;
+}
+
+.optimize-right {
+  float: right;
+  width: calc(100% - 620px);
+  padding-top: 60px;
+}
+
+.optimize-right ul {
+  list-style: none;
+}
+
+.optimize-right li {
+  margin-bottom: 40px;
+}
+
+.optimize-right li h3 {
+  margin-bottom: 10px;
+  font-size: 21px;
+  color: #7157A0;
+}
+
+.optimize-right li p {
+  margin-top: 18px;
+  font-family: MinionPro-Regular;
+  font-size: 21px;
+  color: #464646;
+  line-height: 32px;
 }
 
 
@@ -3101,6 +3176,10 @@ h2 {
   margin-right: auto;
   position: relative;
   transition: all .2s;
+}
+
+.page-template-page-travel .three_column .column {
+  margin-right: 30px; /* This is for the meanwhile */
 }
 
 .two_column .column:last-child,
@@ -3525,14 +3604,14 @@ section.participants .participant:last-child {
 }
 
 .participant .picture {
-  width: 105px;
+  width: 106px;
   height: 105px;
   border-radius: 100px;
   float: left;
 }
 
 .participant-info {
-  width: calc(100% - 135px);
+  width: calc(100% - 136px);
   float: left;
   margin-left: 30px;
 }
@@ -3603,6 +3682,16 @@ section.participants .participant:last-child {
  background-size: cover;
 }
 
+.miguel {
+  background: url(https://ux.nearsoft.com/wp/wp-content/themes/ux/img/ui-designer-miguel.png) no-repeat center center;
+  background-size: cover;
+}
+
+.federico {
+ background: url(../img/federico.jpg) no-repeat center center;
+ background-size: cover;
+}
+
 .webinar-partner {
   height: 20px;
   width: 94px;
@@ -3611,6 +3700,11 @@ section.participants .participant:last-child {
 
 .partner-atlassian {
   background: url(../img/atlassian-logo.png) no-repeat center center;
+  background-size: cover;
+}
+
+.partner-atlassian {
+  background: url(../img/airbnb-logo.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -4416,6 +4510,8 @@ ul.h-carousel li {
   width: 89px;
 }
 
+
+
 .page-template-page-travel .home-hero {
   background-image: url(../img/travel-background.png);
 }
@@ -4426,6 +4522,7 @@ ul.h-carousel li {
 
 .page-template-page-travel .home-process {
   padding-bottom: 60px;
+  padding-top: 140px;
 }
 
 .page-template-page-travel .home-process h2 {
@@ -4434,6 +4531,7 @@ ul.h-carousel li {
 
 .page-template-page-travel .home-process p {
   font-size: 24px;
+  margin-top: 10px;
 }
 
 .travel-process {
@@ -4446,6 +4544,51 @@ ul.h-carousel li {
 .travel-process-left {
   float: left;
   width: calc(100% - 580px);
+  padding-top: 70px;
+}
+
+.travel-process-left .travel-process-item {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.travel-process-left .travel-process-item .icon {
+  width: 73px;
+  height: 70px;
+  margin-right: 25px;
+  float: left;
+  background: aqua;
+  position: relative;
+  top: -10px;
+}
+
+.travel-process-left .travel-process-item .text {
+  width: calc(100% - 98px);
+  float: right;
+  font-family: Poppins;
+  font-size: 18px;
+  color: #5C5C5C;
+  font-weight: bold;
+  padding-right: 55px;
+  line-height: 26px;
+  padding-top: 3px;
+}
+
+.travel-process-left .travel-process-item:nth-child(1) .icon {
+  background: url(../img/travel-icon-01.png) no-repeat center center;
+  background-size: contain;
+}
+
+.travel-process-left .travel-process-item:nth-child(2) .icon {
+  background: url(../img/travel-icon-02.png) no-repeat center center;
+  background-size: contain;
+}
+
+.travel-process-left .travel-process-item:nth-child(3) .icon {
+  background: url(../img/travel-icon-03.png) no-repeat center center;
+  background-size: contain;
 }
 
 .travel-process-right {
@@ -4453,12 +4596,27 @@ ul.h-carousel li {
   width: 580px;
   height: 390px;
   background: url(../img/travel-01.png) no-repeat center center;
-  position: absolute;
+  position: relative;
   right: -10px;
 }
 
 .clear {
   clear: both;
+}
+
+.page-template-page-travel .process-carousel {
+  display: none;
+} 
+
+.travel-big-image {
+  padding-top: 30px;
+  background: #FFF;
+}
+
+.remodal-contact {
+  overflow: hidden;
+  width: 440px;
+  margin: 0 auto;
 }
 
 
@@ -4628,6 +4786,15 @@ ul.h-carousel li {
 }
 
 @media (max-width: 1050px) {
+  
+  .travel-process-left {
+    width: calc(100% - 300px);
+  }
+  
+  .travel-process-right {
+    width: 300px
+  }
+  
   .home-hero .white-block {
     right: 50px;
     width: 400px;
@@ -4658,6 +4825,22 @@ ul.h-carousel li {
   
   .home-process {
     padding-bottom: 0px;
+  }
+  
+  .optimize-right {
+    float: none;
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+  }
+  
+  .optimize-right ul {
+    padding-left: 0;
+  }
+  
+  .optimize-left {
+    width: 100%;
   }
 }
 
@@ -4791,13 +4974,110 @@ ul.h-carousel li {
     background-position: 300px center;
     background-image: url(../img/contact-background.png);
   }
+  
+  .page-template-page-travel .home-process h2 {
+    margin-left: 0;
+  }
 }
 
-@media (max-width: 750px) {
-  .participant {
-    
+@media (max-width: 750px) { 
+  
+  .page-template-page-travel .process-carousel {
+    display: block;
   }
   
+  .process-carousel .bx-wrapper .bx-viewport {
+    top: 0;
+  }
+  
+  .travel-process {
+    display: none;
+  }
+  
+  .process-card-icon {
+    top: -20px;
+  }
+  
+  .process-carousel #bx-pager {
+    top: 80px;
+  }
+  
+  .page-template-page-travel .process-carousel .process-card-content {
+    text-align: center;
+  }
+  
+  .page-template-page-travel .home-process > p {
+    display: none; 
+  }
+  
+  .page-template-page-travel .process-carousel .process-card-content p {
+    margin-top: 0;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #5C5C5C;
+    font-weight: bold;
+    line-height: 23px;
+    display: block;
+  }
+  
+  .page-template-page-travel .process-card {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .page-template-page-travel .process-card-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .page-template-page-travel .process-card:before,
+  .page-template-page-travel .process-card:after {
+    display: none;
+  }
+  
+  .optimize-left h1 {
+    font-size: 36px;
+  }
+  
+  .icon-row {
+    display: none;
+  }
+  
+  .optimize-left {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  
+  .travel-big-image {
+    padding-top: 0!important;
+    padding-left: 0;
+    padding-right: 0;
+    background: #FFF;
+  }
+  
+  .page-template-page-travel .t-optimize {
+    padding-top: 0!important;
+  }
+  
+  .travel-big-image h2 {
+    display: none;
+  }
+  
+  .page-template-page-travel .home-process {
+    padding-bottom: 0;
+  }
+  
+  .page-template-page-travel ul.h-carousel {
+    height: 250px;
+  }
+  
+  .page-template-page-travel .bx-wrapper {
+    padding-bottom: 0;
+  }
+
   section.participants .participant {
     width: 80%;
     margin: 0 auto;
@@ -4850,6 +5130,15 @@ ul.h-carousel li {
 }
 
 @media (max-width: 700px) {
+  
+  .post-card img.align-right {
+    display: none;
+  }
+  
+  .post-card ul.align-left {
+    width: 100%;
+  }
+  
   .workshop-hero {
 		padding-left: 30px;
 		padding-right: 30px;
@@ -5082,11 +5371,40 @@ ul.h-carousel li {
   	height: 78px;
   	margin: 0 auto;
 	}
+	
+	.page-template-page-travel .section-showcase {
+  	padding-left: 0;
+  	padding-right: 0;
+	}
+	
+	.optimize-right li h3 {
+  	font-size: 18px;
+	}
+	
+	.page-template-page-travel .home-process p {
+  	font-size: 16px;
+  	line-height: 18px;
+  	margin-top: 12px;
+	}
+	
+	.optimize-left {
+  	padding-left: 29px;
+	}
+	
+	
+	.optimize-left h1 {
+  	width: auto;
+  	font-size: 32px;
+  	line-height: 42px;
+	}
 }  
   
 
 @media (max-width: 500px) {
   
+  .home-process h2 {
+    padding-right: 0;
+  }
   
   footer .copyright {
     font-size: 14px;
@@ -5488,7 +5806,43 @@ ul.h-carousel li {
   .input-holder {
     left: -15px;
     width: calc(100% + 30px);
-    
+  }
+  
+  .page-template-page-travel .process-card {
+    padding: 50px 25px 25px;
+  }
+  
+  .optimize-right {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .page-template-page-travel .home-process {
+    padding-top: 85px;
+  }
+  
+  .page-template-page-travel .section-showcase {
+    padding-top: 35px;
+  }
+  
+  .remodal-contact {
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .remodal-contact .sandra {
+    margin: 0 auto!important;
+    display: none;
+  }
+  
+  .contact-copy {
+    margin-left: 0!important;
+  }
+  
+  .remodal-wrapper h2 {
+    margin-bottom: 5px;
   }
 }
 

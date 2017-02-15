@@ -28,7 +28,7 @@ Template Name: HOME
       <li>
         <div class="process-card">
           <div class="process-card-icon">
-            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/home-icon01.png" />
+            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/user-centered-design.png" alt="Understanding user’s needs, limitations, and emotions will shape the way your product is developed."/>
           </div>
           <div class="process-card-content">
             <h3>User-Centered Research</h3>
@@ -41,7 +41,7 @@ Template Name: HOME
       <li>
         <div class="process-card">
           <div class="process-card-icon">
-            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/home-icon02.png" />
+            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/analysis-interpretation.png" alt="A correct interpretation of all the data will uncover what the motivations and emotions behind the feedback are."/>
           </div>
           <div class="process-card-content">
             <h3>Analysis & Interpretation</h3>
@@ -54,7 +54,7 @@ Template Name: HOME
       <li>
         <div class="process-card">
           <div class="process-card-icon">
-            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/home-icon03.png" />
+            <img src="<?php bloginfo( 'stylesheet_directory' ); ?>/img/ui-solutions.png" alt="A design solution must boost your product user experience as well as your business goals."/>
           </div>
           <div class="process-card-content">
             <h3>UI Solutions</h3>
@@ -73,7 +73,6 @@ Template Name: HOME
   </div>
 
   <script>
-    
 
       $('ul.h-carousel').bxSlider({
         infiniteLoop : false,
@@ -83,7 +82,6 @@ Template Name: HOME
         speed: 900
       });
 
-    
   </script>
 
 </div>
@@ -150,7 +148,7 @@ Template Name: HOME
     <ul class="card-slider">
       <li><div class="quote-card">The UX team was so helpful for us because a lot of times you need a fresh, 3rd party eyes to really get valuable feedback. It's very easy to get too used to your UX and start making bad decisions based on your own feelings.
         <div class="quote-author">
-          <div class="quote-author-pic"><img src="https://ux.nearsoft.com/wp/wp-content/themes/ux/img/andrew-pic.jpg" /></div>
+          <div class="quote-author-pic"><img src="https://ux.nearsoft.com/wp/wp-content/uploads/2017/02/andrew-miller.jpg" alt="Andrew Miller Marketing Director of Olset"/></div>
           <div class="quote-author-content">
             <h3><b class="purple">Andrew Miller</b> Marketing Director of Olset.</h3>
             <h4><a href="http://olset.com" target="_blank">www.olset.com</a></h4>
@@ -159,7 +157,7 @@ Template Name: HOME
 </div></li>
       <li><div class="quote-card">It is very easy to get too used to your own UX and UI. You start making bad decisions based on your own feelings. Working with the UX Team was extremely useful to get objective feedback on our product.
         <div class="quote-author">
-          <div class="quote-author-pic"><img src="https://ux.nearsoft.com/wp/wp-content/themes/ux/img/dustin-pic.jpg" /></div>
+          <div class="quote-author-pic"><img src="https://ux.nearsoft.com/wp/wp-content/uploads/2017/02/dustin-yoder.jpg" alt="Dustin Yoder CEO at Sureify"/></div>
           <div class="quote-author-content">
             <h3><b class="purple">Dustin Yoder</b> CEO at Sureify.</h3>
             <h4><a href="http://www.sureify.com/" target="_blank">www.sureify.com</a></h4>
@@ -224,6 +222,8 @@ Template Name: HOME
   </div>
 </section>
 </div>
+
+
 
 
 
