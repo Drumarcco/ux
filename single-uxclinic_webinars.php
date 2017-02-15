@@ -35,7 +35,7 @@
   </div>
 </section>
 
-<div class="margin-container">
+<div id="webinar-description" class="margin-container">
 <section class="e-can uxcontent">
   <h2>Improve your software product</h2>
   <p><?php the_field('webinar_full_description'); ?></p>

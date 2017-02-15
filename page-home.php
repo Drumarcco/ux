@@ -290,3 +290,4 @@ Template Name: HOME
   }
 })();
 </script>
+<?php get_footer(); ?>
