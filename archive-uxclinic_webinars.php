@@ -17,7 +17,7 @@
 	?>
 	<div class="webinars-home-hero" 
 		style="background-image: url(<?php echo $background_url ?>)">
-		<div class="datetime">
+		<div class="datetime <?php if($webinar_meta["webinar_toggle"][0]) echo "hidden-content"?>">
 			<div class="time">
 				<div class="countdown">
 					0:0:0:0
@@ -33,8 +33,13 @@
 		</div>
 		<div class="white-block">
 			<h1><?php echo $latest_webinar["post_title"] ?></h1>
-			<a href="<?php echo $latest_permalink ?>" class="button orange arrow-button">
-				Save your spot
+			<a href="<?php echo $latest_permalink ?>#webinar-description" class="button orange arrow-button">
+				<?php 
+				if ($webinar_meta["webinar_toggle"][0]) {
+					echo "Watch Now";
+				} else {
+					echo "Save your spot";
+				}?>
 			</a>
 		</div>
 	</div>
