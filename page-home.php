@@ -244,25 +244,31 @@ Template Name: HOME
   });
   var isJumping = false;
   var mousewheelEvents = 'mousewheel DOMMouseScroll MozMousePixelScroll'; 
+
   $('.home-hero').bind(mousewheelEvents, scrollToProcess);
+
   function onSliderLoad() {
     $('.h-carousel > li:not(.bx-clone)').eq(0).addClass('active-slide');
   }
+
   function onSliderBefore($slideElement, oldIndex, newIndex) {
     $('.h-carousel li').removeClass("active-slide");
     $slideElement.addClass('active-slide');
   }
+
   function scrollToProcess(event, delta, deltaX, deltaY) {
     if (deltaY < 0 && !isJumping) {
       isJumping = true;
       $('html, body').animate({ scrollTop: $('.home-process').offset().top }, 500);
       setTimeout(preventMultipleJumpings, 700);
     }
+
     function preventMultipleJumpings() {
       isJumping = false;
       $('.process-carousel').bind(mousewheelEvents, slideRoll);
     } 
   }
+
   function slideRoll(event, delta, deltaX, deltaY) {
     if (deltaY > 0 && slider.getCurrentSlide() > 0) {
       stopMousewheel();
@@ -272,9 +278,11 @@ Template Name: HOME
       stopMousewheel();
       slider.goToNextSlide();
     }
+
     function isLastSlide() {
       return slider.getCurrentSlide() == slider.getSlideCount() - 1;
     }
+
     function stopMousewheel() {
       event.stopPropagation();
       event.preventDefault();
@@ -282,4 +290,3 @@ Template Name: HOME
   }
 })();
 </script>
-<?php get_footer(); ?>
