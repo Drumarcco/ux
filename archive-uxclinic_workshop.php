@@ -8,7 +8,11 @@
   </div>
 </section>
 
-<div class="margin-container wa-hide-on-mobile">
+<div class="circle-know-more">
+  <a href="#intro" class="circle-button orange-btn"></a>
+</div>
+
+<div id="intro" class="margin-container wa-hide-on-mobile">
 <section class="workshop-archive-intro">
   <div class="left">
     <div class="scaleup-logo"></div>  
