@@ -11,11 +11,11 @@
 		$latest_webinar = wp_get_recent_posts($args)[0];
 		$latest_permalink = get_post_permalink($latest_webinar["ID"]);
 		$webinar_meta = get_post_meta($latest_webinar["ID"]);
-		$background_url = wp_get_attachment_image_src($webinar_meta["webinar_background_image"][0], array(530, 800))[0];
+		$background_url = wp_get_attachment_image_src($webinar_meta["webinar_background_image"][0], array(969, 647))[0];
 		$latest_webinar_date = $webinar_meta["webinar_date"][0];
 		$title_keywords = $webinar_meta["title_keywords"][0];
 	?>
-	<div class="webinars-home-hero" 
+	<div class="home-hero" 
 		style="background-image: url(<?php echo $background_url ?>)">
 		<div class="datetime <?php if($webinar_meta["webinar_toggle"][0]) echo "hidden-content"?>">
 			<div class="time">
@@ -36,9 +36,9 @@
 			<a href="<?php echo $latest_permalink ?>#webinar-description" class="button orange arrow-button">
 				<?php 
 				if ($webinar_meta["webinar_toggle"][0]) {
-					echo "Watch Now";
+					echo "Watch";
 				} else {
-					echo "Save your spot";
+					echo "Learn More";
 				}?>
 			</a>
 		</div>
@@ -92,9 +92,11 @@
 		var titleDOMText = $('.white-block h1').text();
 
 		keywords.forEach(function highlight(keyword) {
-			var capitalizedKeyword = keyword.charAt(0).toUpperCase() + keyword.slice(1);
-			titleDOMText = titleDOMText.replace(' ' + capitalizedKeyword + ' ', 
-				' <span class="purple">' + capitalizedKeyword + '</span> ');
+			var capitalizedKeyword = keyword[0].toUpperCase() + keyword.slice(1);
+			titleDOMText = titleDOMText.replace(' ' + capitalizedKeyword + ' ',
+				' <span class="purple">' + capitalizedKeyword + '</span> ' );
+			titleDOMText = titleDOMText.replace(' ' + keyword + ' ', 
+				' <span class="purple">' + keyword + '</span> ');
 		});
 
 		$('.white-block h1').html(titleDOMText);
