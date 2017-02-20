@@ -4531,6 +4531,31 @@ ul.h-carousel {
   margin: 0 auto;
 }
 
+.post-type-archive-uxclinic_workshop .home-hero {
+  background-color: #FFF;
+  background-image: url(../img/workshop-archive-background.png);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  background-size: auto 150%;
+  height: 515px;
+  overflow: hidden;
+  margin-top: 0!important;
+}
+
+.post-type-archive-uxclinic_workshop .home-hero .white-block {
+  top: 70px;
+}
+
+.post-type-archive-uxclinic_workshop .home-hero .white-block h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.post-type-archive-uxclinic_workshop .home-hero .white-block .tagline {
+  margin-bottom: 30px;
+  display: block;
+}
 
 /* Media Queries */
 
