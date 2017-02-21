@@ -139,3 +139,15 @@ $(function() {
   });
 });
 
+function titleKeywords(titleSelector, keywords) {
+    keywords = keywords.split(' ');
+    var titleDOMText = $(titleSelector).text();
+
+    keywords.forEach(function highlight(keyword) {
+        var regExp = new RegExp(keyword, "i");
+        titleDOMText = titleDOMText.replace(regExp, '<span class="purple">' + keyword + '</span>');
+    });
+
+    $(titleSelector).html(titleDOMText);
+};
+

@@ -86,20 +86,8 @@
 		}, 1000);
 	})();
 
-	(function titleKeywords() {
-		var keywords = '<?php echo $title_keywords ?>';
-		keywords = keywords.split(' ');
-		var titleDOMText = $('.white-block h1').text();
-
-		keywords.forEach(function highlight(keyword) {
-			var capitalizedKeyword = keyword[0].toUpperCase() + keyword.slice(1);
-			titleDOMText = titleDOMText.replace(' ' + capitalizedKeyword + ' ',
-				' <span class="purple">' + capitalizedKeyword + '</span> ' );
-			titleDOMText = titleDOMText.replace(' ' + keyword + ' ', 
-				' <span class="purple">' + keyword + '</span> ');
-		});
-
-		$('.white-block h1').html(titleDOMText);
-	})();
+	$(window).ready(function() {
+		titleKeywords('.white-block h1', '<?php echo $title_keywords ?>');
+	});
 </script>
 <?php get_footer(); ?>

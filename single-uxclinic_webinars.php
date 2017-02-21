@@ -8,6 +8,12 @@
         <h2><?php the_field('webinar_title'); ?></h2>
         <a href="#int-des" class="button arrow-button orange">Save your spot!</a>
       </div>
+
+      <script>
+        $(document).ready(function() {
+          titleKeywords('.workshop-hero-content h2', '<?php echo get_field('title_keywords') ?>');
+        });
+      </script>
     
       <div class="content-footer">
         <div class="content-footer-left">
@@ -83,18 +89,8 @@
         <h1 class="title"><?php the_field('webinar_title'); ?></h1>
 
         <script>
-          $(document).ready(function titleKeywords() {
-            var keywords = '<?php echo get_field('title_keywords') ?>';
-            keywords = keywords.split(' ');
-            var titleDOMText = $('.single-webinar .title').text();
-
-            keywords.forEach(function highlight(keyword) {
-              var capitalizedKeyword = keyword.charAt(0).toUpperCase() + keyword.slice(1);
-              titleDOMText = titleDOMText.replace(' ' + capitalizedKeyword + ' ', 
-                ' <span class="purple">' + capitalizedKeyword + '</span> ');
-            });
-
-            $('.single-webinar .title').html(titleDOMText);
+          $(document).ready(function() {
+            titleKeywords('.single-webinar .title', '<?php echo get_field('title_keywords') ?>');
           });
       </script>
     </div>
