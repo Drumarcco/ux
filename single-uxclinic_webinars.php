@@ -95,7 +95,7 @@
       </script>
     </div>
     <div class="full-description">
-      <h2>We will cover:</h2>
+      <h2>Improve your software product</h2>
       <?php the_field('webinar_full_description'); ?>
     </div>
     <div class="watch-more">

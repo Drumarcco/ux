@@ -56,12 +56,34 @@
         }
         
        h2 {
-            text-transform: uppercase;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             line-height: 23px;
             margin-top: 26px;
             margin-bottom: 13px;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 23px;
+            margin-top: 34px;
+            margin-bottom: 13px;
+            text-transform: uppercase;
+        }
+
+        .assets {
+            font-family: "Poppins";
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: underline;
+            
+            li {
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
         }
 
         ul {
@@ -69,22 +91,26 @@
             list-style: none;
             padding: 0;
             margin: 0;
+
+            li {            
+                position: relative;
+                padding-left: 15px;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 13px;
+                    left: 0px;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background-color: #7960A5;
+                }
+            }
         }
 
-        li {            
-            position: relative;
-            padding-left: 15px;
-
-            &::before {
-                position: absolute;
-                content: "";
-                top: 13px;
-                left: 0px;
-                width: 7px;
-                height: 7px;
-                border-radius: 50%;
-                background-color: #7960A5;
-            }
+        .mobile-hide {
+            display: none;
         }
     }
 
@@ -128,12 +154,33 @@
             font-size: 21px;
             line-height: 32px;
             padding-top: 30px;
+
+            .mobile-hide {
+                display: initial;
+            }
             
             h2 {
                 font-size: 36px;
-                margin-bottom: 50px;
+                margin-bottom: 40px;
                 text-align: center;
-            }            
+            }
+
+            h3 {
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 54px;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+            }
+
+            .assets {
+                font-size: 14px;
+                line-height: 23px;
+                
+                li {
+                    margin-bottom: 12px;
+                }
+            }
         }
 
         .watch-more {
